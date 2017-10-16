@@ -1,0 +1,71 @@
+Date 7/28/2017
+4.9.11-1.0.0 - manifest imx_4.9.11-1.0.0_ga.xml
+- GA release for i.MX 6Quad/Dual/Plus/Solo/SoloX/SoloLite/Ultralite, 6ULL, 7Dual and 7ULP
+- Upgrade Kernel to 4.9.11
+- Upgrade U-Boot to 2017.03
+- Upgrade graphics v6 to v6.2.2.p0
+- Upgrade Gstreamer to 1.10.4 and Codec/Parser to 4.2.1
+
+Date 4/15/2017
+4.1.33-7ulp_beta - manifest imx_4.1.33-7ulp_beta.xml
+- Stanadlone beta release for i.MX 7ULP EVK on the morty Yocto Project
+- Kernel update to 4.1.33
+- Graphics update for v6 graphics to v6.2.0.p0
+- Graphics update for v5 grahpics for v5.0.11.p8.7 - minor patches
+- Codec upgrade to 4.2.0 and Gstreamer upgrade to 1.10
+- imx-gpu-sdk upgrade to v4
+
+Date 3/29/2017
+4.1.15-2.0.3 - manifest imx_4.1.15-2.0.3.xml
+- Patch release for i.MX 6ULL 900MHz
+- Patch release only kernel changes on the meta-fsl-bps-release/imx/meta-bsp/recipes-kernel/linux
+- This patch release is just a Yocto Project release layer and manifest update
+
+Date 2/16/2017
+4.1.15-2.0.2 - manifest imx_4.1.15-2.0.2.xml
+- Patch release for i.MX 6ULL 800MHz
+- This patch release is just a Yocto Project release layer and manifest update
+
+Date 1/6/2017
+4.1.30-7ulp_alpha - manifest imx_4.1.30-7ulp_alpha.xml
+- Standalone release only for i.MX 7ULP alpha 
+- Upgrade to 4.1.30 kernel version
+- Graphics update for v6 graphics alpha quality
+
+Date 11/16/2016
+4.1.15-2.0.1 - manifest imx_4.1.15-2.0.1.xml
+- Patch release only kernel changes on the meta-fsl-bps-release/imx/meta-bsp/recipes-kernel/linux
+- Patches are fox WM8960 and KSZ8081
+- Note the kernel patches are not provided on linux-imx repo but will be provided in next release
+- This patch release is just a Yocto Project release layer and manifest update
+
+Date 10/1/2016
+4.1.15-2.0.0 - manifest imx_4.1.15-2.0.0.xml
+- GA release for i.MX 6ULL, i.MX 6Quad/Dual/Plus/Solo/SoloX/SoloLite/Ultralite and i.MX 7Dual
+- Upgrade U-Boot to 2016.03
+- Upgrade Gstreamer to 1.8.1 and multimedia upgrade to 4.1.4
+- Upgrade to Krogoth Yocto Project release with GCC 5.3
+- Kernel and BSP library fixes
+
+Date 6/28/2016
+4.1.15-1.2.0 - tag meta-fsl-bsp-release tag imx_4.1.15-1.2.0_ga
+- Patches to support i.MX 7Dual SABRE-SD T01.2 silicon
+- Graphics update to p8.4 same as released in 3.14.52-1.1.1 patch release.
+
+Date 4/28/2016
+4.1.15-1.1.1 - tag  meta-fsl-bsp-release tag imx_4.1.15_1.1.1
+- Patches to support i.MX 6UltraLite for 700Mhz
+
+Date 4/8/2016
+4.1.15-1.1.0 - tag - meta-fsl-bsp-release tag imx_4.1.15_1.1.0_ga
+- Release for i.MX 6UltraLite for silicon revision 1.1
+- Changes in in kernel, uboot and imx-test
+
+Date 3/22/2016
+4.1.15-1.0.0_ga - meta-fsl-bsp-release tag imx_4.1.15_1.0.0_ga
+Updates for Linux 4.1.15-1.0.0_ga release for the following SoC
+- i.MX 6Quad/Dual/Plus/Solo
+- i.MX 6SoloX
+- i.MX 6SoloLite
+- i.MX 6UltraLite
+- i.MX 7Dual

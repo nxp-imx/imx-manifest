@@ -1,0 +1,572 @@
+NXP Software Content Register
+
+Release - Linux 4.9.11_1.0.0
+May 2017
+
+Yocto Project recipe manifest:  
+repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-morty -m imx-4.9.11_1.0.0.xml
+
+--------------------------------------------
+BSP PACKAGES
+--------------------------------------------
+
+Package:                   linux-imx
+Outgoing License:          GPL-2.0+
+License File:              COPYING
+Package Category:          BSP
+Type of content:           Source code
+Description and comments:  The Linux kernel with i.MX-specific drivers
+Release Location:          git.freescale.com branch imx_4.9.11_1.0.0
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           kernel.org (GPL-2.0+) - https://www.kernel.org/
+
+--------------------------------------------
+
+Package:                   uboot-imx
+Outgoing License:          GPL-2.0+
+License File:              COPYING
+Package Category:          Bootloader
+Type of content:           Source code
+Description and comments:  Bootloader with i.MX-specific capabilities
+Release Location:          git.freescale.com branch imx_v2017.03
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           Das U-Boot - Universal Bootloader (LGPL-2.0+) - http://www.denx.de/wiki/U-Boot/WebHome
+                           Android Open Source Project (BSD-2-Clause) - https://source.android.com/
+                           zlib (zlib license) - http://www.zlib.net/
+
+--------------------------------------------
+
+Package:                   firmware-imx-5.8.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v14 June 2016
+License File:              COPYING
+Package Category:          BSP
+Type of content:           Binaries
+Description and comments:  BSP firmware - EPDC, SDMA, VPU
+Release Location:          i.MX Yocto Project mirror
+Origin:                    Freescale Semiconductor, Inc. (proprietary)
+                           Chips & Media, Inc.  (proprietary)
+
+--------------------------------------------
+
+Package:                   imx-lib
+Outgoing License:          LGPL-2.1+
+License File:              COPYING-LGPL-2.1
+Package Category:          BSP
+Type of content:           Source code
+Description and comments:  BSP libraries
+Release Location:          git.freescale.com/imx/imx-lib.git "67083e1999d5baa90d7141d84bb866ec8a7cfa90"
+Origin:                    Freescale Semiconductor, Inc. (LGPL-2.1+)
+
+--------------------------------------------
+
+Package:                   imx-test
+Outgoing License:          Each test has its own license.  It is one of GPL-2.0, LGPL-2.1 or Apache-2.0
+License File:              See source code.
+Package Category:          BSP
+Type of content:           Source code
+Description and comments:  Linux unit test applications
+Release Location:           git.freescale.com/imx/imx-test.git "0da02074ec4141ed3a22638347621d03d15e2f73"
+Origins for individual tests:
+                           module_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                               Hantro Products Oy. (GPL-2.0+)
+                           test/etm: The Android Open Source Project (Apache-2.0) - unpublished
+                           test/mxc_ipudev_test: Freescale Semiconductor, Inc. (LGPL-2.1+)
+                           test/mxc_mpeg4_enc_test: Hantro Products Oy. (GPL-2.0+)
+                           test/mxc_rtc: Freescale Semiconductor, Inc. (GPL-2.0+)
+                               Paul Gortmaker (GPL-2.0+) RTC Test in Linux Kernel - http://kernel.org
+                           test/mxc_sensor_test: Vojtech Pavlik (GPL-2.0+)
+                           test/mxc_sound_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                               Hannu Savolainen [soundcard.h] (BSD-2-clause)
+                           test/mxc_vpu_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                               Chips & Media (GPL-2.0+)
+                           test/pxp_v4l2_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                               Embedded Alley Solutions (GPL-2.0+)
+                           test/memtool: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mmdc: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_als_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_asrc_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_cec_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_dcic_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_fb_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_i2c_slave_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_iim_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_l2switch: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_mcc_tty_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_mlb_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_sdma_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_sim_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_spi_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_tuner_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_uart_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/mxc_v4l2_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/pxp_lib_test: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/rpmsg: Freescale Semiconductor, Inc. (GPL-2.0+)
+                           test/wdog: Freescale Semiconductor, Inc. (GPL-2.0+)
+
+--------------------------------------------
+
+Package:                   imx-vpu-5.4.37.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          BSP
+Type of content:           Source code
+Description and comments:  VPU library
+Release Location:          i.MX Yocto Project mirror
+Origin:                    Freescale Semiconductor, Inc. (proprietary)
+                           Chips & Media, Inc. (proprietary)
+
+--------------------------------------------
+
+Package:                   imx-kobs
+Outgoing License:          GPL-2.0+
+License File:              COPYING
+Package Category:          BSP
+Type of content:           external git - Source code
+Description and comments:  NAND boot writer
+Release Location:          NXP github: https://github.com/NXPmicro/imx-kobs.git  "a2734b93759b4222f9dfa3f8c7645be9d39ea601"
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           AES (BSD-3-Clause) - http://brgladman.org/oldsite/AES/
+                           Secure Hash Algorithm Implementation (Public Domain) - http://www.nic.funet.fi/pub/crypt/hash/sha/
+                           IGEP Linux Kernel (GPL-2.0+) - http://www.igep.es/
+
+--------------------------------------------
+
+Package:                   imx-uuc
+Outgoing License:          GPL-2.0+
+License File:              COPYING
+Package Category:          BSP
+Type of content:           Binary and source code
+Description and comments:  A daemon for mfgtools.
+Release Location:          NXP github: https://github.com/NXPmicro/imx-uuc.git "3440b1108373e79669cc17ba1d2be91a123a2053"
+Origin:                    Freescale Semiconductor, Inc. (GPL-2.0+) - https://github.com/NXPmicro/imx-uuc
+
+--------------------------------------------
+GRAPHICS PACKAGES
+--------------------------------------------
+
+Package:                   imx-gpu-viv-6.2.2.p0-aarch*.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          Graphics
+Type of content:           Binaries, scripts and header files
+Description and comments:  GPU Core IP in binary and test application source
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           Vivante Corp. (proprietary)
+                           opengleskul (MIT) - https://code.google.com/archive/p/opengleskul/
+                           Khronos Group (MIT) - http://www.khronos.org/
+                           Mesa3D - Mesa Lib [GL3ext header] (SGI-B-2.0) - http://mesa3d.sourceforge.net/
+                           libdri (MIT) - http://dri.freedesktop.org/wiki/
+                           The Android Open Source Project (Apache 2.0) - https://source.android.com/
+                           LLVM Compiler (BSD-3-clause) - https://github.com/prof123/llvm/
+
+--------------------------------------------
+
+Package:                   kernel-module-imx-gpu-viv-6.2.2.p0.tar.gz
+Outgoing License:          GPL-2.0+
+License File:              See source code.
+Package Category:          Graphics
+Type of content:           Source code
+Description and comments:  GPU kernel source provided for kernel loadable modules
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           Vivante Corp. (proprietary)
+
+--------------------------------------------
+
+Package:                   xserver-xorg-video-imx-viv-6.2.2.p0.tar.gz
+Outgoing License:          MIT
+License File:              COPYING-MIT: MIT License
+Package Category:          Graphics
+Type of content:           Source code
+Description and comments:  Xserver Library extensions
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           Vivante Corp. (proprietary)
+                              xorg-server (MIT) - http://xorg.freedesktop.org/
+                              XFree86 Project (XFree86-1.0) - http://sourceforge.net/projects/xfree86/
+
+--------------------------------------------
+
+Package:                   imx-gpu-sdk--demo-framework_4.0.1
+Outgoing License:          BSD-3-clause
+License File:              License.md
+Package Category:          Graphics
+Type of content:           Source code
+Description and comments:  Graphics sample applications
+Release Location:          github.com/NXPmicro/gtec-demo-framework.git branch=master "57e7932555e5eb3960c6fffb85287f46ac913e5f"
+Origin:                    NXP (BSD-3-clause)
+                           Freescale Semiconductor, Inc. (BSD-3-clause)
+                           "OpenGL(R) ES 3.0 Programming Guide" book samples (MIT) - http://github.com/zemanel/opengles-book-samples/
+                           Norbert Nopper VKTS Examples (MIT) - https://github.com/McNopper/Vulkan
+                           The Android Open Source Project (Apache-2.0) - https://source.android.com/
+                           Mono Xna (MIT) - https://code.google.com/archive/p/monoxna/
+                           Wayland (Seetex License) - http://cgit.freedesktop.org/~krh/wayland/
+                        Imagery Sources:
+                           Emil Persson (CC-BY-3.0) - http://www.humus.name
+                           CDmir (CC0-1.0) - http://opengameart.org/content/old-deer-male
+                           Justin Nichol (CC-BY-SA-4.0) - http://freeforall.cc/works/questquest-game-icons/
+                        Third Party Apps Included:
+                           DevIL (LGPL-2.1+) - https://sourceforge.net/projects/openil/ [separate binary]
+                           G-Truc Creation [GLI] (MIT) - https://www.g-truc.net/
+                           Khronos Group OpenVG (MIT) - https://www.khronos.org/openvg/
+                           libpng (libpng) - https://sourceforge.net/projects/libpng/
+                           libjpeg (IJG) - http://www.ijg.org/
+                           Open Asset Import Library [assimp] (BSD-3-Clause) - https://sourceforge.net/projects/assimp/
+                           OpenGL Mathematics [GLM] (MIT) - https://sourceforge.net/projects/ogl-math/
+                           RapidJSON (MIT) - https://github.com/miloyip/rapidjson/
+                           SRA/SKC gettimeofday (MIT) - https://doxygen.postgresql.org/gettimeofday_8c_source.htm
+                           Templatized C++ Command Line Parser [tclap] (MIT) - http://sourceforge.net/projects/tclap/
+                           zlib (zlib) - http://www.zlib.net/
+
+--------------------------------------------
+
+Package:                   imx-gpu-g2d-6.2.2.p0.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          Graphics
+Type of content:           Binary
+Description and comments:  Graphics 2D
+Release Location:          mx8_downloads
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+
+
+--------------------------------------------
+
+Package:                   VivanteVTK-v6.2.2.1.7.0.tgz
+Outgoing License:          Vivante Licenses in each msi install
+License File:              included in msi install
+Package Category:          Graphics
+Type of content:           Setup MSI installations
+Description and comments:  Vivante Tools
+Release Location:          nxp.com
+Origin:                    VeriSilicon
+
+--------------------------------------------
+MULTIMEDIA PACKAGES
+--------------------------------------------
+
+Package:                   imx-codec-4.2.1.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          Multimedia
+Type of content:           Binaries and header files
+Description and comments:  i.MX multimedia codec libraries
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           ISO/IEC 13818-7 and ISO/IEC 14496-3 standards
+                           3GPP 26.173 standard
+                           FLAC (BSD-3-clause) - https://sourceforge.net/projects/flac/
+                           libjpeg (IJG) - http://www.ijg.org/
+                           OggVorbis Tremor (BSD-3-Clause) - http://xiph.org/vorbis/
+
+--------------------------------------------
+
+Package:                   imx-parser-4.2.1.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          Multimedia
+Type of content:           Binaries and header files
+Description and comments:  i.MX multimedia parser libraries
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+
+--------------------------------------------
+
+Package:                   imx-gst1.0-plugin-4.2.1.tar.gz
+Outgoing License:          LGPL-2.1+
+License File:              COPYING-LGPL-2.1
+Package Category:          Multimedia
+Type of content:           Source code
+Description and comments:  i.MX Gstreamer 1.0 plugins
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           Gstreamer plugins-Base (LGPL-2.1+) - http://gstreamer.freedesktop.org/src/gst-plugins-base/
+                           Gstreamer plugins-Good (LGPL-2.1+) - http://gstreamer.freedesktop.org/src/gst-plugins-good/
+                           Gstreamer plugins-Bad (LGPL-2.1+) - http://gstreamer.freedesktop.org/src/gst-plugins-bad/
+
+--------------------------------------------
+
+Package:                   imx-vpuwrap-1.0.68.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v14 June 2016
+License File:              COPYING
+Package Category:          Multimedia
+Type of content:           Source code
+Description and comments:  i.MX VPU wrapper library
+Release Location:          i.MX Yocto Project mirror
+Origin:                    Freescale Semiconductor, Inc. (proprietary)
+                           sqlite (Public Domain) - http://www.hwaci.com/sw/sqlite/index.html
+
+--------------------------------------------
+
+Package:                   imx-qtapplications-1.2.0-aarch32.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          Multimedia
+Type of content:           Binaries
+Description and comments:  i.MX QT multimedia player application
+Release Location:          i.MX Yocto Project mirror
+Origin:                    i.MX Semiconductor, Inc. (proprietary)
+
+--------------------------------------------
+
+Package:                   imx-alsa-plugins-1.0.26
+Outgoing License:          GPL-2.0+
+License File:              COPYING-GPL: GPL-2.0
+Package Category:          Multimedia
+Type of content:           Source
+Description and comments:  Audio
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           Alsa Plugins (GPL-2.0+) - ftp://ftp.alsa-project.org/pub/plugins/
+                           GNU libtool (GPL-2.0+) http://www.gnu.org/software/libtool/
+
+--------------------------------------------
+
+Package:                   simg2img-1.0.0.tar.gz
+Outgoing License:          Apache-2.0
+License File:              COPYING
+Package Category:          Multimedia
+Type of content:           Source
+Description and comments:  Tool to convert Android sparse images to raw images
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           Freescale Semiconductor, Inc. (proprietary)
+                           The Android Open Source Project (Apache-2.0) - https://android.googlesource.com/platform/system/core/+/master/libsparse
+                           Gary S Brown (Public Domain) - http://www.opensource.apple.com/source/xnu/xnu-1456.1.26/bsd/libkern/crc32.c?txt
+
+--------------------------------------------
+
+M4 Processor
+--------------------------------------------
+
+Package:                   imx7d-sabresd-m4-freertos-1.0.1.bin
+                                imx7d_sabresd_m4_TCM_helloworld.bin
+                                imx7d_sabresd_m4_TCM_mcctty.bin
+                                imx7d_sabresd_m4_TCM_Pingpang.bin
+Outgoing License:          LA_OPT_BASE_LICENSE v12 March 2016
+License File:              COPYING
+Package Category:          BSP
+Type of content:           Binaries
+Description and comments:  i.MX7D MCUXpresso SDK demo image on Cortex-M4 core
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           CMSIS Core Header files - ARM Limited (BSD-3-clause) - http://silver.arm.com
+                           CMSIS DSP Library - ARM Limited (BSD-3-clause) - http://silver.arm.com
+                           FreeRTOS - Real Time Engineers, LTd. (Modified GPL-2.0) - http://www.freertos.org
+                           OpenAMP - Mentor Graphics, Ltd (BSD-3-Clause) - https://github.com/OpenAMP/open-amp
+
+--------------------------------------------
+
+Package:                   imx7ulp-m4-demo-beta.bin
+                                imx7ulp_m4_demo.img
+                                imx7ulp_erpc_matrix_multiply_rtos.img
+                                imx7ulp_rpmsg_lite_pingpong_rtos.img
+                                imx7ulp_rpmsg_lite_str_echo_rtos.img
+                                imx7ulp_wireless_uart_bridge.img
+Outgoing License:          LA_OPT_BASE_LICENSE v18 February 2017
+License File:              COPYING
+Package Category:          BSP
+Type of content:           Binaries
+Description and comments:  i.MX7ULP MCUXpresso SDK demo image on Cortex-M4 core
+Release Location:          i.MX Yocto Project mirror
+Origin:                    NXP (proprietary)
+                           KSDK Peripheral Drivers - NXP (BSD-3-Clause)
+                           KSDK CMSIS Peripheral Drivers - NXP (Apache-2.0 and BSD-3-Clause)
+                           CMSIS Core Header files - ARM Limited (BSD-3-clause) - http://silver.arm.com
+                           CMSIS DSP Library - ARM Limited (BSD-3-clause) - http://silver.arm.com
+                           FreeRTOS - Real Time Engineers, LTd. (Modified GPL-2.0) - http://www.freertos.org
+                           ISSDK - NXP (BSD-3-clause)
+                           rtcesl - NXP (BSD-3-clause)
+                           SD/MMC Card Middleware - NXP (BSD-3-Clause)
+                           MBED TLS stack - ARM Limited (Apache-2.0) - https://tls.mbed.org/
+                           motor_control - NXP (BSD-3-Clause)
+                           DMA Manager - NXP (BSD-3-Clause)
+                           wolfSSL - wolfSSL Inc. (proprietary evaluation) - https://www.wolfssl.com/
+                           USB - NXP (BSD-3-Clause)
+                           C++ option parser - Brad Appleton (Brad Appleton's license) - http://www.bradapp.com/ftp/src/libs/C++/Options.html
+                           mmCAU S/W Library - NXP (BSD-3-Clause)
+                           Multicore SDK - NXP (Proprietary)
+                           FatFS - Electronic Lives Mfg. (FatFS License) - http://elm-chan.org/fsw/ff/00index_e.html
+                           The Bus Pirate - community (public domain) - http://code.google.com/p/the-bus-pirate/
+                           touch - NXP (BSD-3-clause)
+                           wifi_qca - Qualcomm Atheros, Inc. (BSD-3-clause) - https://www.qualcomm.com/products/wifi-platforms
+
+--------------------------------------------
+PATCHES IN META_FSL_BSP_RELEASE
+--------------------------------------------
+
+Patches for:               cryptodev 1.8
+Source Location:           http://download.gna.org/cryptodev-linux/cryptodev-linux-*.tar.gz
+Patch Location:            meta-bsp/recipes-kernel/cryptodev/files
+Outgoing License:          GPL-2.0
+License File:              COPYING
+Package Category:          BSP
+Description and comments:  Access of existing ciphers in kernel space from userspace.
+Origin of patches:         NXP (GPL-2.0)
+
+--------------------------------------------
+
+Patches for:               systemd
+Source Location:           https://github.com/systemd/systemd-bootchart.git
+Patch Location:            meta-bsp/recipes-core/systemd/systemd
+Outgoing License:          GPL-2.0
+License File:              LICENSE.GPL2
+Package Category:          BSP
+Description and comments:  System and Service Manager
+Origin of patches:         NXP (GPL-2.0)
+
+--------------------------------------------
+
+Patches for:               udev
+Source Location:           https://github.com/gentoo/eudev.git
+Patch Location:            meta-bsp/recipes-core/udev/eudev
+Outgoing License:          GPL-2.0
+License File:              COPYING
+Package Category:          BSP
+Description and comments:  System and Service Manager
+Origin of patches:         NXP (GPL-2.0)
+
+--------------------------------------------
+
+Patches for:               chromium-imx
+Source Location:           http://github.com/Freescale/chromium-imx.git
+Patch Location:            recipes-browser/chromium/chromium
+Outgoing License:          BSD-3-Clause
+License File:              LICENSE
+Package Category:          Browser
+Description and comments:  Add hardware video decoding support to Chromium using the Freescale i.MX VPU.
+Origin of patches:         NXP (BSD-3-Clause)
+
+--------------------------------------------
+
+Patches for:               eglinfo
+Source Location:           http://github.com/dv1/eglinfo
+Patch Location:            meta-bsp/recipes-graphics/eglinfo/eglinfo-fb
+Outgoing License:          Zlib
+License File:              LICENSE
+Package Category:          Graphics
+Description and comments:  Utility for printing information EGL and its client APIs.
+Origin of patches:         NXP (BSD-3-Clause)
+
+--------------------------------------------
+Patches for:               glslang
+Source Location:           https://www.khronos.org/opengles/sdk/tools/Reference-Compiler
+Patch Location:            recipes-graphics/lunarg-sdk/glslang
+Outgoing License:          BSD-3-Clause
+License File:              LICENSE
+Package Category:          Graphics
+Description and comments:  Official reference compiler front end for the OpenGL ES and OpenGL shading languages.
+Origin of patches:         NXP (BSD-3-Clause)
+
+--------------------------------------------
+
+Patches for:               imx-gpu-apitrace 7.1.0
+Source Location:           https://github.com/apitrace/apitrace.git
+Patch Location:            recipes-graphics/imx-gpu-apitrace/imx-gpu-apitrace
+Outgoing License:          MIT
+License File:              LICENSE
+Package Category:          Graphics
+Description and comments:  GPU Core IP and test application source
+Origin of patches:         NXP (MIT)
+
+--------------------------------------------
+
+Patches for:               libdrm 2.4.70
+Source Location:           http://dri.freedesktop.org
+Patch Location:            meta-bsp/recipes-graphics/drm/libdrm
+Outgoing License:          MIT
+License File:              (In individual files)
+Package Category:          Graphics
+Description and comments:  Userspace interface to the kernel DRM services.
+Origin of patches:         NXP (MIT)
+
+--------------------------------------------
+
+Patches for:               matchbox-wm 1.2.1
+Source Location:           git://git.yoctoproject.org/matchbox-window-manager
+Patch Location:            meta-bsp/recipes-graphics/matchbox-wm/matchbox-wm
+Outgoing License:          GPL-2.0
+License File:              COPYING
+Package Category:          Graphics
+Description and comments:  Window manager
+Origin of patches:         NXP (GPL-2.0)
+
+--------------------------------------------
+
+Patches for:               opencv 3.2
+Source Location:           http://github.com/opencv/opencv.git
+Patch Location:            meta-bsp/recipes-graphics/opencv/opencv
+Outgoing License:          BSD-3-Clause
+License File:              LICENSE
+Package Category:          Graphics
+Description and comments:  The Open Computer Vision Library
+Origin of patches:         NXP (BSD-3-Clause)
+
+--------------------------------------------
+
+Patches for:               piglet
+Source Location:           http://piglit.freedesktop.org/
+Patch Location:            meta-bsp/recipes-graphics/piglit/piglit
+Outgoing License:          GPL-3.0
+License File:              COPYING
+Package Category:          Graphics
+Description and comments:  OpenGL driver testing framework.
+Origin of patches:         NXP (GPL-3.0)
+
+--------------------------------------------
+
+Patches for:               weston
+Source Location:           https://wayland.freedesktop.org/releases
+Patch Location:            recipes-graphics/wayland/weston
+Outgoing License:          MIT
+License File:              LICENSE
+Package Category:          Graphics
+Description and comments:  A Wayland compositor
+Origin of patches:         NXP (MIT)
+
+--------------------------------------------
+
+Patches for:               pulseaudio
+Source Location:           http://freedesktop.org/software/pulseaudio/releases/
+Patch Location:            meta-bsp/recipes-multimedia/pulaeaudio/pulaeaudio
+Outgoing License:          LGPL-2.1
+License File:              LICENSE
+Package Category:          Multimedia
+Description and comments:  Sound server
+Origin of patches:         NXP (LGPL-2.1)
+
+--------------------------------------------
+
+Patches for:               qtbase
+Source Location:           https://github.com/qt/qtbase
+Patch Location:            recipes-qt5/qt5/qtbase
+Outgoing License:          LGPL-3.0+Qt Exception 1.1
+License File:              LGPL_EXCEPTION.txt
+Package Category:          Qt
+Description and comments:  Qt Base
+Origin of patches:         NXP (LGPL-2.1+Qt Exception 1.1)
+
+--------------------------------------------
+
+Patches for:               qtwayland
+Source Location:           https://github.com/qt/qtwayland
+Patch Location:            meta-sdk/recipes-qt5/qt5/qtwayland
+Outgoing License:          LGPL-3.0+Qt Exception 1.1
+License File:              LGPL_EXCEPTION.txt
+Package Category:          Qt
+Description and comments:  A toolbox for making Qt based Wayland compositors.
+Origin of patches:         NXP (LGPL-2.1+Qt Exception 1.1)
+
+--------------------------------------------

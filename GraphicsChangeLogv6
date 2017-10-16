@@ -1,0 +1,64 @@
+Key Features of the Vivante 6.x Driver Series
+
+    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, 
+      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test. 
+      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product. 
+
+    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
+
+
+6.2.2.p0 New features:
+    - Added mutex protection for referencing gctSIGNAL in gckOS_MapSignal to fix a MT race issue.
+    - Streamlined GPU address calculation base on MC20 (0/1) and MMU (0/1) combinations.
+    - Fixed multiple Android HWC 2.0 rendering issues. Refined HWC 2.0 driver implementation.
+    - Improved HWC2.0 composition performance by composing damaged regions only.
+    - Enabled offline/online compiler IR assembly dump function for users.
+    - Implemented the direct rendering support (no-resolve) for Wayland platform.
+    - Added EGL_EXT_buffer_age extension for Wayland and fbdev platforms.
+    - Updated wayland-viv protocol to support tile status sync from client to server.
+    - Improved OpenCL 1.2 builtin function support with native GPU instructions.
+    - Enabled OpenCL 1.2 API trace dump function controlled by VIV_TRACE environment variable.
+    - Support for OpenGL4.0
+    - Cleaned up driver code issues reported by Klocwork and Coverity.
+
+6.2.2.p0 Known Issues
+    - MGS-3074 [6qp] apitrace does not work
+    - MGS-3027 GPU: X11 manywin draw error.
+    - MGS-2935 [imx6QP] X11: glxs app test some frames render incorrectly.
+    - MGS-2860 [MX7ULP/imx6SLEVK] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error.
+    - MGS-2829 [imx6qp/imx6d] xwld: mm06 Samurai and Proxycon performance regression comparing with L4.1 using 5.0.11p8
+    - MGS-2310 [imx6qp/imx6dq/imx6dl/imx6sx] webgl: two items performance data is lower than L4.1_GA
+    - MGS-1828 [imx6qp_sd/imx6Q/imx6dl] X11/xwld: VGMARK on vg3d have some items performance drop comparing with L4.1 GA
+    - MGS-1350 [imx6qp-sd] X/FB: Some Basemark test items performance drop comparing with L3.14.52GA which use 5.0.11p7
+
+
+6.2.0.p4
+    - 3D: MGS-2551 [#imx-406] webgl case shader-with-too-many-uniforms.html failed on 7ulp
+
+6.2.0.p3
+    - Unified driver for i.MX6X, i.MX7ULP. However current release focused in i.MX7ULP. Full integration testing not performedd so there could be some bugs. 
+
+6.2.0.p2 New features:
+    - Unified driver that includes OpenGL ES, Vulkan, and OpenVX.
+    - Multi-GPU combined mode and individual mode support. More information in the i.MX Graphics user guide
+    - Linux DMA-BUF buffer sharing.
+    - Brand new OpenGL 2.1, 4.0 driver implementation which is based on ES3 driver code.
+    - Improved vProfiler support to include many new HW counters.
+    - Compiler optimizations that improve benchmark/application performance.
+    - Resolved Khronos GLES3.x CTS failures in all EGLConfig runs.
+    - Fixed a YUV420 buffer allocation issue that caused 4K video OOM on Android N.
+    - Fixed several GLES driver memory leak problems that cause random failures in Android CTS.
+    - Corrected EGL buffer age calculation to resolve a GooglePlay UI flickering issue.
+    - Fixed a MMU exception by limiting the number of sampler prefetch in GPU.
+    - Fixed driver code issues reported by static code analysis tools.
+    - Add support for GL_LUMINANCE8_ALPHA8_EXT texture in the directTexVIV extension.
+    - Fixed Xserver crash issues on Yocto X11 desktop.
+    - Clamp 3Dblit rectangle size to surface area to fix a GPU hang in Wayland tests.
+    - Set HW type correctly in Wayland server side to fix a memory leak in 2D composition.
+
+
+6.2.0.p2 Known Issues    
+    - MGS-2513:[imx7ulp] RTC suspend/resume stress test met resume failed. GPU driver issue.
+    - MGS-2512:[imx7ulp] xwld:mm07 some items show nothing on display.
+    - MGS-2511:[imx7ulp] xwld: QT5 app show wrong resolution.
+    - MGS-2503:[imx7ulp] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error. 
