@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.9.11-1.0.0_ga.xml"/>
+
+  <project remote="fsl-release" revision="fdc64c0634bf6a2e6f87f74fc4b2ea1c202025e2" name="meta-nxp-xbmc" path="sources/meta-nxp-xbmc">
+      <linkfile src="README" dest="README-kodi"/>
+      <linkfile src="tools/nxp-setup-kodi.sh" dest="nxp-setup-kodi.sh"/>
+      <linkfile src="tools/nxp-xbmc-setup.sh" dest="nxp-xbmc-setup.sh"/>
+  </project>
+
+</manifest>
