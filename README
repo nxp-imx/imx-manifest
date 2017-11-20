@@ -15,7 +15,7 @@ Download the Yocto Project Environment into your directory:
 -----------------------------------------------------------
 $: mkdir fsl-arm-yocto-bsp
 $: cd fsl-arm-yocto-bsp
-$: repo init -u git://git.freescale.com/imx/fsl-arm-yocto-bsp.git -b imx-linux-morty [-m <manifest>]
+$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-morty [-m <manifest>]
 $: repo sync
 
 <manifest>                      Description
@@ -34,6 +34,9 @@ See ChangeLog for description of patch releases and tags for each update.
 
 Examples
 --------
+To download the 4.9.51-8qxp_alpha release
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qxp_alpha.xml
+
 To download the 4.9.11-1.0.0_ga release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
 
