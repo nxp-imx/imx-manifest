@@ -41,7 +41,7 @@
   <project groups="pdk-fs" name="aosp/platform/packages/apps/Music" path="packages/apps/Music" remote="android-imx" revision="refs/heads/maddev_or8.0"/>
   <project groups="pdk" name="aosp/platform/system/extras" path="system/extras" remote="android-imx" revision="refs/heads/maddev_or8.0"/>
   <project path="packages/inputmethods/LatinIME" name="aosp/platform/packages/inputmethods/LatinIME" remote="android-imx" groups="pdk-fs" revision="refs/heads/maddev_or8.0"/>
-  <project path="external/libdrm" name="android-imx/platform/external/libdrm" remote="android-imx" groups="pdk" revision="refs/heads/maddev_or8.0" />
+  <project path="external/libdrm" name="libdrm-imx" remote="android-imx" groups="pdk" revision="refs/heads/maddev_or8.0" />
 
   <project path="build/make" name="aosp/platform/build" groups="pdk" remote="android-imx" revision="refs/heads/maddev_or8.0">
     <copyfile src="core/root.mk" dest="Makefile" />
