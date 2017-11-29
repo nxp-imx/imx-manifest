@@ -17,12 +17,12 @@ $: PATH=${PATH}:~/bin
 
 Get the proprietary tarball from nxp.com and setup build:
 -----------------------------------------
-- Download imx-android_O8.0.0_1.0.0_ga.tar.gz from nxp.com/imx
+- Download imx-android_O8.0.0_1.2.0_ga.tar.gz from nxp.com/imx
 - unzip the tarball
-$: tar xvf imx-android_O8.0.0_1.0.0_ga.tar.gz
+$: tar xvf imx-android_O8.0.0_1.2.0_ga.tar.gz
 - Run the build setup script in the tarball as specified in the README - example below
 - This donwloads the public Android open source and copies the proprietary to the appropriate locations
-$: source ./O8.0.0-1.0.0_build.sh
+$: source ./O8.0.0-1.2.0_setup.sh
 
 Setup build environment:
 -------------------------
