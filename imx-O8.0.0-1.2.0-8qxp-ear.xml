@@ -14,36 +14,36 @@
   <!--> imx-firmware needs to be fetched from git.freescale.com as it is proprietary <-->
   <project path="external/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="refs/heads/master" />
 
-  <project path="kernel_imx" name="linux-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="android-imx" revision="refs/tags/imx_v2017.03_4.9.51_imx8_beta1" />
-  <project path="device/fsl" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="external/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="external/toybox" name="aosp/platform/external/toybox" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="external/avb" name="aosp/platform/external/avb" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="hardware/imx" name="android-imx/platform/hardware/imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
+  <project path="kernel_imx" name="linux-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="device/fsl" name="android-imx/device/fsl" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="external/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="external/toybox" name="aosp/platform/external/toybox" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="external/avb" name="aosp/platform/external/avb" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="hardware/imx" name="android-imx/platform/hardware/imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
   <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" remote="android-imx" groups="pdk" revision="refs/tags/imx_ng7.1"/>
-  <project path="external/imx-mkimage" name="imx-mkimage" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="packages/apps/fsl_imx_demo" name="android-imx/platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="packages/apps/Bluetooth" name="aosp/platform/packages/apps/Bluetooth" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="packages/apps/Camera2" name="aosp/platform/packages/apps/Camera2" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
-  <project path="packages/apps/DeskClock" name="aosp/platform/packages/apps/DeskClock" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project path="frameworks/opt/net/wifi" name="aosp/platform/frameworks/opt/net/wifi" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project path="device/wfd-sink-app" name="android-imx/device/wfd-sink-app" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
+  <project path="external/imx-mkimage" name="imx-mkimage" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="packages/apps/fsl_imx_demo" name="android-imx/platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="packages/apps/Bluetooth" name="aosp/platform/packages/apps/Bluetooth" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="packages/apps/Camera2" name="aosp/platform/packages/apps/Camera2" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="packages/apps/LegacyCamera" name="aosp/platform/packages/apps/LegacyCamera" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="packages/apps/DeskClock" name="aosp/platform/packages/apps/DeskClock" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project path="frameworks/opt/net/wifi" name="aosp/platform/frameworks/opt/net/wifi" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project path="device/wfd-sink-app" name="android-imx/device/wfd-sink-app" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
 
-  <project groups="pdk" name="aosp/platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk" name="aosp/platform/bootable/recovery" path="bootable/recovery" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk-cw-fs,pdk-fs" name="aosp/platform/frameworks/base" path="frameworks/base" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk" name="aosp/platform/frameworks/av" path="frameworks/av" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk" name="aosp/platform/frameworks/native" path="frameworks/native" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk" name="aosp/platform/system/core" path="system/core" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk-fs" name="aosp/platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk-fs" name="aosp/platform/packages/apps/Music" path="packages/apps/Music" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project groups="pdk" name="aosp/platform/system/extras" path="system/extras" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project path="packages/inputmethods/LatinIME" name="aosp/platform/packages/inputmethods/LatinIME" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123"/>
-  <project path="external/libdrm" name="libdrm-imx" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123" />
+  <project groups="pdk" name="aosp/platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk" name="aosp/platform/bootable/recovery" path="bootable/recovery" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="aosp/platform/frameworks/base" path="frameworks/base" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk" name="aosp/platform/frameworks/av" path="frameworks/av" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk" name="aosp/platform/frameworks/native" path="frameworks/native" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk" name="aosp/platform/system/core" path="system/core" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk-fs" name="aosp/platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk-fs" name="aosp/platform/packages/apps/Music" path="packages/apps/Music" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project groups="pdk" name="aosp/platform/system/extras" path="system/extras" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project path="packages/inputmethods/LatinIME" name="aosp/platform/packages/inputmethods/LatinIME" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
+  <project path="external/libdrm" name="libdrm-imx" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
 
-  <project path="build/make" name="aosp/platform/build" groups="pdk" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123">
+  <project path="build/make" name="aosp/platform/build" groups="pdk" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear">
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -52,7 +52,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/soong" name="aosp/platform/build/soong" groups="pdk,tradefed" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear-20171123">
+  <project path="build/soong" name="aosp/platform/build/soong" groups="pdk,tradefed" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
