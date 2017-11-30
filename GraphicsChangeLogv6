@@ -6,6 +6,185 @@ Key Features of the Vivante 6.x Driver Series
 
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
 
+6.2.4 GPU Release (8QM Beta, 8QXP Alpha)
+========================================
+
+Key Features
+============
+- GPU Frequency Scaling governor
+- OpenCL improvements
+- OpenVX 1.1 Support
+- Wayland-weston DRM Support
+- Wayland-weston with 2D accelerated renderer
+- X11 with DRI3 support with multiple display support
+- DRMFB (Experimental feature: DRM framework wrapper for Vivante FB APIs)
+
+6.2.4 Improvements
+==================
+- Fixed multiple Vulkan CTS 1.0.2.* failures.
+- Improved vProfiler support in driver to have more accurate HW counter values.
+- Fixed Linux kernel panic issue when try to put_page for reserved memory.
+- Enhanced CL kernel compiler support for OpenCV library and applications.
+- Opened Wayland server side buffer protocol in EGL driver to enable WL applications.
+- Refined flat mapping kernel memory allocation. Use a single allocation for all STLBs.
+- Fixed a kernel driver issue to enable repeated galcore insmod/rmmod to work with mmu.
+- Fixed QNX driver issues to pass ES CTS and CL CTS.
+- Fixed the 3DVG SDK app up-side down rendering issue
+- Add Wayland support for EGL_EXT_swap_buffers_with_damage and EGL_EXT_buffer_age
+- Support the tiled and compression texture with EXT_image_dma_buf_import_modifiers
+- Stream cache optimization.
+- VBOs, Index buffer cache optimizations for performance
+
+6.2.4 Changes and Bug Fixes
+===========================
+General:gpu idle cycle counter register has two values in gpu 5.x
+WL-EGL: [6sx-sdb/6sx-ard][6.2.2]Memory leak found in test destory_simple-egl2
+
+General: Fix GPU clock issue with built-in mode on QM/QXP
+General: Allow same process to open more than one fd with the driver
+General: iMX6Q : Dithering is only performed on first frame
+General: [8QXP]repeated insmod/rmmod galcore w/ power management off causes hang upon reloading
+General: Replace CONFIG_PM_RUNTIME with CONFIG_PM
+General: [imx8qm] Met segmentation fault when run GLES samples stress on GPU0, GPU1 and bridged mode
+General: Use default implementation for cache operations.
+General: fix the suspend/resume hang issue on imx6
+General: fix power-off issue for ctrl-C exit
+General: Fix power-off random failure when GPU become idle
+GBM: gbm->surface_create is null before call eglGetDisplay caused glmark2 segmentation fault.
+GBM: Add map/unmap functions
+GBM: Enable GBM EGL Support in FB,WLD,X11 backends
+GBM: kmscube does not work
+GBM: [Imx8][wayland]gbm_surface_lock_front_buffer failed in Weston
+GBM: [8qm][weson]Error log found after weston stopped.
+GBM: Enable GBM EGL Support in FB,WLD,X11 backends
+OpenCL: hevc_cl_test has performance drop compared with imx8 qxp. 25%
+FB-EGL: GPU installs a signal hander, which can overwrite user's signal handler
+X11-EGL: [MX8/imx6QP] X11: glxs app test some frames render incorrectly.
+X11-EGL: server down when run sdk app multi times in background
+WL-EGL: [wayland]The fps of weston-simple-egl was changed according to the back buffer number
+WL-EGL: tutorials crash on wayland with ivi-shell as core
+WL-EGL: weston-simple-egl full screeen met core dump
+EGL: fix cma_release dump with ctrl-c
+EGL: gplay-1.0 met "Failed to convert multiview video buffer"
+OpenCL: opencl high cpu usage
+OpenCL: clpeak, met GPU freeze on 6q with 6.2.2 driver.
+OpenCL: opencv_perf_objdetect failed with clBuildProgram()
+OpenCL: math_brute_force of OpenCL 1.2 CTS, crashes with 6.2.3 driver on qxp & mscale. randomly, like 40%
+OpenCL: some data types of CL_R format are not supported in driver 6.2.3
+
+[i.MX_Android]use kzalloc instead of kmalloc during fence_init.
+[i.MX_Android] DEQP GLES3.1 CTS cases fail on mx6qp board
+[i.MX_Android]GPU kernel driver build error when enable KASAN check
+[i.MX_android] YUV buffer with GRALLOC_USAGE_HW_TEXTURE usage will allocate as titled RGB buffer
+[i.MX_android] Add more reserve memory in private_handle_t for imx8 on android O
+[i.MX_android] dEQP-EGL CTS fail and hang up issue on mx8qm board
+[i.MX_android] dEQP-VK CTS cause GPU dump on android 8.0 mx8qm board
+[i.MX_android] GPU lock up issue on Android7.1 + 4.9.y kernel with GPU 6.2.2 driver
+[i.MX_android] CTS testNonDefaultLauncherCantStart fail on GPU6.2.2.p1
+[i.MX_android] Fix cts testOpenGlEsVersion fail on mx6qp
+[i.MX_android]Fix monkey test reboot issue due to drm gem bug
+[i.MX_android]Export Buffer size and set virtual address when lock
+[i.MX_android]Support more YUV formats in drm gralloc
+
+QNX - iMX8QM - Deadlock seen with Screen API test
+QNX -[iMX8] Fix NV12 handling
+QNX - gpu hang when running es32 conformance test suite
+QNX OpenCL buffer mapping doesn't work
+QNX - [iMX8] Rotation using blitter seems broken
+QNX - OpenVG apps failing on iXM8QXP with 6.2.4
+QNX CAR apps report EGL errors
+QNX MMU faults on iMX8DV
+
+6.2.4 Known Issues
+==================
+MGS-3453	[8QM] X11:WebEngine test met core dump and segmentation fault
+MGS-3434	[8QXP/8QM] webgl color-adjust item draw error.
+MGS-3423	es11 test failed with 'could not find encoder'
+MGS-3421	weston:G2D: rotate(transform) not working
+MGS-3396	[8QM] Xwld: met blurred screen when use G2D compositor. 100%
+MGS-3373	[imx8qxp] KPA met gpu hang
+MGS-3354	[imx8qm/8mq] Vulkan cts can't pass with 22 failed due to Khronos spec error
+MGS-3330	[8QM/8QXP]GPU top tool met GPU dump when monitor process in background. 100%
+MGS-3276	[imx8qm] x11 2D acceleration performance test met fatal IO error
+
+
+
+==========================================================================================================
+
+Key Features of the Vivante 6.2.2P0 Driver Series
+Full support for Khronos Vulkan 1.0 API and WSI extension APIs Vulkan is a new generation graphics 
+and compute API that provides high-efficiency, cross-platform access to modern GPUs used in a wide 
+variety of devices. Vivanteâ€™s Vulkan 1.0 implementation has passed Khronos Vulkan 1.0 Conformance Test. 
+And Vivante GC7000XS* GPU core has been certified by Khronos as a Vulkan 1.0 compliant product. 
+
+Full support for Khronos OpenGL ES 3.2 API 
+The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, plus additional 
+functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos 
+OpenGL ES 3.2 Conformance Test. And Vivante GC7000XS* GPU core has been certified by Khronos as an 
+OpenGL ES 3.2 compliant product.
+
+Draw calls specifying a base vertex parameter
+Floating-point framebuffers
+Robust buffer access control
+Support for querying CONTEXT_FLAGS, as needed by debug and robust buffer access functionality.
+Khronos OpenVX 1.0.1 API
+Khronos OpenCL 1.2 API
+
+
+Improvements:
+1. Added mutex protection for referencing gctSIGNAL in gckOS_MapSignal to fix a MT race issue.
+2. Streamlined GPU address calculation base on MC20 (0/1) and MMU (0/1) combinations.
+3. Fixed multiple Android HWC 2.0 rendering issues. Refined HWC 2.0 driver implementation.
+4. Improved HWC2.0 composition performance by composing damaged regions only.
+6. Enabled offline/online compiler IR assembly dump function for users.
+7. Implemented the direct rendering support (no-resolve) for Wayland platform.
+8. Added EGL_EXT_buffer_age extension for Wayland and fbdev platforms.
+9. Updated wayland-viv protocol to support tile status sync from client to server.
+10. Improved OpenCL 1.2 builtin function support with native GPU instructions.
+11. Enabled OpenCL 1.2 API trace dump function controlled by VIV_TRACE environment variable.
+12. Support for OpenGL4.0
+13. Cleaned up driver code issues reported by Klocwork and Coverity.
+
+Changes and Bug Fixes
+
+VG3D:   MGS-2972 fix 3D OpenVG render target orientation
+EGL:    MGS-2790 6sx-sdb Met memory dump when do xwld stress test
+EGL:    MGS-2885 fix recursive call to dequeue buffer issue on wayland
+EGL:    MGS-2785 Meet segmentation fault when test qt5nmapper on wayland
+EGL:    MGS-2734 fix x11 memory leak issue
+Gralloc:MA-9561 fix crash issue on new gralloc1 interface.
+2D:     MGS-2900 fix filterblt memory leak
+VG2D/6SL: MGS-2882 fix video memory allocator
+OCL:    MGS-2732 clCopyImage with max_images in OCL1.1 cts, crashes.
+GLES:   MGS-2747 enable the full config for ES3 CTS
+GLES:   MGS-1832 fix Mirada performance issue. optimize cpu load for fence check
+WEBGL:  MGS-2779 webgl 1.0.2 conformance test met out of memory
+General:MGS-2923 fix gc2000 gpu hang when flush TS cache
+General:MGS-2907 fix wrong cache invalidate with dma_map_area
+General:MGS-2902 fix wrong release_mem_region
+General:MGS-2848 fix gpu hang for flat mapping optimization
+General:MGS-2848 Optimize MMUv1 FlatMapping performances
+General:MGS-2857 fix spinlock in gpu kernel driver
+General:MGS-2805 Enable gcdENABLE_VG by default.
+General:MGS-2827 fix serious performance drop on imx6q
+General:MGS-2832 fix axi bus error with correct baseaddress
+General:MA-9483  Refine android native fence code to match 4.9 kernel
+General:MA-9473 Fix gpu random crash issue caused by NULL pointer
+General:MGS-2804 fix flat mapping overflow issue
+General:MGS-2786 fix gpu kernel panic with debugfs
+General:GS-2776  fix galcore device open failure
+General:MGS-2767 i.MX7ULP GPU suspend/resume problem
+Coverity:MGS-2858 Double free in __driUtilUpdateExtraDrawableInfo
+
+Known Issues
+OpenCL 1.1 CTS failures. Will be addresed in 6.2.3
+MGS-3027 GPU: X11 manywin draw error. 100%
+MGS-2935 [imx6QP] X11: glxs app test some frames render incorrectly. 100%
+MGS-2860 [MX7ULP/imx6SLEVK] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error. 100%
+MGS-2829 [imx6qp/imx6d] xwld: mm06 Samurai and Proxycon performance regression comparing with L4.1 using 5.0.11p8
+MGS-2310 [imx6qp/imx6dq/imx6dl/imx6sx] webgl: two items performance data is lower than L4.1_GA
+MGS-1828 [imx6qp_sd/imx6Q/imx6dl] X11/xwld: VGMARK on vg3d have some items performance drop comparing with L4.1 GA
+MGS-1350 [imx6qp-sd] X/FB: Some Basemark test items performance drop comparing with L3.14.52GA which use 5.0.11p7
 
 6.2.2.p0 New features:
     - Added mutex protection for referencing gctSIGNAL in gckOS_MapSignal to fix a MT race issue.
