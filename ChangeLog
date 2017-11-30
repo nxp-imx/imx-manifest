@@ -1,3 +1,18 @@
+Date 12/1/2017
+4.9.51-mx8_beta1 - manifest imx-4.9.51-8qm_beta1.xml
+- Beta1 release for i.MX 8QuadMax
+
+Date 11/20/2017
+4.9.51-8qxp_alpha - manifest imx-4.9.51-8qxp_alpha.xml
+- Alpha release for i.MX 8QuadXPlus
+- Upgrade kernel to 4.9.51
+- Upgrade graphics to 6.2.4.p0
+- Upgrade weston to 2.0.0
+- Upgrade multimedia to 4.3.1
+- Upgrade Gstreamer to 1.12.2
+- CAF release
+- manifest released i imx-manifest
+
 Date 7/28/2017
 4.9.11-1.0.0 - manifest imx_4.9.11-1.0.0_ga.xml
 - GA release for i.MX 6Quad/Dual/Plus/Solo/SoloX/SoloLite/Ultralite, 6ULL, 7Dual and 7ULP
