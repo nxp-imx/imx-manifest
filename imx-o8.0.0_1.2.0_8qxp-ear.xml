@@ -8,11 +8,11 @@
            review="" />
 
   <remote  name="imx-proprietary"
-           fetch="git://git.freescale.com/imx/"
+           fetch="git://git.freescale.com/proprietary/"
            review="" />
 
   <!--> imx-firmware needs to be fetched from git.freescale.com as it is proprietary <-->
-  <project path="external/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="refs/heads/master" />
+  <project path="external/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="128bef93245c5fe10e235e6f226dce93acc16351" />
 
   <project path="kernel_imx" name="linux-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
   <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
@@ -21,7 +21,7 @@
   <project path="external/toybox" name="aosp/platform/external/toybox" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
   <project path="external/avb" name="aosp/platform/external/avb" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
   <project path="hardware/imx" name="android-imx/platform/hardware/imx" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
-  <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" remote="android-imx" groups="pdk" revision="refs/tags/imx_ng7.1"/>
+  <project path="system/tools/bpt" name="aosp/platform/system/tools/bpt" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
   <project path="external/imx-mkimage" name="imx-mkimage" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
   <project path="packages/apps/fsl_imx_demo" name="android-imx/platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
   <project path="packages/apps/Bluetooth" name="aosp/platform/packages/apps/Bluetooth" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
@@ -41,7 +41,7 @@
   <project groups="pdk-fs" name="aosp/platform/packages/apps/Music" path="packages/apps/Music" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
   <project groups="pdk" name="aosp/platform/system/extras" path="system/extras" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
   <project path="packages/inputmethods/LatinIME" name="aosp/platform/packages/inputmethods/LatinIME" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear"/>
-  <project path="external/libdrm" name="libdrm-imx" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
+  <project path="external/libdrm" name="aosp/platform/external/libdrm" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear" />
 
   <project path="build/make" name="aosp/platform/build" groups="pdk" remote="android-imx" revision="refs/tags/o8.0.0_1.2.0_8qxp-ear">
     <copyfile src="core/root.mk" dest="Makefile" />
