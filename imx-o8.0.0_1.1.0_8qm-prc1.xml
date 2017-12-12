@@ -4,12 +4,15 @@
   <include name="aosp-O8.0.0-1.1.0.xml"/>
 
   <remote  name="android-imx"
-           fetch="http://androidsource.ap.freescale.net/project/p/"
+           fetch="https://source.codeaurora.org/external/imx/"
            review="" />
 
-  <remote  name="fsl-linux-sdk"
-           fetch="http://bitbucket.sw.nxp.com/scm/imx/"
+  <remote  name="imx-proprietary"
+           fetch="git://git.freescale.com/proprietary/"
            review="" />
+
+  <!--> imx-firmware needs to be fetched from git.freescale.com as it is proprietary <-->
+  <project path="external/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="128bef93245c5fe10e235e6f226dce93acc16351" />
 
   <project path="kernel_imx" name="linux-imx" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
