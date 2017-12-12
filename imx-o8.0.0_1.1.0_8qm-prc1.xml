@@ -14,16 +14,16 @@
   <!--> imx-firmware needs to be fetched from git.freescale.com as it is proprietary <-->
   <project path="external/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="128bef93245c5fe10e235e6f226dce93acc16351" />
 
-  <project path="kernel_imx" name="linux-imx" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
-  <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="kernel_imx" name="linux-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="device/fsl" name="device/fsl" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
-  <project path="external/imx-firmware" name="imx-firmware" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
-  <project path="external/imx-lib" name="imx-lib" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/imx-firmware" name="imx-firmware" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="external/toybox" name="platform/external/toybox" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="external/avb" name="platform/external/avb" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="hardware/imx" name="platform/hardware/imx" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="system/tools/bpt" name="platform/system/tools/bpt" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
-  <project path="external/imx-mkimage" name="imx-mkimage" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/imx-mkimage" name="imx-mkimage" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="packages/apps/fsl_imx_demo" name="platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
