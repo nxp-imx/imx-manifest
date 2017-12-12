@@ -17,7 +17,6 @@
   <project path="kernel_imx" name="linux-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="device/fsl" name="device/fsl" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
-  <project path="external/imx-firmware" name="imx-firmware" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="external/imx-lib" name="imx-lib" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="external/toybox" name="platform/external/toybox" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
   <project path="external/avb" name="platform/external/avb" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
