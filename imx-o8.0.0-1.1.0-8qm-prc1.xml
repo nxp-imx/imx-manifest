@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-O8.0.0-1.1.0.xml"/>
+
+  <remote  name="android-imx"
+           fetch="http://androidsource.ap.freescale.net/project/p/"
+           review="" />
+
+  <remote  name="fsl-linux-sdk"
+           fetch="http://bitbucket.sw.nxp.com/scm/imx/"
+           review="" />
+
+  <project path="kernel_imx" name="linux-imx" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="bootable/bootloader/uboot-imx" name="uboot-imx" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="device/fsl" name="device/fsl" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/imx-firmware" name="imx-firmware" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/imx-lib" name="imx-lib" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/toybox" name="platform/external/toybox" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/avb" name="platform/external/avb" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="hardware/imx" name="platform/hardware/imx" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="system/tools/bpt" name="platform/system/tools/bpt" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project path="external/imx-mkimage" name="imx-mkimage" remote="fsl-linux-sdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="packages/apps/fsl_imx_demo" name="platform/packages/apps/fsl_imx_demo" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="packages/apps/LegacyCamera" name="platform/packages/apps/LegacyCamera" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" groups="pdk-fs" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project path="device/wfd-sink-app" name="device/wfd-sink-app" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+
+  <project groups="pdk" name="platform/hardware/broadcom/libbt" path="hardware/broadcom/libbt" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk" name="platform/bootable/recovery" path="bootable/recovery" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk" name="platform/frameworks/av" path="frameworks/av" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk" name="platform/frameworks/native" path="frameworks/native" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk" name="platform/system/core" path="system/core" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project groups="pdk" name="platform/system/extras" path="system/extras" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1"/>
+  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" remote="android-imx" groups="pdk-fs" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+  <project path="external/libdrm" name="platform/external/libdrm" remote="android-imx" groups="pdk" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1" />
+
+  <project path="build/make" name="platform/build" groups="pdk" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform/build/soong" groups="pdk,tradefed" remote="android-imx" revision="refs/tags/o8.0.0_1.1.0_8qm-prc1">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+</manifest>
