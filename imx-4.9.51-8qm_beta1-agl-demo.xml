@@ -11,7 +11,7 @@
   <project name="gpsnavi-agl" path="sources/gpsnavi-agl" remote="NAVI" revision="b5feb136b5dd546284a9ba4452c18f74ac1570ac"/>
   <project name="meta-agl" path="sources/meta-agl" remote="AGL" revision="71b483b535da40d41ead5873e8ae548fb624efde"/>
   <project name="meta-agl-demo" path="sources/meta-agl-demo" remote="AGL" revision="36d1f3a7a35366a98d3594fb6a4ad0f9082fa9e7"/>
-  <project name="meta-nxp-agl" path="sources/meta-nxp-agl" remote="fsl-release" revision="413ded4a01d4fa4e530449f84033469a8749feaf">
+  <project name="meta-nxp-agl" path="sources/meta-nxp-agl" remote="CAF" revision="413ded4a01d4fa4e530449f84033469a8749feaf">
     <copyfile dest="nxp-setup-agl.sh" src="tools/nxp-setup-agl.sh"/>
   </project>
   <remove-project name="meta-qt5"/>

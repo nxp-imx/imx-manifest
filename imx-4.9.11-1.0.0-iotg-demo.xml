@@ -3,7 +3,7 @@
 
   <include name="imx-4.9.11-1.0.0_ga.xml"/>
 
-  <project remote="fsl-release" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="a4a1978768e89bc4e87bd1a044a34d10ac0d9a85">
+  <project remote="CAF" name="meta-nxp-iotg" path="sources/meta-nxp-iotg" revision="a4a1978768e89bc4e87bd1a044a34d10ac0d9a85">
     <linkfile src="README" dest="README-iotg"/>
   </project>
 

@@ -5,7 +5,7 @@
 
   <remote fetch="git://github.com/GENIVI" name="IVI"/>
 
-  <project remote="fsl-release" name="meta-nxp-genivi" path="sources/meta-nxp-genivi" revision="ee3f2eecdc36f30ca310a4e0f39b7cd4abf1d745">
+  <project remote="CAF" name="meta-nxp-genivi" path="sources/meta-nxp-genivi" revision="ee3f2eecdc36f30ca310a4e0f39b7cd4abf1d745">
     <copyfile dest="nxp-setup-genivi.sh" src="tools/nxp-setup-genivi.sh"/>
   </project>
   <project remote="IVI" name="meta-ivi" path="sources/meta-ivi" revision="7135517c22ba3e912cee49ca694693fb76194d07"/>
