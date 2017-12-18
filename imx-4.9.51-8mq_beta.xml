@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/Freescale" name="freescale"/>
+  <remote fetch="git://github.com/openembedded" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+
+  <project remote="yocto" revision="1b231d7b0628c5e19afc2987d25000f71030c000" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="05681fdf8298bb441c15135eae424c7601b07e98" name="meta-freescale" path="sources/meta-freescale"/>
+
+  <project remote="oe" revision="b40116cf457b88a2db14b86fda9627fb34d56ae6" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="morty" name="fsl-community-bsp-base" path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="84af21481aed8fc236910367ce25daa8c8209f7d" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+
+  <project remote="OSSystems" revision="678706cb43fb8576ff7b88bfb612993b8542724d" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="ff073f04109900fc07bf81e2f1df63c626caf342" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="CAF" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="morty-4.9.51-8mq_beta" >
+     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+     <linkfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+
+</manifest>
