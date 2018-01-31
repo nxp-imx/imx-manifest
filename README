@@ -6,7 +6,7 @@ To get the BSP you need to have `repo` installed.
 Install the `repo` utility: (only need to do this once):
 --------------------------------------------------------
 $: mkdir ~/bin
-$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
+$: curl https://storage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
 $: chmod a+x ~/bin/repo
 $: PATH=${PATH}:~/bin
 
