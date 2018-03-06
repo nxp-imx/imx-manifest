@@ -34,6 +34,9 @@ See ChangeLog for description of patch releases and tags for each update.
 
 Examples
 --------
+To download the 4.9.51-8mq_ga release
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8mq_ga.xml
+
 To download the 4.9.51-8qm_beta2 and 4.9.51-8qxp_beta release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta2.xml
 
