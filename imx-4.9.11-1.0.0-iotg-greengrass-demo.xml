@@ -3,7 +3,7 @@
   <include name="imx-4.9.11-1.0.0_ga.xml"/>
   <project remote="yocto" name="meta-security" path="sources/meta-security" revision="3d863f72641f930e10ed1b6211d66b2c3d04d306"/>
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="eb6b5129561eda9ea1f47e85ab9ed9e5a6b8f64c"/>
-  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="08b7324f698ffad09ad23e9e4f1beae904ad4efb">
+  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="0be432c7cc9cf633182e9a516c6fdee69a6da37a">
     <linkfile src="README" dest="README-iot-gateway"/>
     <linkfile src="meta-iot-gateway/setup" dest="setup-iot-gateway"/>
     <linkfile src="meta-greengrass/setup" dest="setup-greengrass"/>
