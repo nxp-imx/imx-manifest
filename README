@@ -13,9 +13,9 @@ $: PATH=${PATH}:~/bin
 
 Download the Yocto Project Environment into your directory:
 -----------------------------------------------------------
-$: mkdir fsl-arm-yocto-bsp
-$: cd fsl-arm-yocto-bsp
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-morty [-m <manifest>]
+$: mkdir imx-yocto-bsp
+$: cd imx-yocto-bsp
+$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-morty -m <manifest>
 $: repo sync
 
 <manifest>                      Description
@@ -62,17 +62,20 @@ $: [MACHINE=<machine>] [DISTRO=fsl-imx-<backend>] source ./fsl-setup-release.sh 
 <machine> defaults to imx6qsabresd
 
 <backend>   Graphics backend type
-x11         X11 (this is the default if DISTRO is unspecified)
+xwayland    Wayland with XWayland support - default distro
 wayland     Wayland
-xwayland    Wayland with XWayland support
-fb          Framebuffer
+x11         X11  (not supported on MX8)
+fb          Framebuffer (not supported on MX8)
 
 Note DirectFB is not supported in 4.1.15 release.
+Note X11 and Framebuffer not supported for MX8 machines
 
 Note if the poky community distro is used then build breaks will happen with some
 components using our meta-fsl-bsp-release layer.
 
 Examples:
+- Setup for Wayland and X11.
+$: MACHINE=imx8qmmek DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-xwayland
 
 - Setup for X11.
 $: MACHINE=imx7ulpevk DISTRO=fsl-imx-x11 source ./fsl-setup-release.sh -b bld-x11
