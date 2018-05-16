@@ -1,0 +1,11 @@
+Date 5/16/2018
+4.9.88-2.0.0_ga - manifest imx-4.9.88_2.0.0_ga.xml
+- GA release for i.MX 7ULP
+- Updates for i.MX 6 and i.MX 7 and i.MX 8MQ
+- Optee support
+- Upgrade to Yocto Project Rocko including new GCC 7.3 toolchain
+- Upgrade to 4.9.88 Kernel including Spectre and Meltdown patches
+- Graphics update to 6.2.4.p1
+- Qualcomm WiFi and Bluetooth integration
+- No support for i.MX 8QM and i.MX 8QXP
+
