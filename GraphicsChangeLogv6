@@ -1,0 +1,74 @@
+Key Features of the Vivante 6.x Driver Series
+
+    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP,
+      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
+      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
+
+    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
+
+6.2.4P1 GPU Release (8MQ GA)
+========================================
+
+Key Features
+============
+- OpenCL improvements
+- Wayland-weston DRM Support
+- Wayland-weston with 2D accelerated renderer
+- Wayland-Weston EGL DRM Modifier support
+- Wayland-Weston EGL Framebuffer compression
+- Wayland-Weston DMABUF support
+- OpenCV tests with OpenCL
+- Add GPU DRM support
+- GLES CTS version 3.2.4
+
+
+6.2.4P1 Improvements
+==================
+OCL: MGS-3255-34 add opencl memory optimzation
+OCL: MGS-3255-33 fix opencl test buffer copy failure
+OCL: MGS-3640 fix opencl corruption for arm_compute_library
+OCL: MGS-3710 SoftISP meet CL_INVALID_WORK_GROUP_SIZE (-54) on mscale and qxp
+OCL: cache invalidate for uncached buffer get accesing user space memory outsied uaccess.h error
+OCL: ovx and ocl running together
+EGL MGS-3711 met display blurred when run weston-nested
+EGL:  Enable extension EGL_EXT_image_dma_buf_import_modifiers
+EGL: weston-nested met process aborted and core dump
+EGL: MGS-3399 fix wayland egl resize cts failure
+EGL: support direct rendering on external drm buffer
+EGL: MGS-3840-2 fix 6qp display flicker with fbdev test
+EGL: MGS-3791 imx6q shared egl context rendering issue
+EGL: MGS-3744 fix GC355 OpenVG flicker on wayland
+EGL: MA-11528 Support enable framebuffer direct rendering
+GLES3.0: 6QP FB have CTS failures with ESCTS 3.2.2.0
+GLES: MGS-3570 glGenerateMipmap takes too much time on 5.x/6.x driver
+Weston:  Disable surface compress if g2d-renderer
+GBM: Enable DRM compression for mscale board
+GBM: MGS-3625 6.2.4.p1: Fix xserver build break with GBM change
+GBM :MGS-3694 enable fb fd and tile status fd in GPU and DCSS on wayland
+Android:MA-11232 Enable HDR10 support on imx8mq platform.
+Android: MA-10844 GPU driver pass build after refine some NXP git path
+Android : MA-11101 Add HAL_PIXEL_FORMAT_NV12_TILED format to support VPU tile
+QNX:iMX8QM MGS-2906 VDK app fail if it's started as the first app after screen
+QNX:iMX8QM MGS-3289 [iMX8] Rotation using blitter seems broken
+QNX:iMX8QM MGS-3338  - Deadlock seen with Screen API test
+QNX:iMX8QM MGS-3323 QNX -[iMX8] Fix NV12 handling
+iMX8QM Disable depth compression for LPDDR4 parts
+OCL: MGS-3848-5 OCL1.2: test_image_streams failures
+OCL:MGS-3832 cl_convolution of ACL cause MMU exception
+OVX: MGS-3579  Fix the invalid scope of VX graph for 8QM
+OVG: MGS-3826 met core dump and system prompt out of memory when do OpenVG memory leak test.
+OVG: MGS-3750 fix gc355 openvg stuck issue on 6q and 6qp
+OVG: MGS-3791 VGCTS failed to run on i.MX6SL wayland
+OGL: MGS-3570 glGenerateMipmap takes too much time on 5.x/6.x driver
+OGL: MGS-3741 glmark2 test met error message
+General: MGS-3848 refinements for pm and isr
+General: MGS-3840 Display resume back very slow and has snow screen after suspend and resume.
+General: MGS-3751 met GPU core dump when run multiple es20 sdk apps
+
+Known Issues
+============
+MGS-3770 [6q/6qp] can not generate correct reference file after do api retrace and sometimes met stuck
+    - Need wayland support in waffle. will be addressed in next release
+MGS-3747 [6dl/6q] X11: copytex can't work after "Qt5_NMapper" app test.
+YOCIMX-2354 Some qt3-3d demos not work. Issue related to QTwayland in 5.8 later
+MGS-3739 can not pass webgl 1.0.2 CTS test. Chromium 64 known issue. Same reproduced on desktop
