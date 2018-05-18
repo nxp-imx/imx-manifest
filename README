@@ -41,10 +41,8 @@ $: [MACHINE=<machine>] [DISTRO=fsl-imx-<backend>] source ./fsl-setup-release.sh 
 <backend>   Graphics backend type
 xwayland    Wayland with X11 support - default distro
 wayland     Wayland
-x11         X11  (not supported in 4.9.88-2.0.0 ga release)
-fb          Framebuffer (not supported in 4.9.88-2.0.0 ga release)
-
-Note only XWayland is supported in 4.9.88-2.0.0 ga release.
+x11         X11  (not supported for mx8)
+fb          Framebuffer (not supported for mx8)
 
 Note if the poky community distro is used then build breaks will happen with some
 components using our meta-fsl-bsp-release layer.
