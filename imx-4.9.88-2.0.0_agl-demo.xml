@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.9.88-2.0.0_ga.xml"/>
+
+  <remote name="agl" fetch="https://git.automotivelinux.org/AGL"/>
+
+  <project remote="agl" revision="c40ee88f6aa0b379787a9ea3c853a806892e0dd1" name="meta-agl" path="sources/meta-agl"/>
+  <project remote="agl" revision="5c1f34ff690f28179ab308f068d84c909e46b171" name="meta-agl-demo" path="sources/meta-agl-demo"/>
+  <project remote="agl" revision="08baf9383ee1e367e76058df81f658ce901b7e8d" name="meta-agl-devel" path="sources/meta-agl-devel"/>
+
+  <project remote="yocto" revision="aedbec5ea3d958c18e8cfd5dead5d37a060bfcec" name="meta-security" path="sources/meta-security"/>
+
+  <project remote="CAF" revision="0265f9ddf6e9437d46e7ac60e5cae564e31522ee" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+    <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
+  </project>
+
+</manifest>
