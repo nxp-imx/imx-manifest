@@ -11,7 +11,7 @@
 
   <project remote="yocto" revision="aedbec5ea3d958c18e8cfd5dead5d37a060bfcec" name="meta-security" path="sources/meta-security"/>
 
-  <project remote="CAF" revision="0265f9ddf6e9437d46e7ac60e5cae564e31522ee" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+  <project remote="CAF" revision="cb4727e6d22a750babfc42ba9367305e9c2687bd" name="meta-nxp-agl" path="sources/meta-nxp-agl">
     <copyfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
   </project>
 
