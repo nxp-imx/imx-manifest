@@ -1,3 +1,8 @@
+Date 6/29/2018
+4.9.88-2.1.0-8mm_alpha - manifest imx-4.9.88-2.1.0-8mm_alpha.xml
+- Alpha release for i.MX 8MMini
+- Upgrade weston to 4.0.0
+
 Date 5/16/2018
 4.9.88-2.0.0_ga - manifest imx-4.9.88_2.0.0_ga.xml
 - GA release for i.MX 7ULP
