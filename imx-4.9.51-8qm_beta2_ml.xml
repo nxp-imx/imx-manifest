@@ -9,7 +9,9 @@
   <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
-  <remote fetch="ssh://git@bitbucket.sw.nxp.com/~nxa06718"  name="ML"/>
+  <remote fetch="ssh://git@bitbucket.sw.nxp.com/imx"  name="ML"/>
+
+
 
   <project remote="yocto" revision="ef888dd58f431866db2472753643f3f848fece21" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="05681fdf8298bb441c15135eae424c7601b07e98" name="meta-freescale" path="sources/meta-freescale"/>
@@ -29,7 +31,7 @@
   
   <project remote="CAF" revision="morty-4.9.51-8qm_beta2" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" />
 
-  <project remote="ML" name="meta-nxp-ml" path="sources/meta-nxp-ml" revision="master" >
+  <project remote="ML" name="meta-imx-machinelearning" path="sources/meta-imx-machinelearning" revision="master" >
      <linkfile src="tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="README" dest="README-IMX-ML"/>
   </project>
