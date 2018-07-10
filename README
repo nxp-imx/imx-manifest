@@ -26,6 +26,10 @@ Each branch will have detailed READMEs describing exact syntax.
 
 Examples
 --------
+
+To download the 4.9.88-2.2.0 i.MX 8QXP Beta2 release
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.2.0-8qxp_beta2.xml
+
 To download the 4.9.88-2.1.0 i.MX 8MM Alpha release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.1.0-8mm_alpha.xml
 
