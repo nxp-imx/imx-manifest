@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/Freescale" name="freescale"/>
+  <remote fetch="git://github.com/openembedded" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+
+  <project remote="yocto" revision="9ed1178c87afce997d5a21cadae7461fb6bb48da" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="a4158e3425a79720ddc4c02e76251d567bdceb51" name="meta-freescale" path="sources/meta-freescale"/>
+
+  <project remote="oe" revision="352531015014d1957d6444d114f4451e241c4d23" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="freescale" revision="rocko" name="fsl-community-bsp-base" path="sources/base">
+	<linkfile dest="README" src="README"/>
+	<linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="freescale" revision="a02324e27f7a7ac630dab616f46a8bad7fe2c071" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="freescale" revision="51756d1c2058139c8a21f89b86cfd8007b71b7f0" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+
+  <!-- Use a newer version of chromium than is currently available on rocko -->
+  <project remote="OSSystems" revision="2ae23f16309d228ec6f1a25e404b3941115083ee" name="meta-browser" path="sources/meta-browser" />
+  <project remote="QT5" revision="682ad61c071a9710e9f9d8a32ab1b5f3c14953d1" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="CAF" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="rocko-4.9.123-2.3.0_8mm_ga" >
+     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+     <linkfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+
+</manifest>
