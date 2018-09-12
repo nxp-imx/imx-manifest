@@ -15,7 +15,7 @@
 
   <project remote="oe" revision="dacfa2b1920e285531bec55cd2f08743390aaf57" name="meta-openembedded" path="sources/meta-openembedded"/>
 
-  <project remote="freescale" revision="rocko" name="fsl-community-bsp-base" path="sources/base">
+  <project remote="freescale" revision="70535e13dd2aabbad53243518f4cc5064d284592" name="fsl-community-bsp-base" path="sources/base">
 	<linkfile dest="README" src="README"/>
 	<linkfile dest="setup-environment" src="setup-environment"/>
   </project>
@@ -27,7 +27,7 @@
   <project remote="OSSystems" revision="d6f9aed41c73b75a97d71bff060b03a66ee087b1" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="cfe02f26de53e5c20e6f9555059cbaaf5ab9b22f" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="CAF" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="rocko-4.9.88-2.1.0_8mm_alpha" >
+  <project remote="CAF" revision="8898f51c96e0e79dd56690d797d309f013ec9f76" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
