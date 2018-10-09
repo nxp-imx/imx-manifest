@@ -2,7 +2,7 @@ i.MX Android BSP Repo Manifest README
 
 This repo is used to download manifests for i.MX Android BSP releases.
 
-The imx-android-oreo branch will include all release manifests for Android i.MX Oreo releases.
+The imx-android-pie branch will include all release manifests for Android i.MX Pie releases.
 The code is not distributed as patches as previous i.MX Android releases.
 Instead the i.MX Android open source is distributed on the https://source.codeaurora.org/external/imx
 and the proprietary is distributed on nxp.com.   Please download from nxp.com first the proprietary
@@ -17,14 +17,14 @@ $: PATH=${PATH}:~/bin
 
 Get the proprietary tarball from nxp.com and setup build:
 -----------------------------------------
-For imx-p9.0.0_1.0.0_beta.tar.gz    - Download imx-p9.0.0_1.0.0_beta.tar.gz from nxp.com.
+For imx-p9.0.0_1.0.0-beta.tar.gz    - Download imx-p9.0.0_1.0.0-beta.tar.gz from nxp.com.
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
 - This donwloads the public Android open source and copies the proprietary to the appropriate locations
 
 Example below
-$: tar xvf imx-p9.0.0_1.0.0_beta.tar.gz
-$: source ./imx-p9.0.0_1.0.0_beta/imx_android_setup.sh
+$: tar xvf imx-p9.0.0_1.0.0-beta.tar.gz
+$: source ./imx-p9.0.0_1.0.0-beta/imx_android_setup.sh
 
 Setup build environment:
 -------------------------
@@ -34,7 +34,7 @@ $ source build/envsetup.sh
 - Execute the Android lunch command.
 lunch command can be issued with an argument <Build name>-<Build type> or can be issued without the argument presenting a menu of selection.
 $ lunch <Build name>-<Build type>
-(Example: Build name :sabresd_6dq Build type: user)
+(Example: Build name :sabresd_6dq Build type: userdebug)
 Check Android User's Guide for more details
 
 - Execute the make command to generate the image.
