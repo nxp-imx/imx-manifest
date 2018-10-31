@@ -20,6 +20,7 @@ To execute
 $: mkdir <release>
 $: cd <release>
 $: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo sync
 
 Each branch will have detailed READMEs describing exact syntax.
 
