@@ -8,6 +8,6 @@
 
   <project remote="qt5" revision="rocko" name="meta-qt5-extra" path="sources/meta-qt5-extra"/>
   <project remote="liri" revision="master" name="meta-liri" path="sources/meta-liri"/>
-  <project remote="imx-release" revision="master" name="meta-imx-liri" path="sources/meta-imx-liri"/>
+  <project remote="CAF" revision="master" name="meta-imx-liri" path="sources/meta-imx-liri"/>
 
 </manifest>
