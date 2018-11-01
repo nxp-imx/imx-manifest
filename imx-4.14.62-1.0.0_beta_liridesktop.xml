@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.14.62-1.0.0_beta.xml"/>
+
+  <remote fetch="https://github.com/schnitzeltony" name="qt5"/>
+  <remote fetch="https://github.com/lirios" name="liri"/>
+
+  <project remote="qt5" revision="rocko" name="meta-qt5-extra" path="sources/meta-qt5-extra"/>
+  <project remote="liri" revision="master" name="meta-liri" path="sources/meta-liri"/>
+  <project remote="imx-release" revision="master" name="meta-imx-liri" path="sources/meta-imx-liri"/>
+
+</manifest>
