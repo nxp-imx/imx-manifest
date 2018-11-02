@@ -21,6 +21,59 @@ Key Features
 - Add GPU DRM support
 - GLES CTS version 3.2.4
 
+6.2.4p1-4.9.123- Improvements
+=============================
+OCL: MGS-3255-41 fix opencl test_buffer failures
+OCL: MGS-3255-39 fix opencl cache issue
+OCL: MGS-3891 [QNX] - OpenCL CTS bruteforce fails with commitworker
+OCL: MA-11932 Enable openCL flag CL_MEM_USE_UNCACHED_HOST_MEMORY_VIV
+OCL: MGS-3827 OpenCL C, even and odd operator of vector have wrong behavior.
+OCL: MGS-3976 clblast_sample_cache_c, segmentation fault. crash in CL compiler
+G2D: MGS-4135 Weston crash when run two videos with g2d compositor
+G2D: MGS-4128 Fix g2d_multiblit_test case segmentation fault.
+G2D: MGS-4091-2 fix g2d YUY2 scaling issue
+G2D: MGS-4091 fix g2d YUY2 output issue
+G2D : MGS-3943-3 add global alpha test
+G2D : MGS-3814-2 fix g2d API back compatibility
+G2D : MGS-3847 [QNX][Blitter] Remove redundant g2d open and close in QNX blitter
+G2D : MGS-3940 webgl basemark test met segmentation fault using g2d compositor
+G2D : MGS-4048 Display change to be blank when use g2d compositor
+EGL: MGS-4285 gl compositor stress test failed with out of memory
+EGL: MA-12481 Enable direct renderintile status on android 845s
+EGL: MGS-4104 Enable direct rendering on wayland
+EGL: MGS-4080 HelloworldX stress test met segmentation fault and core dump
+EGL: MGS-3399-8 fix imx6 weston crash with ESCTS 3.2.4.0
+EGL: MGS-3901 Wayland Client deadlock in libGAL when dispatching swap_queue
+EGL: MGS-3901-1 Wayland Client deadlock in libGAL when dispatching swap_queue
+EGL: MGS-3868 Align the struct wl_egl_window with wayland-egl
+EGL: MGS-4049 FPS wrong when weston-simple-egl run in full screen mode
+EGL: MGS-4058 weston will be closed after executing weston-info
+EGL: MGS-3906 galcore cannot be unload after stop weston service
+EGL: MGS-4058 weston will be closed after executing weston-info
+GLES: MGS-3953 ES11 segmentation fault on 8MM board
+GLES: MGS-3255-40 fix es31 cts crash with multiple thread test
+GLES: MGS-3473 ES31 random fail on Mscale. Related to BETA RC2 DDR setting.
+Android: MA-12227 Add framebuffer compression support on android. Refine dma-buf metadata setting
+Android: MA-11974-5 Fix video playback crash issue
+Android: MA-11974-4 Support FSL YUV format in gralloc helper
+Android: MA-11974-6 Fix gralloc helper build back compatible issue
+OpenVX: MGS-3630 openvx api return failure error if VXCreateContext() is called after eglInitialize() in GLES2 and GLES3 application
+General: MGS-3995 Can't remove galcore when VIVANTE_ENABLE_DRM was enabled
+General: MGS-3969 Fix reading HW counters values using old profiling method for GC7000
+General: MGS-3956 Fix build break for libgpuperfcnt
+General: MGS-3485 QNX - OVG conformance test crashes on QXP
+General: MA-11957 Rename fence to dma_fence
+General: MA-12411 Enable in-fence function for DRM driver on IMX8 platform.
+General: MGS-3730 [QNX] - add gcoOS_MemoryBarrier to QNX HAL
+General: MGS-3856-3 skip disable openvg2d on android build
+General: MGS-3856 Avoid build openvg2d for MX8
+General: MGS-3255 flush commit worker to fix QM cts crash
+General: MGS-4197 fix suspend failure with ctrl-C
+General: MGS-4162 fix suspend stuck with false negative
+General: MGS-4125 fix 6sx suspend/resume stuck issue
+General: MGS-4103 fix gpu axi bus error on 6sx
+General: MGS-4095 fix m845s system hang with suspend/resume
+General: MGS-4130 Cannot pass the stress test of low bus suspend/resume.
 
 6.2.4P1 Improvements
 ==================
