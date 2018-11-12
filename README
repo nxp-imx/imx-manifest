@@ -17,7 +17,9 @@ $: PATH=${PATH}:~/bin
 
 Get the proprietary tarball from nxp.com and setup build:
 -----------------------------------------
-For imx-p9.0.0_1.0.0-beta.tar.gz    - Download imx-p9.0.0_1.0.0-beta.tar.gz from nxp.com.
+For imx-p9.0.0_1.0.0-beta.tar.gz          - Download imx-p9.0.0_1.0.0-beta.tar.gz from nxp.com.
+For imx-p9.0.0_1.0.2-auto-alpha.tar.gz    - Download imx-p9.0.0_1.0.2-auto-alpha.tar.gz from nxp.com.
+
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
 - This donwloads the public Android open source and copies the proprietary to the appropriate locations

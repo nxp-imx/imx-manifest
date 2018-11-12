@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-trusty-p9.0.0_1.0.2-auto-alpha.xml"/>
+
+  <remote  name="android-imx"
+           fetch="https://source.codeaurora.org/external/imx/aosp/"
+           review="" />
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/lk" name="trusty/lk/common" groups="trusty" remote="android-imx" revision="refs/tags/p9.0.0_1.0.2-auto-alpha">
+    <copyfile src="makefile" dest="makefile" />
+  </project>
+  <project path="trusty/kernel" name="trusty/lk/trusty" groups="trusty" remote="android-imx" revision="refs/tags/p9.0.0_1.0.2-auto-alpha"/>
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx8" name="trusty/device/nxp/imx8m" groups="trusty" remote="android-imx" revision="refs/tags/p9.0.0_1.0.2-auto-alpha"/>
+  <project path="trusty/hardware/nxp" name="trusty/lk/nxp" groups="trusty" remote="android-imx" revision="refs/tags/p9.0.0_1.0.2-auto-alpha"/>
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN trusty vendor projects -->
+  <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty" remote="android-imx" revision="refs/tags/p9.0.0_1.0.2-auto-alpha">
+   <!-- Install lk_inc.mk into trusty root -->
+    <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
+  </project>
+  <!-- END trusty vendor projects -->
+
+</manifest>
