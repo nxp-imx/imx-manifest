@@ -28,7 +28,7 @@
 
   <!-- For imx public git. -->
   <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.2-auto-beta" />
-  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="arm-trusted-firmware" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.2-auto-beta" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.2-auto-beta" />
   <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.2-auto-beta" />
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.2-auto-beta" />
   <project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.2-auto-beta" />
