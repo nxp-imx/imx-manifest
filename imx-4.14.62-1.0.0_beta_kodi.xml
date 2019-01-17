@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.14.62-1.0.0_beta.xml"/>
+
+  <project remote="CAF" name="meta-nxp-xbmc" path="sources/meta-nxp-xbmc" revision="5fe636521fc9d7b55fb6f8344bb69f4dbebecbf6">
+      <linkfile src="README" dest="README-kodi"/>
+      <linkfile src="tools/nxp-setup-kodi.sh" dest="nxp-setup-kodi.sh"/>
+  </project>
+
+</manifest>
