@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.14.62-1.0.0_beta.xml"/>
+
+  <remote fetch="git://github.com/genivi" name="genivi"/>
+
+  <project remote="yocto" revision="d7687d404bbc9ba3f44ec43ea8828d9071033513" name="meta-gplv2" path="sources/meta-gplv2"/>
+  <project remote="genivi" revision="7a452dc9b803912da56e358c7aa3daa7a2bd695f" name="meta-ivi" path="sources/meta-ivi"/>
+  <project remote="CAF" revision="b725f122d40b2b2e831d1bc140df1bc82f9a8afd" name="meta-nxp-genivi" path="sources/meta-nxp-genivi">
+    <linkfile src="tools/nxp-setup-genivi.sh" dest="nxp-setup-genivi.sh"/>
+  </project>
+
+</manifest>
