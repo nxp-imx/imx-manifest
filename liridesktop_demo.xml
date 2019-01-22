@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="imx-4.14.62-1.0.0_beta.xml"/>
+  <include name="imx-4.14.78-1.0.0_ga.xml"/>
 
   <remote fetch="https://github.com/schnitzeltony" name="qt5"/>
   <remote fetch="https://github.com/lirios" name="liri"/>
