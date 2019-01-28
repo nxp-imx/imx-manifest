@@ -1,3 +1,9 @@
+Date 01/28/2019
+VIRT-4.14.78-4.11-0.9.1_betaa - manifest imx-virt-4.14.78-4.11-0.9.1_beta.xml
+- Virtualization Beta release based on 4.14.78-1.0.0_ga
+- XEN v4.11 is supported on i.MX8QM/8QXP
+- Jailhouse v0.9.1 is supported on i.MX8MQ/8MM
+
 Date 12/04/2018
 4.14.78-1.0.0_ga - manifest imx-4.14.78-1.0.0_ga.xml
 - GA release for i.MX 6, 7 and 8
