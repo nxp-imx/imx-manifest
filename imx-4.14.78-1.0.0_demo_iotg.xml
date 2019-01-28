@@ -7,6 +7,5 @@
   <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="e4f4f869f618f0458c2494211687d1bde00baee3">
     <linkfile src="README" dest="README-iot-gateway"/>
     <linkfile src="meta-iot-gateway/setup" dest="setup-iot-gateway"/>
-    <linkfile src="meta-greengrass/setup" dest="setup-greengrass"/>
   </project>
 </manifest>
