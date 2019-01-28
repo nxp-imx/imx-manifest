@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <include name="imx-4.14.62-1.0.0_beta.xml"/>
+  <include name="imx-4.14.78-1.0.0_ga.xml"/>
   <project remote="yocto" name="meta-security" path="sources/meta-security" revision="1e4b45ca888188b4eb838cb29b501ee004237552"/>
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="ed2038c935777d1336c17989d454f4e9c95fea7f"/>
 
-  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="fbf6f4324f12a28a54e8b8a37bb96fc0a4f688aa">
+  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="332be5f6d25f1623b6eeb97ce7e50debf19a6d54">
     <linkfile src="README" dest="README-iot-gateway"/>
     <linkfile src="meta-iot-gateway/setup" dest="setup-iot-gateway"/>
     <linkfile src="meta-greengrass/setup" dest="setup-greengrass"/>
