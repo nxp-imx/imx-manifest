@@ -27,7 +27,7 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 To download the Machine Learning 4.14.78-1.0.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-machinelearning-4.14.78-1.0.0_ga.xml
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.0_machinelearning.xml
 
 To download the Virtualization 4.14.78-4.11-0.9.1 Beta release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-virt-4.14.78-4.11-0.9.1_beta.xml
