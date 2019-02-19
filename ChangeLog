@@ -1,3 +1,7 @@
+Date 19/02/2019
+Machine learning 4.14.78-1.0.0_ga - manifest imx-machinelearning-4.14.78-1.0.0_ga.xml
+- meta-imx-machinelearning for i.MX8QM
+
 Date 01/28/2019
 VIRT-4.14.78-4.11-0.9.1_betaa - manifest imx-virt-4.14.78-4.11-0.9.1_beta.xml
 - Virtualization Beta release based on 4.14.78-1.0.0_ga
