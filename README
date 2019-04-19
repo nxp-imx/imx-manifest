@@ -33,6 +33,7 @@ For imx-o8.1.0_1.5.1_8mm-beta.tar.gz   - Download imx-o8.1.0_1.5.1_8mm-beta.tar.
 For imx-o8.1.0_2.0.0-beta.tar.gz     - Download imx-o8.1.0_2.0.0-beta.tar.gz from nxp.com.
 For imx-o8.1.0_2.0.0-auto-beta.tar.gz  - Download imx-o8.1.0_2.0.0-auto-beta.tar.gz from nxp.com.
 For imx-o8.1.0_2.0.0-ga.tar.gz         - Download imx-o8.1.0_2.0.0-ga.tar.gz from nxp.com.
+For imx-o8.1.0_2.1.0-auto-ga.tar.gz    - Download imx-o8.1.0_2.1.0-auto-ga.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
