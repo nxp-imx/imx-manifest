@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="imx-4.14.98-2.0.0_ga.xml"/>
+
+  <project remote="yocto" revision="9aa6b5dcbacf734a93602515f0b1857b91c1d408" name="meta-cloud-services" path="sources/meta-cloud-services"/>
+  <project remote="yocto" revision="ed2038c935777d1336c17989d454f4e9c95fea7f" name="meta-virtualization" path="sources/meta-virtualization"/>
+
+  <project remote="CAF" revision="sumo-es1903" name="meta-imx-edgescale" path="sources/meta-edgescale">
+        <linkfile dest="edgescale-setup.sh" src="setup.sh"/>
+  </project>
+
+</manifest>
+
+
