@@ -1,0 +1,49 @@
+=== Notes on using Mender on i.MX BSP
+=====================================
+
+Mender.io is an open source over-the-air (OTA) software updater for embedded
+Linux devices. Mender comprises a client running at the embedded device, as
+well as a server that manages deployments across many devices.
+
+Mender aims to address this challenge with a robust and easy to use updater
+for embedded Linux devices, which is open source and available to anyone.
+
+Robustness is ensured with atomic image-based deployments using a dual A/B
+rootfs partition layout. This makes it always possible to roll back to a
+working state, even when losing power at any time during the update process.
+
+Mender.io also supports partial update, utilizing the Update Modules feature.
+An Update Module is an extension to the Mender client for supporting a new type
+of software update, such as a package manager, container, bootloader or
+even updates of nearby microcontrollers. An Update Module can be tailored to a
+specific device or environment (e.g. update a proprietary bootloader), or be
+more general-purpose (e.g. install a set of .deb packages.).
+
+The official documentation is a good resource to get an more in depth
+understanding of how Mender works:
+
+    https://docs.mender.io
+
+There is a demo manifest file provided for the 'imx8mqevk' board where Mender is
+integrated.
+
+Setup environment and start a build
+-----------------------------------
+
+To use the demo manifest, the 'repo' tool must be installed first.
+
+$: mkdir ~/bin
+$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
+$: chmod a+x ~/bin/repo
+$: PATH=${PATH}:~/bin
+
+With the 'repo' tool installed you can proceed with the following,
+
+$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-sumo -m imx-4.14.98-2.0.0_demo_mender.xml
+$: repo sync
+$: DISTRO=fsl-imx-xwayland MACHINE=imx8mqevk . fsl-setup-mender.sh -b build
+$: bitbake core-image-base
+
+For a more detailed explanation on how to use the demo you can visit:
+
+     https://hub.mender.io/t/nxp-i-mx-8mquad-evaluation-kit

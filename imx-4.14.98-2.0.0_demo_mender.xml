@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.14.98-2.0.0_ga.xml"/>
+
+  <remote fetch="https://github.com/mendersoftware" name="mender"/>
+
+  <project name="meta-mender" remote="mender" revision="sumo" path="sources/meta-mender"/>
+  <project name="meta-mender-community" remote="mender" revision="sumo" path="sources/meta-mender-community">
+     <linkfile src="meta-mender-imx/scripts/fsl-setup-mender.sh" dest="fsl-setup-mender.sh"/>
+  </project>
+
+</manifest>
