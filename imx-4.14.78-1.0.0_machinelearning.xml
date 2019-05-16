@@ -3,6 +3,6 @@
 
   <include name="imx-4.14.78-1.0.0_ga.xml"/>
 
-  <project remote="CAF" revision="5e0d28e9a799bb2eca8327fb20475ce564458130" name="meta-imx-machinelearning" path="sources/meta-imx-machinelearning" />
+  <project remote="CAF" revision="7e9294dead55d1f6b4f1cfe486e0c4e0c5097953" name="meta-imx-machinelearning" path="sources/meta-imx-machinelearning" />
 
 </manifest>
