@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="imx-4.14.98-2.0.0_ga.xml"/>
+
+  <remote fetch="git://github.com/Azure"   name="Azure"/>
+  <remote fetch="git://github.com/meta-rust"  name="Rust"/>
+
+  <project remote="Azure" revision="736078713e4f81a59500580ef8811fee5cc07a23" name="meta-iotedge" path="sources/meta-iotedge"/>
+  <project remote="Rust"  revision="0d03c206c3d56c6dd6d8bb59bb5f4f8e32ea3f95" name="meta-rust" path="sources/meta-rust"/>
+  <project remote="yocto" revision="ed2038c935777d1336c17989d454f4e9c95fea7f" name="meta-virtualization" path="sources/meta-virtualization"/>
+
+  <project remote="CAF" revision="sumo" name="meta-imx-iotedge" path="sources/meta-imx-iotedge">
+      <linkfile src="tools/imx-azure-setup.sh" dest="imx-azure-setup.sh"/>
+  </project>
+
+</manifest>
