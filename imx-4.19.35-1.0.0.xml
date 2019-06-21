@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  <remote fetch="git://github.com/Freescale" name="community"/>
+  <remote fetch="git://github.com/openembedded" name="oe"/>
+  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="git://github.com/TimesysGit"  name="Timesys"/>
+  <remote fetch="git://github.com/meta-rust"  name="rust"/>
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+
+  <project remote="yocto" revision="50f33d3bfebcbfb1538d932fb487cfd789872026" name="poky" path="sources/poky"/>
+  <project remote="yocto" revision="f5c932229c31b612cba38c2ed6f3c3ec6b800e92" name="meta-freescale" path="sources/meta-freescale"/>
+
+  <project remote="oe" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" name="meta-openembedded" path="sources/meta-openembedded"/>
+
+  <project remote="community" revision="70535e13dd2aabbad53243518f4cc5064d284592" name="fsl-community-bsp-base" path="sources/base">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="community" revision="c4b5ac6b20e4245ce0630e9197313aaef999a331" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
+  <project remote="community" revision="4a244af3993ae662624c6f615464e6806cc719a2" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
+
+  <project remote="OSSystems" revision="23e206d355e46d6f6e6a5638c574524492f91bc2" name="meta-browser" path="sources/meta-browser" />
+  <project remote="rust" revision="84710b341be53cc2af13ecc8ae87773cf84687bf" name="meta-rust" path="sources/meta-rust" />
+  <project remote="QT5" revision="0630018c0033c91fddda62a49f59a82ba6ec6850" name="meta-qt5" path="sources/meta-qt5" />
+
+  <project remote="Timesys" revision="8a0d9405dd3083926ced6be92fc8d940c0052490" name="meta-timesys" path="sources/meta-timesys" />
+
+  <project remote="CAF" revision="thud-4.19.35-1.0.0" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
+     <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
+     <linkfile src="imx/README" dest="README-IMXBSP"/>
+  </project>
+
+</manifest>
