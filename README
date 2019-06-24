@@ -7,7 +7,7 @@ Specific instructions will reside in READMEs in each branch.
 The branch will be based on the release type Linux or Android with release manifests in each branch tied to the base releases.
 
 For example for i.MX Linux Yocto Project releases the branches will be imx_linux_<Yocto Project release> so imx_linux_thud with
-all manifests tied to releases on sumo in this branch.
+all manifests tied to releases on Thud in this branch.
 
 To use this manifest repo, the 'repo' tool must be isntalled first.
 --------------------------------------------------------
@@ -27,7 +27,7 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 To download the 4.19.35-1.0.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.19.35-1.0.0.xml
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-thud -m imx-4.19.35-1.0.0.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
