@@ -1,14 +1,111 @@
 Key Features of the Vivante 6.x Driver Series
 
-    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, 
-      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test. 
-      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product. 
+    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP,
+      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
+      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
+    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
-    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
-    
+
+
+6.2.4 p4
+=======================
+Further enhancement
+	- commit worker to support dual GPUs
+	- Enablement of Robust feature Android CTS
+	- Vulkan driver fixes to comply with Android CTS
+	- OpenCL general improvements
+
+Improvements and Bug fixes
+MGS-4638 [#imx-1373] fix gpu kernel build error with kasan config
+MGS-4629 [#imx-1369] Fix the GPU hang issue in vxuThreshold()
+MGS-4634 [#imx-1374] weston failed to start as 64 bit kernel with 32bit graphics lib case
+MGS-4609 iMX8QM - glsl memfault, mat4 access
+MGS-4601 fix transform feedback random failure
+MGS-4531  disable loop unroll for opencl kernel
+MGS-3944fix frag-depth for WebGL 2.0 CTS
+MGS-4547-2 [#imx-1330] second fix for pow performance issue
+MGS-4547fix built-in pow performance issue
+MGS-4611  fix 8mm es20 cts failure with 3.2.5.1
+MGS-4448 fix vulkan sascha deferredmultisampling demo, deferredmultisampling
+MA-11528 Support enable framebuffer direct rendering
+MGS-4550 vxSobel3x3Node() segmentation fault when output_x or output_y is NULL
+MGS-4569 fix GPU hang when play 4K video
+MGS-4394 Out of memory issue on MQ when running opencv_perf_imgproc
+MGS-4541  fix galcore kernel panic in debugfs
+MGS-4551  fix gpu hang by wrong idle check
+MGS-4444  fix opencv_perf_photo failure
+MGS-4523-1  Add support for gcc 8.2
+Increase GL_CHIP_NAME_LEN to 32
+MGS-4483 ACL, v18.11, arm_benchmark, GPU hang , at case 3646 and 4406
+MGS-4476-1 Fix GBM used too much memory in p4 driver
+MGS-3596-1  Disable surface compress if g2d-renderer
+MGS-4513  avoid oom killer in gpu kernel driver
+MGS-4376  fix low performance with CMA allocator
+MA-13763  Fix fence signal memory leakage issue.
+MGS-4494  fix GL_SRG8_ALPHA8 renderable texture
+MGS-4326 support YUY2 to NV21/NV61
+Fix Video performance dropped with in_fence feature
+Fix memory leakage issue when render buffer is reused to bind to FBO.
+Fixed WILDCAT-41 YUY2 conversion & composition in Weston
+Refine hardware query idle.
+i.MX8M GLSL shader conversion output distorted need to set all calculations related to mod() source to high precision to avoid precision loss in dual16 mode. The case "Ocean surface simulation" Out_of_momory when run compubenchcl_v2.0
+Support for GBM asynchrounous support
+Add RGBA_FP16 format support to fix CtsGraphicsTestCases crash issue: fix R8G8B8_UNORM related fail
+When destory the wayland surface or display, we should destroy the source until the swap thread handles all workers.
+Fix SoftISP denoise performance fix
+Enable OES_EGL_image_external_essl3 extension for Android/QNX.
+Added two new API in GBM driver to support 18.1.9 gbm version.
+Fix in driver to support Vulkan-validation-layer
+Fix for vcompiler preprocessor fails to parse function-like macros with zero parameter
+Query clock frequency dynamically.
+Fix filterblit  vertical strip issue
+i.MX8MQ Android DRM no-resolve feature for KMS 
+Fixed the arithmetic assign's left hand side to be memory store instead of simple MOV.
+QNX - problem rendering to KHR image on iMX8QXP B0. Flush the tile status and decompress the pixmap buffers, as pixmap buffer could be get by QNX system calls.
+Dont' enable gcdENABLE_DRM when kernel doesn't have CONFIG_DRM.
+Fix galBlit2 & galBlit & stretchBlit rotation issue. 
+Improve to comply with eglslsanbox-player
  
+6.2.4 p3
+=====================
+Skipped
+
 6.2.4 p2 GPU Release for i.MX6, i.MX7, i.MX8 
 ===========================================
+
+GA Release Updated (incremental fixes from Beta release
+=====================================================
+Support Android P. Fixes including new cases added in DEQP, Vulkan CTS
+
+Improvements and Bug fixes
+
+MGS-4326 support YUY2 to NV12/YV12/NV16
+MA-13159 Fix crash caused by changes in copyimagebuffer
+MA-13159 Enable Vulkan CTS 64, 128 bpp msaa formats
+MA-13159 Fix Vulkan SPIRV shader compilation issues
+MA-13159 [#imx-1215] Fix dEQP-GLES3.functional.shaders.indexing.moredynamic.* CTS fail
+MGS-3083 [#imx-662] fix kernel build error with kasan config
+MGS-4184 [#imx-1158] Display image is blurred when run SVG demo in VG3d environment.
+MLK-20450 [#imx-1251] Fix Linux NO SMP kernel - GPU
+MGS-4087 [#imx-1095] Fix the GPU hang issue when run opencv_perf_imgproc on QXP
+MGS-4384-81 vkmark: The screen flash the gray squares  when run vkmark(cube)
+MGS-4347 App weston-touch-calibrator is stucked in wl_egl_window_destroy
+MA-13450 Switch layer memory allocation to virtual pool to improve performance.
+MGS-4376 fix low performance with CMA allocator
+MA-13203 Fix kernel panic when do video plaback with dual display on 8mq.
+MGS-4340 clpeak, kernel latency got a negtive number randomly, 1/3
+MGS-3612 Fix Lower performance of SoftISP running on MX8QXP
+MA-12928-2 [#imx-1199] Use gcdANDROID MARCO to control android build
+MA-13067-17 [#imx-1215] Fix dEQP-VK.renderpass.suballocation.attachment.4.532 fail
+MA-13166-1 [#imx-1229] Fix CtsNativeHardwareTestCases CTS crash issue
+MGS-4161 Fix glslsandbox some items fail
+MGS-3732 [#imx-1224] OpenCL C, select() issue.
+MGS-4407  [QNX] gl-dlls.so is missing reported in slog2info when graphics apps started
+402abada7 MGS-4406 [QNX] - fix free error message when slaying screen
+b01759433 MGS-4392 [QNX] - Screen hang when slay - problem terminating resource manager
+105078615 MGS-4390 [#imx-1249] [QNX] - memory fault when playing glslsandbox case 196
+
+============================
 Improvements and Bug fixes
 
 GPU3D:
