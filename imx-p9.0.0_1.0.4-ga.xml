@@ -15,16 +15,20 @@
            fetch="https://source.codeaurora.org/external/imx/"
            review="" />
 
+  <remote  name="imx-proprietary"
+           fetch="https://github.com/nxp/"
+           review="" />
+
   <remote  name="kernel"
            fetch="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/"
            review="" />
 
-  <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-linux-sdk" revision="3a01285785a7391bb62b5fcf0400208c3fe391bf" />
+  <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="3a01285785a7391bb62b5fcf0400208c3fe391bf" />
   <project path="external/linux-firmware" name="linux-firmware" remote="kernel" revision="bf04291309d3169c0ad3b8db52564235bbd08e30" />
 
   <!-- For imx public git. -->
   <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.4-ga" />
-  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="arm-trusted-firmware" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.4-ga" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.4-ga" />
   <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.4-ga" />
   <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.4-ga" />
   <project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_1.0.4-ga" />
