@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="int-4.14.98-2.0.0_ga.xml"/>
+
+  <remote fetch="git://github.com/digi-embedded" name="digi"/>
+
+  <project remote="yocto" name="meta-security" path="sources/meta-security" revision="2160c5de874234045ba4e201a0703185b65dbae4"/>
+  <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="ed2038c935777d1336c17989d454f4e9c95fea7f"/>
+  <project remote="digi" name="meta-digi" path="sources/meta-digi" revision="1204c236d861f8b28aeba6b0c53b8ac4d645fc3e"/>
+
+  <project remote="CAF" name="meta-imx-greengrass" path="sources/meta-imx-greengrass" revision="master">
+      <linkfile src="tools/setup-greengrass" dest="setup-greengrass"/>
+  </project>
+
+</manifest>
