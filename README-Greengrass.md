@@ -81,9 +81,8 @@ sync
 
 ## Qualify the device
 
-The following section shows how to verify that the device is qualified
-to run Greengrass. The section will approximately follow the IDT User
-Guide.
+This section shows how to verify that the device is qualified to run
+Greengrass. The section will approximately follow the IDT User Guide.
 
 https://docs.aws.amazon.com/greengrass/latest/developerguide/device-tester-for-greengrass-ug.html
 
@@ -99,8 +98,8 @@ addgroup --system ggc_group
 Add the following to `/etc/sysctl.d/99-sysctl.conf`:
 
 ```
-fs.protcted_hardlinks = 1
-fs.protcted_symlinks = 1
+fs.protected_hardlinks = 1
+fs.protected_symlinks = 1
 ```
 
 ### Run the Greengrass dependency checker
