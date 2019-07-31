@@ -44,6 +44,9 @@ repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-lin
 To download the Virtualization 4.14.78-4.11-0.9.1 Beta release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-virt-4.14.78-4.11-0.9.1_beta.xml
 
+To download the 4.14.78-1.1.0 Patch release
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.1.0.xml
+
 To download the 4.14.78-1.0.4 Patch release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.4_patch.xml
 
