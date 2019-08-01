@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-4.19.35-1.0.0.xml"/>
+
+  <remote name="agl" fetch="https://git.automotivelinux.org/AGL"/>
+
+  <project remote="agl" revision="875f5d817a204146f8628e37bfc90e8324394495" upstream="halibut" name="meta-agl" path="sources/meta-agl"/>
+  <project remote="agl" revision="22b149d1fb2513554c19e131c404466ebc7a6976" upstream="halibut" name="meta-agl-demo" path="sources/meta-agl-demo"/>
+  <project remote="agl" revision="0c48b622c53059cb0da320c83747056a766e3364" upstream="halibut" name="meta-agl-devel" path="sources/meta-agl-devel"/>
+
+  <project remote="yocto" revision="31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud" name="meta-security" path="sources/meta-security"/>
+
+  <project remote="CAF" revision="bf53053595665536504812bcee3061f8d52c4596" upstream="thud" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+    <linkfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
+    <linkfile src="README" dest="README-IMX-AGL"/>
+  </project>
+
+</manifest>
