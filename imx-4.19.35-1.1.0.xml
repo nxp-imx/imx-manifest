@@ -25,7 +25,7 @@
   <project remote="community" revision="da422478d38e744283bcf61123c4a526396c7030" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty"/>
   <project remote="community" revision="d4e77ea682fa10d0d54a723b3d3099c44fc5e95c" name="meta-freescale-distro" path="sources/meta-freescale-distro"/>
 
-  <project remote="OSSystems" revision="23e206d355e46d6f6e6a5638c574524492f91bc2" name="meta-browser" path="sources/meta-browser" />
+  <project remote="OSSystems" revision="5f365ef0f842ba4651efe88787cf9c63bc8b6cb3" name="meta-browser" path="sources/meta-browser" />
   <project remote="rust" revision="11aed43748d7dd194dc6c06a35a16104400d1090" name="meta-rust" path="sources/meta-rust" />
   <project remote="QT5" revision="dc2dedef9961950b88f4245ba7499538ec4244ab" name="meta-qt5" path="sources/meta-qt5" />
 
