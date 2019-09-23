@@ -1,0 +1,17 @@
+Date 10/1/2019
+4.19.35-1.1.0
+- GA release for 4.19.35-1.1.0 for i.MX 6, 7 and 8 Series.
+- Please review release notes on http://www.nxp.com/imxsw in Documentation section for quatlity statement on each i.MX board.
+- Kernel upgrade to 4.19.35
+- U-Boot upgrade to 2019.04
+- Yocto Project upgrade to warrior release.
+- Integration of machine learning
+
+Date 06/21/2019
+4.19.35-1.0.0
+- Beta release for 4.19.35-1.0.0 for i.MX 6, 7 and 8 Series.
+- Please review release notes on http://www.nxp.com/imxsw in Documentation section for quatlity statement on each i.MX board.
+- Kernel upgrade to 4.19.35
+- U-Boot upgrade to 2019.04
+- Yocto Project upgrade to thud release.
+- Integration of machine learning
