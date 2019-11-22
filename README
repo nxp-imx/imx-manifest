@@ -56,5 +56,5 @@ Build an image:
 bitbake <image recipe>
 
 Some image recipes:
-fsl-image-gui - full image with demos and tests used for testing with graphics, no QT.
-fsl-image-qt5 - fsl-image-gui with QT
+imx-image-multimedia: This image contains all the packages except QT5/OpenCV/Machine Learning packages.
+imx-image-full: This is the big image which includes imx-image-multimedia + OpenCV + QT5 + Machine Learning packages.
