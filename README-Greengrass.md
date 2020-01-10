@@ -24,7 +24,7 @@ Download the demo source:
 ```
 mkdir imx-greengrass
 cd imx-greengrass
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-sumo -m imx-VERSION_demo_greengrass.xml
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-warrior -m imx-VERSION_demo_greengrass.xml
 repo sync
 ```
 
@@ -67,15 +67,15 @@ cp HASH-setup.tar.gz imx-greengrass/my-core-setup.tar.gz
 Build the image:
 
 ```
-bitbake fsl-image-validation-imx
+bitbake imx-image-multimedia
 ```
 
 Program the SD card for the device:
 
 ```
 cd tmp/deploy/images/MACHINE
-bunzip2 fsl-image-validation-imx-MACHINE.sdcard.bz2
-sudo dd if=fsl-image-validation-imx-MACHINE.sdcard of=/dev/sdDRIVE bs=1M
+bunzip2 imx-image-multimedia-MACHINE.wic.bz2
+sudo dd if=imx-image-multimedia-MACHINE.wic of=/dev/sdDRIVE bs=1M
 sync
 ```
 
@@ -86,37 +86,21 @@ Greengrass. The section will approximately follow the IDT User Guide.
 
 https://docs.aws.amazon.com/greengrass/latest/developerguide/device-tester-for-greengrass-ug.html
 
-### Setup the device
-
-Configure the user and group:
-
-```
-adduser --system ggc_user
-addgroup --system ggc_group
-```
-
-Add the following to `/etc/sysctl.d/99-sysctl.conf`:
-
-```
-fs.protected_hardlinks = 1
-fs.protected_symlinks = 1
-```
-
 ### Run the Greengrass dependency checker
 
 Download and run the Greengrass dependency checker on the device:
 
 ```
-wget https://github.com/aws-samples/aws-greengrass-samples/raw/master/greengrass-dependency-checker-GGCv1.8.x.zip
-unzip greengrass-dependency-checker-GGCv1.8.x.zip
-cd greengrass-dependency-checker-GGCv1.8.x
+wget https://github.com/aws-samples/aws-greengrass-samples/raw/master/greengrass-dependency-checker-GGCv1.9.x.zip
+unzip greengrass-dependency-checker-GGCv1.9.x.zip
+cd greengrass-dependency-checker-GGCv1.9.x
 sudo modprobe configs
 sudo ./check_ggc_dependencies
 ```
 
 ### Run the IoT Device Tester
 
-Download IDT v1.3.3 for AWS IoT Greengrass v1.8.2:
+Download IDT for AWS IoT Greengrass:
 
 https://docs.aws.amazon.com/greengrass/latest/developerguide/dev-tst-prereqs.html
 
