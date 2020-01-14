@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-trusty-android-10.0.0_1.0.0.xml"/>
+
+  <remote  name="aosp-imx"
+           fetch="https://source.codeaurora.org/external/imx/aosp/"
+           review="" />
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/lk" name="trusty/lk/common" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0">
+    <copyfile src="makefile" dest="makefile" />
+  </project>
+  <project path="trusty/kernel" name="trusty/lk/trusty" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <project path="trusty/user/app/avb" name="trusty/app/avb" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <project path="trusty/user/app/gatekeeper" name="trusty/app/gatekeeper" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <project path="trusty/user/app/keymaster" name="trusty/app/keymaster" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <project path="trusty/user/app/storage" name="trusty/app/storage" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <project path="trusty/user/base" name="trusty/lib" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN platform projects -->
+  <project path="system/keymaster" name="platform/system/keymaster" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <!-- END platform projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx8" name="trusty/device/nxp/imx8m" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <project path="trusty/hardware/nxp" name="trusty/lk/nxp" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0"/>
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN trusty vendor projects -->
+  <project path="trusty/vendor/google/aosp" name="trusty/vendor/google/aosp" groups="trusty" remote="aosp-imx" revision="refs/tags/trusty-android-10.0.0_1.0.0">
+   <!-- Install lk_inc.mk into trusty root -->
+    <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
+  </project>
+  <!-- END trusty vendor projects -->
+
+</manifest>
