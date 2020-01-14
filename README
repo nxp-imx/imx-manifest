@@ -1,13 +1,12 @@
-i.MX Repo Manifest README
+i.MX Android BSP Repo Manifest README
 
-This repo is used to download manifests for i.MX BSP releases.
+This repo is used to download manifests for i.MX Android BSP releases.
 
-Specific instructions will reside in READMEs in each branch.
-
-The branch will be based on the release type Linux or Android with release manifests in each branch tied to the base releases.
-
-For example for i.MX Linux Yocto Project releases the branches will be imx_linux_<Yocto Project release> so imx_linux_morty with
-all manifests tied to releases on morty in this branch.
+The imx-android-11 branch will include all release manifests for Android 11 i.MX releases.
+The code is not distributed as patches as previous i.MX Android releases.
+Instead the i.MX Android open source is distributed on the https://source.codeaurora.org/external/imx
+and the proprietary is distributed on nxp.com.   Please download from nxp.com first the proprietary
+release and follow the README directions for configuring.  Below are directions for preparation.
 
 To use this manifest repo, the 'repo' tool must be isntalled first.
 --------------------------------------------------------
@@ -16,13 +15,30 @@ $: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin
 $: chmod a+x ~/bin/repo
 $: PATH=${PATH}:~/bin
 
+Get the proprietary tarball from nxp.com and setup build:
+-----------------------------------------
+For imx-android-11.0.0_1.0.0.tar.gz          - Download imx-android-11.0.0_1.0.0.tar.gz from nxp.com.
 
-To excute 
-$: mkdir <release>
-$: cd <release>
-$: repo init -u https://source.codeaurora.org/external/imx/fsl-arm-yocto-bsp -b <branch name> [ -m <release manifest>]
+- unzip the package
+- Run the build setup script in the tarball as specified in the README - example below
+- This donwloads the public Android open source and copies the proprietary to the appropriate locations
 
-Each branch will have detailed READMEs describing exact syntax.
+Example below
+$: tar xvf imx-android-11.0.0_1.0.0.tar.gz
+$: source ./imx-android-11.0.0_1.0.0/imx_android_setup.sh
 
+Setup build environment:
+-------------------------
+- Set up the environment for building. This only configures the current terminal.
+$ source build/envsetup.sh
 
+- Execute the Android lunch command.
+lunch command can be issued with an argument <Build name>-<Build type> or can be issued without the argument presenting a menu of selection.
+$ lunch <Build name>-<Build type>
+(Example: Build name :mek_8q Build type: userdebug)
+Check Android User's Guide for more details
+
+- Execute the "imx-make.sh" script to generate the image.
+$ ./imx-make.sh -j4 2>&1 | tee build-log.txt
+When the make command is complete, the build-log.txt file contains the execution output. Check for any errors.
 
