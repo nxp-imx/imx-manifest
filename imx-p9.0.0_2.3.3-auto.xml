@@ -18,9 +18,6 @@
   <remote  name="imx-proprietary"
            fetch="https://github.com/nxp/"
            review="" />
-  <remote  name="android-imx"
-           fetch="http://androidsource.ap.freescale.net/project/p/"
-           review="" />
 
   <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="f6d0859f9435796f03ae93b70b5f92f4406bc56d" />
 
