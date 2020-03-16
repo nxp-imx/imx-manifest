@@ -24,5 +24,8 @@ $: repo init -u https://source.codeaurora.org/external/imx/fsl-arm-yocto-bsp -b 
 
 Each branch will have detailed READMEs describing exact syntax.
 
-
+Examples
+--------
+To download the 5.4.3-1.0.0 release
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-zeus -m imx-5.4.3-1.0.0.xml
 
