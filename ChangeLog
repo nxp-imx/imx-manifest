@@ -6,6 +6,10 @@ Date 11/22/2019
 4.14.98-2.3.0 - manifest imx-4.14.98-2.3.0.xml
 - GA release for i.MX 8QXP C0 && Post GA release for i.MX 8MN
 
+Date 12/1/2019
+4.14.78-1.1.10 - manifest imx-4.14.78-1.1.10.xml
+- Patch release for i.MX 8QXP B0 and i.MX 8QM - just updated SCFW 
+
 Date 09/17/2019
 4.14.98-2.2.0 - manifest imx-4.14.98-2.2.0.xml
 - GA release for i.MX 8MN
