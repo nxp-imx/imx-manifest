@@ -1,0 +1,7 @@
+Date 4/8/2020
+5.4.3-1.0.0
+- GA release for 5.4.3-1.0.0 i.MX 6, 7 and 8 Series.
+- Please review release notes on http://www.nxp.com/imxsw in Documentation section for quatlity statement on each i.MX board.
+- Kernel upgrade to 5.4.3
+- Linux Factory kernel release supporting i.MX, Layerscape and automotive SoC.
+- Yocto Project upgrade to zeus release.

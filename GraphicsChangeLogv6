@@ -1,0 +1,18 @@
+Key Features of the Vivante 6.x Driver Series
+
+    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP,
+      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
+      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
+    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
+
+Introducing 6.4.0
+======================
+Key Features:
+        - Graphics 6.4.0.p2.0
+       - Vulkan 1.1
+       - OpenVX 1.2
+       - OpenCL, OpenVX bridged support.
+       - Upgrade to Weston 7.0
+       - OpenCV 4.0.1
+       - Chromium v74
+
