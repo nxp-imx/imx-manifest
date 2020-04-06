@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="imx-5.4.3-1.0.0.xml"/>
+  <project remote="yocto" name="meta-security" path="sources/meta-security" revision="ecd8c30af6b1b957b4fa814d3f25c40f060b3ac1"/>
+  <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="561b597d4ba91dd36147e1af81bd1edc2d6636db"/>
+
+  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="d28c2e45f86be74396e585dd265c8b42ed11e300">
+    <linkfile src="README" dest="README-iot-gateway"/>
+    <linkfile src="meta-iot-gateway/setup" dest="setup-iot-gateway"/>
+  </project>
+</manifest>
