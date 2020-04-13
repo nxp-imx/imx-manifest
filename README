@@ -18,7 +18,8 @@ $: PATH=${PATH}:~/bin
 Get the proprietary tarball from nxp.com and setup build:
 -----------------------------------------
 For imx-android-10.0.0_1.0.0.tar.gz          - Download imx-android-10.0.0_1.0.0.tar.gz from nxp.com.
-For imx-android-10.0.0_1.1.0.tar.gz          - Download imx-android-10.0.0_1.1.0.tar.gz from nxp.com.
+For imx-automotive-10.0.0_1.1.0.tar.gz       - Download imx-automotive-10.0.0_1.1.0.tar.gz from nxp.com.
+For imx-android-10.0.0_2.1.0.tar.gz          - Download imx-android-10.0.0_2.1.0.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
