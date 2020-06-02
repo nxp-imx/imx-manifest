@@ -54,7 +54,7 @@
   <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
   <project path="external/nanopb-c" name="platform/external/nanopb-c" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
   <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
-  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
+  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/heads/rel_p9.0.0_2.3.5-auto" />
   <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
   <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
   <project path="frameworks/ml" name="platform/frameworks/ml" groups="pdk" remote="android-imx" revision="refs/tags/p9.0.0_2.3.5-auto" />
