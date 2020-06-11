@@ -1,3 +1,8 @@
+Date 6/11/2020
+5.4.3-1.0.1
+- Patch release for 5.4.3-1.0.0 release.
+- Add Kernel patches to correct LDO voltage for i.MX 8MM/8MN.
+
 Date 4/20/2020
 5.4.3-2.0.0
 - Beta release for i.MX 8QXP C0 SoC.
