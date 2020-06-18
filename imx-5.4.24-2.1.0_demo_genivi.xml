@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.4.24-2.1.0.xml"/>
+
+  <remote fetch="git://github.com/genivi" name="genivi"/>
+
+  <project remote="yocto" revision="0f4eecc000f66d114ad258fa31aed66afa292166" name="meta-gplv2" path="sources/meta-gplv2"/>
+  <project remote="genivi" revision="b9974852e41136a1edd366c2b93674b974adf60f" name="meta-ivi" path="sources/meta-ivi"/>
+
+</manifest>
