@@ -1,3 +1,8 @@
+Date 07/27/2020
+4.14.98-2.3.3 - manifest imx-4.14.98-2.3.3.xml
+- Support i.MX 6ULZ Lite EVK
+- Patch release for i.MX 8QXP C0 and i.MX 8MN
+
 Date 05/15/2020
 4.14.98-2.3.2 - manifest imx-4.14.98-2.3.2.xml
 - Patch release for i.MX 8QXP C0 , i.MX 8QM and  i.MX 8MN
