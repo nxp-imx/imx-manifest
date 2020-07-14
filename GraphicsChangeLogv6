@@ -4,49 +4,45 @@ Key Features of the Vivante 6.x Driver Series
       plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test. 
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product. 
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
-	
-6.4.0 P2 GA
+
+6.4.0P2 GA
 ======================
 Key Features:
 	- Vulkan 1.1
 	- OpenVX 1.2
 	- OpenCL and OpenVX bridged support.
     - GPU accelerated ML support
-	- Upgrade to weston 7.0
-	- OpenCV 4.0.1
+	- Upgrade to weston 8.0, QT5.15, QT5.15(vulkan experimentatal)
+	- OpenCV 4.1
 	- Chromium v74
-    - Support for renderdoc 1.2
+    - Support for renderdoc 1.4, apitrace 9.0
     - vProfiler/vAnalyser through new Vivante IDE
-    - Support for Android 10
-    - Support for TFlite 1.3
+    - Support for Android 10, Android NN
+    - Support for TFlite 2.1
     - NNCTS 1.2
     - Optimize command buffer size, so the memory usage per context will be lower
-    
-	
-Known Issues :
+ 
+
+Known Issues- L5.4.3_2.1.0:
     LF-308	wl_display_connect Failure reported during VPU and GPU stress power management test.
-    LF-868	[MX6SX-SDB]GPU: weston stopped abnormally during stress suspend resume test.
-    LF-459	[8QM] GPU/xwld:Vulkan sdk demo 'ObjectSelection' flicker on display. 
-    LF-178	GPU/XWLD: some tests failed in OpenCV performance test.     
-    LF-262	GPU:Some qt5 demos not work. QT5.3 have regressions. Require qt3d update in QT5.4 and later
-    LF-836	GPU/XWLD: met version mismatch when using renderdoc remote test
+    LF-868	[MX6SX-SDB]GPU: weston stopped abnormally during stress suspend resume test.    
+    LF-178	GPU/XWLD: some tests failed in OpenCV performance test.
     LF-861	some tests failed in OpenCV stress test.
-    LF-423	ML/AI:Some dnn_vxc cases showed out-of-range recognition rates.
-    LF-844	[6QP_SD] GPU/FB: Bloom_FB cannot be killed by ctrl c randomly.
+    LF-262	QT5.15 Few qt3d demos not work. Ongoing discussion with QT
+    LF-836	GPU/XWLD: met version mismatch when using renderdoc remote test        
     LF-1109	[8QM] GPU/Vivante IDE tool: vpd file of OpenVX import failed to VSI IDE
     LF-1110	[8QM] GPU/Vivante IDE tool: some binary of sample project cannot work after building successfuly in vCompiler test
-    LF-936	[MX8MQ/MM/MN]GPU:no desktop UI and weston@root.service load fail after run low bus freq test.100%
-    LF-88	[8QXP_MEK/8QM/8MM_EVK] GPU/XWLD: apitrace tool can not work properly
+    LF-936	[MX8MQ/MM/MN]GPU:no desktop UI and weston@root.service load fail after run low bus freq test.100% 
 
-    
+ 
 6.2.4 p4
 =======================
-Further enhancement 
+Further enhancement
 	- commit worker to support dual GPUs
 	- Enablement of Robust feature Android CTS
 	- Vulkan driver fixes to comply with Android CTS
 	- OpenCL general improvements
-	
+
 Improvements and Bug fixes
 MGS-4638 [#imx-1373] fix gpu kernel build error with kasan config
 MGS-4629 [#imx-1369] Fix the GPU hang issue in vxuThreshold()
@@ -91,11 +87,11 @@ Fix in driver to support Vulkan-validation-layer
 Fix for vcompiler preprocessor fails to parse function-like macros with zero parameter
 Query clock frequency dynamically.
 Fix filterblit  vertical strip issue
-i.MX8MQ Android DRM no-resolve feature for KMS 
+i.MX8MQ Android DRM no-resolve feature for KMS
 Fixed the arithmetic assign's left hand side to be memory store instead of simple MOV.
 QNX - problem rendering to KHR image on iMX8QXP B0. Flush the tile status and decompress the pixmap buffers, as pixmap buffer could be get by QNX system calls.
 Dont' enable gcdENABLE_DRM when kernel doesn't have CONFIG_DRM.
-Fix galBlit2 & galBlit & stretchBlit rotation issue. 
+Fix galBlit2 & galBlit & stretchBlit rotation issue.
 Improve to comply with eglslsanbox-player
  
 6.2.4 p3
@@ -363,7 +359,7 @@ MGS-3276	[imx8qm] x11 2D acceleration performance test met fatal IO error
 Key Features of the Vivante 6.2.2P0 Driver Series
 Full support for Khronos Vulkan 1.0 API and WSI extension APIs Vulkan is a new generation graphics 
 and compute API that provides high-efficiency, cross-platform access to modern GPUs used in a wide 
-variety of devices. Vivanteâ€™s Vulkan 1.0 implementation has passed Khronos Vulkan 1.0 Conformance Test. 
+variety of devices. VivanteÃ¢â‚¬â„¢s Vulkan 1.0 implementation has passed Khronos Vulkan 1.0 Conformance Test. 
 And Vivante GC7000XS* GPU core has been certified by Khronos as a Vulkan 1.0 compliant product. 
 
 Full support for Khronos OpenGL ES 3.2 API 
@@ -485,8 +481,9 @@ MGS-1350 [imx6qp-sd] X/FB: Some Basemark test items performance drop comparing w
     - Set HW type correctly in Wayland server side to fix a memory leak in 2D composition.
 
 
-6.2.0.p2 Known Issues    
+6.2.0.p2 Known Issues
     - MGS-2513:[imx7ulp] RTC suspend/resume stress test met resume failed. GPU driver issue.
     - MGS-2512:[imx7ulp] xwld:mm07 some items show nothing on display.
     - MGS-2511:[imx7ulp] xwld: QT5 app show wrong resolution.
     - MGS-2503:[imx7ulp] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error. 
+
