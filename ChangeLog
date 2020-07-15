@@ -1,3 +1,12 @@
+Date 7/15/2020
+4.19.35-1.1.2
+- Fixes for multilib build breaks
+
+4.19.35-1.1.1
+- Patch update for kernel to pick up 8mm dtb changes and SCFW to 1.2.10.1
+- Include fix for iso-codes fetch issue
+- Make defaul
+
 Date 10/1/2019
 4.19.35-1.1.0
 - GA release for 4.19.35-1.1.0 for i.MX 6, 7 and 8 Series.
