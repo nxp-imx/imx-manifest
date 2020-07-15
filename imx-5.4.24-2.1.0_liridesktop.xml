@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.4.24-2.1.0.xml"/>
+
+  <remote fetch="https://github.com/schnitzeltony" name="qt5"/>
+  <remote fetch="https://github.com/lirios" name="liri"/>
+
+  <project remote="qt5" revision="8b53b092e0f0425f97197a698124191b26d4f280" name="meta-qt5-extra" path="sources/meta-qt5-extra"/>
+  <project remote="liri" revision="6ea9b056af4b3a2df495e1fe576a4809a95f9d48" name="meta-liri" path="sources/meta-liri"/>
+  <project remote="qt5" revision="6f4fa506aa62f14fb0917e3d71b77aea00cee1ff" name="meta-mortsgna" path="sources/meta-mortsgna"/>
+  <project remote="CAF" revision="048969b7ec661614fe5c17d5c7492509bf29aaad" name="meta-imx-liri" path="sources/meta-imx-liri"/>
+
+</manifest>
