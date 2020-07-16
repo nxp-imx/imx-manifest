@@ -31,7 +31,7 @@
 
   <project remote="Timesys" revision="ef776166d7a4f7c8677137adbfd6adee6a0e2389" name="meta-timesys" path="sources/meta-timesys" />
 
-  <project remote="CAF" revision="63ead63f53bfd2fbe8499859c569ec5ab7cd10ce" name="meta-imx" path="sources/meta-imx" upstream="zeus-5.4.3-2.0.0" >
+  <project remote="CAF" revision="bdb1e4e9a8efc37df86f26b35e291fa826c9852f" name="meta-imx" path="sources/meta-imx" upstream="zeus-5.4.3-2.0.0" >
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
