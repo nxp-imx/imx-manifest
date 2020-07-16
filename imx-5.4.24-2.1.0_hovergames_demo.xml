@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.4.24-2.1.0.xml"/>
+
+  <remote fetch="git://github.com/NXPmicro" name = "nxp-micro"/>
+
+  <project remote="nxp-micro" name="meta-nxp-hovergames" path="sources/meta-nxp-hovergames" revision="demo" >
+     <linkfile src="README-UBUNTU.md" dest="README-HOVERGAMES.md"/>
+     <linkfile src="tools/setup-hovergames-ubuntu" dest="setup-hovergames"/>
+  </project>
+
+</manifest>
