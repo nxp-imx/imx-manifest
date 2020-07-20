@@ -6,8 +6,8 @@
   <remote fetch="git://github.com/NXPmicro" name = "nxp-micro"/>
 
   <project remote="nxp-micro" name="meta-nxp-hovergames" path="sources/meta-nxp-hovergames" revision="demo" >
-     <linkfile src="README-UBUNTU.md" dest="README-HOVERGAMES.md"/>
-     <linkfile src="tools/setup-hovergames-ubuntu" dest="setup-hovergames"/>
+     <linkfile src="README-DEMO.md" dest="README-HOVERGAMES-DEMO.md"/>
+     <linkfile src="tools/setup-hovergames-demo" dest="setup-hovergames-demo"/>
   </project>
 
 </manifest>
