@@ -1,3 +1,9 @@
+Date 9/23/2020
+5.4.47-2.2.0
+- GA release for i.MX 7ULP B1 SoC.
+- Beta 2 release for i.MX 8MPlus SoC.
+- Beta release for i.MX 8DXL SoC.
+
 Date 8/12/2020
 5.4.47-1.0.1
 - Linux Factory LTS kernel maintenance release
