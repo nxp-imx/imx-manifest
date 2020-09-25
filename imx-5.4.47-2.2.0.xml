@@ -4,15 +4,15 @@
   <default sync-j="2"/>
 
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
-  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="git://github.com/TimesysGit"  name="Timesys"/>
-  <remote fetch="git://github.com/kraj" name="clang"/>
-  <remote fetch="git://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
+  <remote fetch="https://github.com/kraj" name="clang"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
   <remote fetch="https://source.codeaurora.org/external/imxsupport" name="imx-support"/>
-  <remote fetch="git://github.com/openembedded" name="oe"/>
-  <remote fetch="git://git.openembedded.org"  name="python2"/>
-  <remote fetch="git://github.com/meta-rust"  name="rust"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://git.openembedded.org"  name="python2"/>
+  <remote fetch="https://github.com/meta-rust"  name="rust"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="01488a237cdf45b3087420e169c9f67b84fd7373">
@@ -27,7 +27,7 @@
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="ca27d12e4964d1336e662bcc60184bbff526c857"/>
 
-  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="bbdccdf3d33738805cb343a11fd5ef5f55e7f299" upstream="zeus-5.4.47-2.2.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="2c1c604ab2a819c87c838f87bd6d9d2da1a470bd" upstream="zeus-5.4.47-2.2.0">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>
