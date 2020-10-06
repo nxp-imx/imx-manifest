@@ -1,11 +1,37 @@
 Key Features of the Vivante 6.x Driver Series
 
-    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, 
-      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test. 
-      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product. 
-    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes. 
+    - Full support for Khronos OpenGL ES 3.2 API. The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP,
+      plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
+      And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
+    - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
-6.4.0P2 GA
+6.4.3P0 GA
+======================
+
+Key Improvements:
+	- GLES CTS 3.2.6.1
+    - Vulkan 1.1.6
+	- OpenVX 1.2
+	- GPU & NPU accelerated ML support
+	- OpenCV 4.2
+	- Chromium v74
+    - Support for renderdoc 1.7
+    - Support for TFlite 2.2
+    - NNCTS 1.2
+    - Vulkan backend support for Unity
+
+Known Issues- L5.4.3_2.2.0:
+    LF-308	wl_display_connect Failure reported during VPU and GPU stress power management test.
+    LF-868	[MX6SX-SDB]GPU: weston stopped abnormally during stress suspend resume test.
+    LF-178	GPU/XWLD: some tests failed in OpenCV performance test.
+    LF-861	some tests failed in OpenCV stress test.
+    LF-262	QT5.15 Few qt3d demos not work. Ongoing discussion with QT
+    LF-936	[MX8MQ/MM/MN]GPU:no desktop UI and weston@root.service load fail after run low bus freq test.100%
+    MGS-5650 UnrealEngine 4.25: Crash on GPU Drivers when starting a Vulkan Based Engine.
+
+
+
+6.4.0P2 GA 
 ======================
 Key Features:
 	- Vulkan 1.1
@@ -21,20 +47,20 @@ Key Features:
     - Support for TFlite 2.1
     - NNCTS 1.2
     - Optimize command buffer size, so the memory usage per context will be lower
- 
+
 
 Known Issues- L5.4.3_2.1.0:
     LF-308	wl_display_connect Failure reported during VPU and GPU stress power management test.
-    LF-868	[MX6SX-SDB]GPU: weston stopped abnormally during stress suspend resume test.    
+    LF-868	[MX6SX-SDB]GPU: weston stopped abnormally during stress suspend resume test.
     LF-178	GPU/XWLD: some tests failed in OpenCV performance test.
     LF-861	some tests failed in OpenCV stress test.
     LF-262	QT5.15 Few qt3d demos not work. Ongoing discussion with QT
-    LF-836	GPU/XWLD: met version mismatch when using renderdoc remote test        
+    LF-836	GPU/XWLD: met version mismatch when using renderdoc remote test
     LF-1109	[8QM] GPU/Vivante IDE tool: vpd file of OpenVX import failed to VSI IDE
     LF-1110	[8QM] GPU/Vivante IDE tool: some binary of sample project cannot work after building successfuly in vCompiler test
-    LF-936	[MX8MQ/MM/MN]GPU:no desktop UI and weston@root.service load fail after run low bus freq test.100% 
+    LF-936	[MX8MQ/MM/MN]GPU:no desktop UI and weston@root.service load fail after run low bus freq test.100%
 
- 
+
 6.2.4 p4
 =======================
 Further enhancement
@@ -93,12 +119,12 @@ QNX - problem rendering to KHR image on iMX8QXP B0. Flush the tile status and de
 Dont' enable gcdENABLE_DRM when kernel doesn't have CONFIG_DRM.
 Fix galBlit2 & galBlit & stretchBlit rotation issue.
 Improve to comply with eglslsanbox-player
- 
+
 6.2.4 p3
 =====================
 Skipped
 
-6.2.4 p2 GPU Release for i.MX6, i.MX7, i.MX8 
+6.2.4 p2 GPU Release for i.MX6, i.MX7, i.MX8
 ===========================================
 
 GA Release Updated (incremental fixes from Beta release
@@ -155,7 +181,7 @@ MGS-4134 [QNX] problem rendering to KHR image on iMX8QXP B0
 MGS-4170-1 [QNX] - update memory allocation to correctly configure cache
 MGS-3501-2 Enable asynchrounous swap in libGBM
 disable gbm import feature for EGL_IMAGE instead of WL_BUFFER
-QNX - optimization of _GetWindowSize and gckOS_WriteMemory() 
+QNX - optimization of _GetWindowSize and gckOS_WriteMemory()
 
 
 OpenVX
@@ -166,7 +192,7 @@ MGS-4151-2 merge openvx HW caps initialization
 MGS-4151-1 merge openvx cmdBuffer release
 MGS-4151-5 merge OpenVX fix for vxNonLinearFilterNode
 openvx api return failure error if VXCreateContext() is called after eglInitialize() in GLES application
-OpenVX error when release user kernel. 
+OpenVX error when release user kernel.
 
 G2D-GPU
 MGS-4135 Weston crash when run two videos with g2d compositor
@@ -233,21 +259,21 @@ screen mess in fullscreen mode with fb modifier.
 Refined gcoOS_GetTLS logic to remove recursive call
 Fixed CtsMonkeyTestCases crash issue
 Upgrade OpenGL ES CTS with opengl-es-cts-3.2.4.0 version CL151117 Fixed CTS dEQP-GLES2.functional.fbo.render.*_depth_components*_stencil* by excluding separate depth and stencil buffer config.
-test global bandwidth of clpeak, get an error, clEnqueueNDRangeKernel (-54), local work size larger than Kernel maxWorkGroupSize 
+test global bandwidth of clpeak, get an error, clEnqueueNDRangeKernel (-54), local work size larger than Kernel maxWorkGroupSize
  relax the maxworkgroupsize when threre's no barrier or private memory in the kernel.
 [imx6sl_wayland]:fail when run vgcts CL151588 fix vgcts failed on 6SL wayland. backbuffer should be re-create if config format is changed.#19212.
 ISP in imx-gpu-sdk/OpenCL met GPU hang with QM beta2 (regression introduced in 23Nov release)
-OCL1.2: test_image_streams: 2 tests failed on 8QXP FB. 
+OCL1.2: test_image_streams: 2 tests failed on 8QXP FB.
 Add VX_CONTEXT_NONLINEAR_MAX_DIMENSION support to vxQueryContext
 [NXP][MX8_MSCALE_BETA]HDMI hot plug, cause Weston crash, blank screen CL151952 Fixed IMX-844 weston crash when HDMI hotplug
 CL151953 Prepare code for GPU PM and ISR refinement
 6.2.4: fix events stuck issue when clock off CL151955 Refine GPU PM logic to be more robust.
-fix synchronization between isr and clock state,fix kernel panic issue in bug 
+fix synchronization between isr and clock state,fix kernel panic issue in bug
 Correct hw-event synchronization between pm and other threads
 Support aliased attribute in compiler. Check the aliased attribute for ES11 only.
 the high dynamic range crash on imx8qm/imx8mscale android o CL153605 fixed #20270, changed SPV_MAX_OPERAND_NUM to 30
-Fix:OpenCL precompiled kernel doesn't work 
-[8mscale_wayland[cl12_conform]:random fail when run "images/kernel_read_write/test_image_streams max_images" 
+Fix:OpenCL precompiled kernel doesn't work
+[8mscale_wayland[cl12_conform]:random fail when run "images/kernel_read_write/test_image_streams max_images"
 fixed potential mmu setup command allocate fail, since kernel might not support CONFIG_ZONE_DMA32.
 
 
@@ -357,15 +383,15 @@ MGS-3276	[imx8qm] x11 2D acceleration performance test met fatal IO error
 ==========================================================================================================
 
 Key Features of the Vivante 6.2.2P0 Driver Series
-Full support for Khronos Vulkan 1.0 API and WSI extension APIs Vulkan is a new generation graphics 
-and compute API that provides high-efficiency, cross-platform access to modern GPUs used in a wide 
-variety of devices. VivanteÃ¢â‚¬â„¢s Vulkan 1.0 implementation has passed Khronos Vulkan 1.0 Conformance Test. 
-And Vivante GC7000XS* GPU core has been certified by Khronos as a Vulkan 1.0 compliant product. 
+Full support for Khronos Vulkan 1.0 API and WSI extension APIs Vulkan is a new generation graphics
+and compute API that provides high-efficiency, cross-platform access to modern GPUs used in a wide
+variety of devices. Vivanteâ€™s Vulkan 1.0 implementation has passed Khronos Vulkan 1.0 Conformance Test.
+And Vivante GC7000XS* GPU core has been certified by Khronos as a Vulkan 1.0 compliant product.
 
-Full support for Khronos OpenGL ES 3.2 API 
-The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, plus additional 
-functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos 
-OpenGL ES 3.2 Conformance Test. And Vivante GC7000XS* GPU core has been certified by Khronos as an 
+Full support for Khronos OpenGL ES 3.2 API
+The new OpenGL ES 3.2 and OpenGL ES Shading Language 3.20 specifications bring AEP, plus additional
+functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos
+OpenGL ES 3.2 Conformance Test. And Vivante GC7000XS* GPU core has been certified by Khronos as an
 OpenGL ES 3.2 compliant product.
 
 Draw calls specifying a base vertex parameter
@@ -460,7 +486,7 @@ MGS-1350 [imx6qp-sd] X/FB: Some Basemark test items performance drop comparing w
     - 3D: MGS-2551 [#imx-406] webgl case shader-with-too-many-uniforms.html failed on 7ulp
 
 6.2.0.p3
-    - Unified driver for i.MX6X, i.MX7ULP. However current release focused in i.MX7ULP. Full integration testing not performedd so there could be some bugs. 
+    - Unified driver for i.MX6X, i.MX7ULP. However current release focused in i.MX7ULP. Full integration testing not performedd so there could be some bugs.
 
 6.2.0.p2 New features:
     - Unified driver that includes OpenGL ES, Vulkan, and OpenVX.
@@ -485,5 +511,4 @@ MGS-1350 [imx6qp-sd] X/FB: Some Basemark test items performance drop comparing w
     - MGS-2513:[imx7ulp] RTC suspend/resume stress test met resume failed. GPU driver issue.
     - MGS-2512:[imx7ulp] xwld:mm07 some items show nothing on display.
     - MGS-2511:[imx7ulp] xwld: QT5 app show wrong resolution.
-    - MGS-2503:[imx7ulp] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error. 
-
+    - MGS-2503:[imx7ulp] X11/Xwld: XWindow 2D Acceleration performance test met "X Error of failed request: BadMatch (invalid parameter attributes)" error.
