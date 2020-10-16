@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.4.3-2.0.0.xml"/>
+
+  <remote fetch="https://source.codeaurora.org/external/imxat/ecockpit" name="imxat"/>
+
+  <project remote="imxat" revision="refs/tags/ecockpit_caf_07_01" name="meta-ecockpit" path="sources/meta-ecockpit" >
+     <linkfile src="tools/nxp-setup-ecockpit.sh" dest="nxp-setup-ecockpit.sh"/>
+  </project>
+
+</manifest>
