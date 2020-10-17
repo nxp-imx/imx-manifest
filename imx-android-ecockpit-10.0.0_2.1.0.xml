@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-android-10.0.0_2.1.0.xml"/>
+
+  <remote  name="ecockpit-specific"
+           fetch="https://source.codeaurora.org/external/imxat/ecockpit"
+           review="" />
+
+  <!-- For imx public git. -->
+  <remove-project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.1.0" />
+  <remove-project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.1.0" />
+  <remove-project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.1.0" />
+  <remove-project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/android-10.0.0_2.1.0" />
+  <remove-project path="device/fsl" name="device/fsl" remote="android-imx-orig" revision="refs/tags/android-10.0.0_2.1.0" />
+
+  <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="ecockpit-specific" revision="refs/tags/ecockpit_android_07_01" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="arm-trusted-firmware" remote="ecockpit-specific" revision="refs/tags/ecockpit_07_01" />
+  <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="ecockpit-specific" revision="refs/tags/ecockpit_07_01" />
+  <project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="ecockpit-specific" revision="refs/tags/ecockpit_android_07_01" />
+
+  <project path="device/fsl" name="device-fsl" remote="ecockpit-specific" revision="refs/tags/ecockpit_android_07_01" >
+    <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+  </project>
+
+  <extend-project name="platform/libcore" revision="refs/tags/android-10.0.0_r32" />
+</manifest>
