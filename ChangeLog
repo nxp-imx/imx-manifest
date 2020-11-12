@@ -1,6 +1,7 @@
 Date 9/23/2020
 5.4.47-2.2.0
-- GA release for i.MX 7ULP B1 SoC.
+- GA for shipping i.MX 6, 7, 8 SoC.
+- GA release for i.MX 7ULP B2 SoC.
 - Beta 2 release for i.MX 8MPlus SoC.
 - Beta release for i.MX 8DXL SoC.
 
@@ -10,6 +11,7 @@ Date 8/12/2020
 
 Date 6/12/2020
 5.4.24-2.1.0
+- GA for shipping i.MX 6, 7, 8 SoC.
 - GA release for i.MX 8QXP C0 SoC.
 - Beta 1 release for i.MX 8MPlus SoC.
 - Alpha 2 release for i.MX 8DXL SoC.
