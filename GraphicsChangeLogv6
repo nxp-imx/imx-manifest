@@ -5,16 +5,16 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+
 6.4.3P0 GA
 ======================
-
-Key Improvements:
-	- GLES CTS 3.2.6.1
+Key Features:
+    - GLES CTS 3.2.6.1
     - Vulkan 1.1.6
-	- OpenVX 1.2
-	- GPU & NPU accelerated ML support
-	- OpenCV 4.2
-	- Chromium v74
+    - OpenVX 1.2
+    - GPU & NPU accelerated ML support
+    - OpenCV 4.2
+    - Chromium v74
     - Support for renderdoc 1.7
     - Support for TFlite 2.2
     - NNCTS 1.2
@@ -30,24 +30,22 @@ Known Issues- L5.4.3_2.2.0:
     MGS-5650 UnrealEngine 4.25: Crash on GPU Drivers when starting a Vulkan Based Engine.
 
 
-
 6.4.0P2 GA 
 ======================
 Key Features:
-	- Vulkan 1.1
-	- OpenVX 1.2
-	- OpenCL and OpenVX bridged support.
+    - Vulkan 1.1
+    - OpenVX 1.2
+    - OpenCL and OpenVX bridged support.
     - GPU accelerated ML support
-	- Upgrade to weston 8.0, QT5.15, QT5.15(vulkan experimentatal)
-	- OpenCV 4.1
-	- Chromium v74
+    - Upgrade to weston 8.0, QT5.15, QT5.15(vulkan experimentatal)
+    - OpenCV 4.1
+    - Chromium v74
     - Support for renderdoc 1.4, apitrace 9.0
     - vProfiler/vAnalyser through new Vivante IDE
     - Support for Android 10, Android NN
     - Support for TFlite 2.1
     - NNCTS 1.2
     - Optimize command buffer size, so the memory usage per context will be lower
-
 
 Known Issues- L5.4.3_2.1.0:
     LF-308	wl_display_connect Failure reported during VPU and GPU stress power management test.
