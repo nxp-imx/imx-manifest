@@ -27,7 +27,7 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 To download the 5.4.70-2.3.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.47-2.3.0.xml
+repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.0.xml
 
 To download the 5.4.47-2.2.0 release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.47-2.2.0.xml
