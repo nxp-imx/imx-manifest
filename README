@@ -25,6 +25,7 @@ For imx-automotive-10.0.0_2.2.0.tar.gz       - Download imx-automotive-10.0.0_2.
 For imx-android-10.0.0_2.3.0.tar.gz          - Download imx-android-10.0.0_2.3.0.tar.gz from nxp.com.
 For imx-automotive-10.0.0_2.4.0.tar.gz       - Download imx-automotive-10.0.0_2.4.0.tar.gz from nxp.com.
 For imx-android-10.0.0_2.5.0.tar.gz          - Download imx-android-10.0.0_2.5.0.tar.gz from nxp.com.
+For imx-android-10.0.0_2.6.0.tar.gz          - Download imx-android-10.0.0_2.6.0.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
