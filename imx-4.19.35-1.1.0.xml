@@ -31,7 +31,7 @@
 
   <project remote="Timesys" revision="3d53df8f8c8e9d37dfc8d4b03ab4f4bdd415d3d2" name="meta-timesys" path="sources/meta-timesys" />
 
-  <project remote="CAF" revision="bb05c60e6398b374ac49554c642a3bef36452f73" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" upstream="warrior-4.19.35-1.1.0" >
+  <project remote="CAF" revision="6b237a975521daa1687c5ac49f57da6d32c8c719" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" upstream="warrior-4.19.35-1.1.0" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
