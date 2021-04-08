@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+  <default remote="aosp"
+           sync-j="4" />
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/headers" name="trusty/external/headers" groups="trusty" revision="fe7222b7341192abe23982374f4fc11061255965"/>
+  <project path="external/trusty/bootloader" name="trusty/external/trusty" groups="trusty" revision="4ae4b5f2730760481cc6902117c6dbe452c9222f"/>
+  <project path="external/trusty/musl" name="trusty/external/musl" groups="trusty" revision="d64f459708dba5f0f176b8a2a987f8bfd6a1aa0f"/>
+
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN apps projects  -->
+  <project path="trusty/user/app/confirmationui" name="trusty/app/confirmationui" groups="trusty" revision="af75ee2838030786e9933689f4b26713b0b93123"/>
+  <project path="trusty/user/app/sample" name="trusty/app/sample" groups="trusty" revision="74f65f33021613558c7f6f104e44357c272ec4a9"/>
+  <!-- END apps projects -->
+
+  <!-- BEGIN platform projects -->
+  <project path="external/boringssl" name="platform/external/boringssl" groups="trusty" revision="d2b13ebfb4d1da9552abce1be7672981411327b4"/>
+  <project path="external/freetype" name="platform/external/freetype" groups="trusty" revision="75b4fbd0462ad4544ffc447213777d1f0d536c1a"/>
+  <project path="external/googletest" name="platform/external/googletest" groups="trusty" revision="f93adba5c98356dfee63567b65261161c219ad93"/>
+  <project path="external/libcppbor" name="platform/external/libcppbor" groups="trusty" revision="315d859ec47ec349348cc400973ab4d5f5973332"/>
+  <project path="external/libcxx" name="platform/external/libcxx" groups="trusty" revision="a23eef8375ab8e8d66833668486a50f1fe47de4a"/>
+  <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="trusty" revision="4b3634b5f8131cf59b3670148079ab1e3622b413"/>
+  <project path="external/nanopb-c" name="platform/external/nanopb-c" groups="trusty" revision="08db7e3d442bb08ecf61cfb970ea4e2744602381"/>
+  <project path="external/protobuf" name="platform/external/protobuf" groups="trusty" revision="6d5d8eaccb77e80983a34dbcd7fb31532304088a"/>
+  <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="trusty" revision="b628d2a7dc049ef3aec72d71cece53226cd04e27"/>
+  <project path="system/iot/attestation" name="platform/system/iot/attestation" groups="trusty" revision="1ce107c299a915d4e4022660ec9be65cb65a653c"/>
+  <project path="system/teeui" name="platform/system/teeui" groups="trusty" revision="d283c4e748699e289e268d549f01ef65fbe9da4b"/>
+  <project path="tools/repohooks" name="platform/tools/repohooks" groups="trusty" revision="ea6c7d7c9177be09d2386ae4adc319b62193b39c"/>
+  <!-- END platform projects -->
+
+  <!-- BEGIN trusty device projects -->
+  <project path="trusty/device/arm/generic-arm64" name="trusty/device/arm/generic-arm64" groups="trusty" revision="1de5bbef974ac13b07667f1a7bd586b5c89e3933"/>
+  <project path="trusty/device/arm/vexpress-a15" name="trusty/device/arm/vexpress-a15" groups="trusty" revision="acc5296c8a69789f57338f5b4dcbc4ff8c271c6a"/>
+  <project path="trusty/device/x86/generic-x86_64" name="trusty/device/x86/generic-x86_64" groups="trusty" revision="7f321c48df4d31bc06347707a11c21a71fd41c4c"/>
+  <!-- END trusty device projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx7d" name="trusty/device/nxp/imx7d" groups="trusty" revision="b89ff2015485562c65efe3792bc4da3c7ada15fc"/>
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN toolchains -->
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="trusty" revision="4ee596afdb296daee61f0a4a7349a051d6245954" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.8" groups="trusty" revision="14606fb850d5dd0de14dee1c42453cf8889b3204" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" groups="trusty" revision="98dce673ad97a9640c5d90bbb1c718e75c21e071" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" groups="trusty" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" groups="trusty" revision="3e1d1fd459f5bb401479602c44448764f54ffe57" clone-depth="1"/>
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" groups="trusty" revision="c422f3cf5316c1b491db8b7c7ba7a2b693a56bc8" clone-depth="1"/>
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="trusty" revision="31783ed84a9698ead8992f878fd9d82d8b1d3a85" clone-depth="1"/>
+  <project path="prebuilts/libprotobuf" name="platform/prebuilts/libprotobuf/linux" groups="trusty" revision="10812113a483a5ea697c65e1135cb543532141b5" clone-depth="1"/>
+  <project path="trusty/prebuilts/aosp" name="trusty/prebuilts/aosp" groups="trusty" revision="b2049025838a0af0bb78ac89e215e42d5a50b97f" clone-depth="1"/>
+  <!-- END toolchains -->
+
+  <!-- BEGIN aux external projects -->
+  <project path="external/linux" name="kernel/common" groups="trusty" revision="bd616a0d2b1493efa1f2cb3699686bb966a1fa69"/>
+  <project path="external/qemu" name="trusty/external/qemu" groups="trusty" revision="0bfea6599b8a3ebd2c3f98bf6e0d2705e5cb609c"/>
+  <project path="external/capstone" name="platform/external/capstone" groups="trusty" revision="f1f1cbc054db7021d4167a96b55783e087e1b7b4"/>
+  <project path="external/dtc" name="platform/external/dtc" groups="trusty" revision="9591d1638e01e892a38899970e92f4b0571a1848"/>
+  <project path="external/qemu-keycodemapdb" name="trusty/external/qemu-keycodemapdb" groups="trusty" revision="10739aa26051a5d49d88132604539d3ed085e72e"/>
+  <project path="external/arm-trusted-firmware" name="trusty/external/trusted-firmware-a" groups="trusty" revision="b89e5144aee5f2f348357d3989163dc459694fe4"/>
+  <!-- END aux external projects -->
+
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+</manifest>
