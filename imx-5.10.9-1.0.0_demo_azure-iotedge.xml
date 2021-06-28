@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <include name="imx-5.10.9-1.0.0.xml"/>
+
+  <remote fetch="git://github.com/Azure"   name="Azure"/>
+  <remote fetch="ssh://bitbucket.sw.nxp.com/imx" name="imx-release"/>
+
+  <project name="meta-iotedge" path="sources/meta-iotedge" remote="Azure" revision="ffd829d144eef4e255af9f8b4bd814567114a700" upstream="thud"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="gatesgarth"/>
+
+  <project name="meta-imx-iotedge" path="sources/meta-imx-iotedge" remote="CAF" revision="gatesgarth">
+      <linkfile src="tools/imx-azure-setup.sh" dest="imx-azure-setup.sh"/>
+  </project>
+
+</manifest>
