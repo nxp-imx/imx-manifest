@@ -5,6 +5,34 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+6.4.3P2 GA for L5.10.52-2.1.0
+======================
+Key Features:
+8ULP GPU alpha
+    - ESCTS 3.2.7.0
+    - Vulkan 1.2.6.1
+    - libdrm 2.4.107
+    - OpenCL 3.0
+    - Chromium v91
+    - OpenCV 4.5.2
+
+6.4.3P2 GA for L5.10.35-2.0.0
+======================
+Key Features:
+    - Vulkan optimization
+    - OpenCL 3.0 beta
+    - Chromium v89
+    - NNCTS 1.3
+
+6.4.3P1 GA for L5.10.9-1.0.0
+======================
+Key Features:
+    - Weston 9.0
+    - Vulkan 1.2.1
+    - OpenVX 1.3
+    - OpenCV 4.4
+    - Chromium v83
+    - Support for TFlite 2.3
 
 6.4.3P0 GA
 ======================
