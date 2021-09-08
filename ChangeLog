@@ -1,3 +1,8 @@
+Date 9/8/2021
+5.4.70-2.3.4
+- Patch release for i.MX 8DXL SoC for Seco and V2X
+- Patch fixes for System Controller Firmware for i.MX 8QuadMax and i.MX 8QuadXPlus
+
 Date 5/28/2021
 5.4.70-2.3.3
 - GA release for i.MX 8DXL SoC.
