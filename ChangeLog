@@ -1,5 +1,12 @@
+Date 10/1/2021
+5.10.52-2.1.0
+- GA release for Kernel 5.10 i.MX 6, 7 and 8 Series.
+- Kernel upgrade to 5.10.52
+
+
 Date 6/25/2021
 5.10.35-2.0.0
 - GA release for Kernel 5.10 i.MX 6, 7 and 8 Series.
 - Kernel upgrade to 5.10.35
+- Uboot upgrade to 2021.04
 - Yocto Project upgrade to HardKnott release.

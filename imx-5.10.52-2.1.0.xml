@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="CAF" fetch="https://source.codeaurora.org/external/imx"/>
+  <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
+  <remote name="QT5" fetch="https://github.com/meta-qt5"/>
+  <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
+  <remote name="clang" fetch="https://github.com/kraj"/>
+  <remote name="community" fetch="https://github.com/Freescale"/>
+  <remote name="imx-support" fetch="https://source.codeaurora.org/external/imxsupport"/>
+  <remote name="oe" fetch="https://github.com/openembedded"/>
+  <remote name="python2" fetch="https://git.openembedded.org"/>
+  <remote name="rust" fetch="https://github.com/meta-rust"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
+  
+  <default sync-j="2"/>
+  
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="5a551f453260bd19895e4d847877874eaa51fde3">
+    <linkfile src="README" dest="README"/>
+    <linkfile src="setup-environment" dest="setup-environment"/>
+  </project>
+  <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="8be1d3a0ba0cf32e61144900597207af5698c10d"/>
+  <project name="meta-clang" path="sources/meta-clang" remote="clang" revision="7ef47d048267cf755c496a3962b34314f6f1f1e1"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="2027a8045384463b7c793381dd887b0591037e2f"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="060967a7df43e8505568aa3d54fd8addcecab98d"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="916df6d24c0a33a3b1533bde70b6a2724ec77af4"/>
+  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="refs/tags/rel_imx_5.10.52_2.1.0" upstream="hardknott-5.10.52-2.1.0">
+    <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+    <linkfile src="README" dest="README-IMXBSP"/>
+  </project>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="71d85758f4189a065e69b10527e4014e998d0a80" upstream="imx_5.10.y" dest-branch="imx_5.10.y"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="5a4b2ab29d38c02535f24d5308cc40615739f557"/>
+  <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="8db9e4f6ceae33d7a4f55453d31e69f9858af4eb"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="a00af3eae082b772469d9dd21b2371dd4d237684"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="00f81fbdf7fba2a09ff83d14fc3b040e9ae63b42"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="14c5392fded42f17962e1cc07fcc0446881b4fa0"/>
+</manifest>
