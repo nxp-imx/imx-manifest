@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.10.52-2.1.0.xml"/>
+
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="c19c9927855abb63e89f9d853ba0cb258a2de415"/>
+
+</manifest>

@@ -6,6 +6,8 @@ $: mkdir <release>
 $: cd <release>
 To download the 5.10.35-2.0.0 release with docker
 $: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-hardknott -m imx-5.10.35-2.0.0_docker.xml
+To download the 5.10.52-2.1.0 release with docker
+$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-hardknott -m imx-5.10.52-2.1.0_docker.xml
 $: repo sync
 
 Setup the build folder:
@@ -45,4 +47,3 @@ $ docker pull ubuntu:18.04
 Launch basic Docker image:
 
 $ docker run -it --net=host ubuntu:18.04
-
