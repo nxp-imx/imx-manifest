@@ -14,7 +14,7 @@ Setup the build folder:
 -----------------------------------------
 Note: Docker is supported only on mx8 machines.
 
-$ EULA=1 MACHINE=imx8qmmek DISTRO=fsl-imx-xwayland source ./fsl-setup-release.sh -b bld-dir
+$ EULA=1 MACHINE=imx8qmmek DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-dir
 
 Add meta-virtualization layer in bblayers.conf:
 
