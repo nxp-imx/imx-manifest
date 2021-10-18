@@ -25,6 +25,7 @@ For imx-android-11.0.0_1.2.1.tar.gz          - Download imx-android-11.0.0_1.2.1
 For imx-android-11.0.0_2.2.0-imx8ulp-er.tar.gz          - Download imx-android-11.0.0_2.2.0-imx8ulp-er.tar.gz from nxp.com.
 For imx-android-11.0.0_2.2.0.tar.gz          - Download imx-android-11.0.0_2.2.0.tar.gz from nxp.com.
 For imx-android-11.0.0_2.4.0.tar.gz          - Download imx-android-11.0.0_2.4.0.tar.gz from nxp.com.
+For imx-automotive-11.0.0_2.1.0.tar.gz       - Download imx-automotive-11.0.0_2.1.0.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
