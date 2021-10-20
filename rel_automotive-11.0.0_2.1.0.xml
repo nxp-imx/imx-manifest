@@ -53,7 +53,7 @@
 
   <!-- For imx changed aosp git. -->
   <project path="system/bt" name="platform/system/bt" groups="pdk" remote="android-imx" revision="refs/tags/automotive-11.0.0_2.1.0" />
-  <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" remote="android-imx" revision="refs/tags/automotive-11.0.0_2.1.0" />
+  <project path="system/tools/bpt" name="platform/system/tools/bpt" groups="pdk" remote="android-imx" revision="e2c77aebf72d56beb50329e9ce873ea834e02164" />
   <project path="device/generic/car" name="device/generic/car" groups="pdk" remote="android-imx" revision="refs/tags/automotive-11.0.0_2.1.0" />
   <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/automotive-11.0.0_2.1.0"/>
   <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/automotive-11.0.0_2.1.0"/>
