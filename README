@@ -9,7 +9,7 @@ The branch will be based on the release type Linux or Android with release manif
 For example for i.MX Linux Yocto Project releases the branches will be imx_linux_<Yocto Project release> so imx_linux_hardknott with
 all manifests tied to releases on gatesgarth in this branch.
 
-To use this manifest repo, the 'repo' tool must be isntalled first.
+To use this manifest repo, the 'repo' tool must be installed first.
 --------------------------------------------------------
 $: mkdir ~/bin
 $: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
