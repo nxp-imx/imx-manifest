@@ -1,3 +1,10 @@
+Date 12/25/2021
+5.10.72-2.2.0
+- GA release for Kernel 5.10 i.MX 6, 7 and 8 Series.
+- Beta1 release for i.MX 8ULP.
+- Kernel upgrade to 5.10.72.
+- i.MX8MP ISP upgrade to P16.
+
 Date 10/1/2021
 5.10.52-2.1.0
 - GA release for Kernel 5.10 i.MX 6, 7 and 8 Series.
