@@ -5,7 +5,7 @@
 
   <project remote="yocto" name="meta-security" path="sources/meta-security" revision="c40e1e84da9624b9096a463dbed3b301c01c268e"/>
 
-  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="85f2cc183a5a0473fd09ee0a42d2b4ba71e2b612">
+  <project remote="CAF" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="85f2cc183a5a0473fd09ee0a42d2b4ba71e2b612"/>
     <linkfile src="README" dest="README-iot-gateway"/>
     <linkfile src="meta-iot-gateway/setup" dest="setup-iot-gateway"/>
   </project>
