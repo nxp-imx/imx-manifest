@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.10.72-2.2.0.xml"/>
+
+  <remote name="meta-aws-nxp" fetch="https://github.com/NXPmicro"/>
+
+  <project remote="meta-aws-nxp" revision="e16d4f17696472a1e564dcdd4e9fcf82f1e53d74" name="meta-aws" path="sources/meta-aws" >
+    <linkfile src="tools/imx-aws-setup-release.sh" dest="imx-aws-setup-release.sh"/>
+  </project>
+
+</manifest>
