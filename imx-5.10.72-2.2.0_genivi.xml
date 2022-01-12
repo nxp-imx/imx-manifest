@@ -3,9 +3,9 @@
 
   <include name="imx-5.10.72-2.2.0.xml"/>
 
-  <remote fetch="https://github.com/genivi" name="genivi"/>
+  <remote fetch="git://github.com/genivi" name="genivi"/>
 
-  <project remote="yocto" revision="hardknott" name="meta-gplv2" path="sources/meta-gplv2"/>
-  <project remote="genivi" revision="master" name="meta-ivi" path="sources/meta-ivi"/>
+  <project remote="yocto" revision="9e119f333cc8f53bd3cf64326f826dbc6ce3db0f" name="meta-gplv2" path="sources/meta-gplv2"/>
+  <project remote="genivi" revision="b9974852e41136a1edd366c2b93674b974adf60f" name="meta-ivi" path="sources/meta-ivi"/>
 
 </manifest>
