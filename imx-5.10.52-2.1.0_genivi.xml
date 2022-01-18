@@ -5,7 +5,7 @@
 
   <remote fetch="git://github.com/genivi" name="genivi"/>
 
-  <project remote="yocto" revision="6e8e969590a22a729db1ff342de57f2fd5d02d43" name="meta-gplv2" path="sources/meta-gplv2"/>
+  <project remote="yocto" revision="9e119f333cc8f53bd3cf64326f826dbc6ce3db0f" name="meta-gplv2" path="sources/meta-gplv2"/>
   <project remote="genivi" revision="b9974852e41136a1edd366c2b93674b974adf60f" name="meta-ivi" path="sources/meta-ivi"/>
 
 </manifest>
