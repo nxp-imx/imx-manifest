@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://code.qt.io/yocto"  name="QT6"/>
+  <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
+  <remote fetch="https://github.com/kraj" name="clang"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://git.openembedded.org"  name="python2"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://source.codeaurora.org/external/imxsupport" name="imx-support"/>
+
+  <project remote="yocto" name="poky" path="sources/poky" revision="4d7162798ec19c726877e85509e4c7a99eb6576d" upstream="honister"/>
+
+  <project remote="oe" name="meta-openembedded" path="sources/meta-openembedded" revision="4647e3ea3708d30eeb0149f6d5626c9576bff520" upstream="honister"/>
+
+  <project remote="community" name="fsl-community-bsp-base" path="sources/base" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="honister">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project remote="community" name="meta-freescale" path="sources/meta-freescale" revision="ed3435620a2404c241fef3c4ef90d1f31d3b7a8a" upstream="honister"/>
+  <project remote="community" name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" revision="155ffd6d7b694d8de76919c25681ecb98882646e" upstream="honister"/>
+  <project remote="community" name="meta-freescale-distro" path="sources/meta-freescale-distro" revision="d2e27cc4778663450495a67bfb036cba600cb27a" upstream="honister"/>
+
+  <project remote="OSSystems" name="meta-browser" path="sources/meta-browser" revision="e22bac72bc1f1bb5d2f44e64a53128b8be644272"/>
+  <project remote="clang" name="meta-clang" path="sources/meta-clang" revision="fc5389393adb005b519e488e9e6be4fc5791239c" upstream="honister"/>
+  <project remote="QT6" name="meta-qt6" path="sources/meta-qt6" revision="1b9f4646dd69c5567d19ed77b8347506fe7faf2b" upstream="6.2.2"/>
+  <project remote="python2" name="meta-python2" path="sources/meta-python2" revision="5243d509aebff378c1ae9d3dff6a29cfdc0dee1f" upstream="honister"/>
+  <project remote="Timesys" name="meta-timesys" path="sources/meta-timesys" revision="93bf122d77e77aac1a917865538df84f148a8fcc" upstream="gatesgarth"/>
+  <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="ed52ba982179087ecc84f7dc3b0a16cfe25f2f8e" upstream="honister"/>
+
+  <project remote="imx-release" name="meta-imx" path="sources/meta-imx" revision="honister-5.15.5-1.0.0">
+     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
+     <linkfile dest="README-IMXBSP" src="README"/>
+  </project>
+
+  <project remote="imx-support" revision="22582a9dc5d389c3f0f2ce869256e83b678950bf" name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" />
+
+</manifest>
