@@ -2,7 +2,7 @@ i.MX Android BSP Repo Manifest README
 
 This repo is used to download manifests for i.MX Android BSP releases.
 
-The imx-android-11 branch will include all release manifests for Android 11 i.MX releases.
+The imx-android-12 branch will include all release manifests for Android 12 i.MX releases.
 The code is not distributed as patches as previous i.MX Android releases.
 Instead the i.MX Android open source is distributed on the https://source.codeaurora.org/external/imx
 and the proprietary is distributed on nxp.com.   Please download from nxp.com first the proprietary
@@ -17,15 +17,15 @@ $: PATH=${PATH}:~/bin
 
 Get the proprietary tarball from nxp.com and setup build:
 -----------------------------------------
-For imx-android-11.0.0_1.0.0.tar.gz          - Download imx-android-11.0.0_1.0.0.tar.gz from nxp.com.
+For imx-android-12.0.0_1.0.0.tar.gz          - Download imx-android-12.0.0_1.0.0.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
 - This donwloads the public Android open source and copies the proprietary to the appropriate locations
 
 Example below
-$: tar xvf imx-android-11.0.0_1.0.0.tar.gz
-$: source ./imx-android-11.0.0_1.0.0/imx_android_setup.sh
+$: tar xvf imx-android-12.0.0_1.0.0.tar.gz
+$: source ./imx-android-12.0.0_1.0.0/imx_android_setup.sh
 
 Setup build environment:
 -------------------------
