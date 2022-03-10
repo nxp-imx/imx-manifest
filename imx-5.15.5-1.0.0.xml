@@ -39,6 +39,6 @@
      <linkfile dest="README-IMXBSP" src="README"/>
   </project>
 
-  <project remote="imx-support" revision="22582a9dc5d389c3f0f2ce869256e83b678950bf" name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" />
+  <project remote="imx-support" revision="4bbe714267b730df020438fe83ae2c7c91708045" name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" />
 
 </manifest>
