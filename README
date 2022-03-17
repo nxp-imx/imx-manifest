@@ -26,7 +26,7 @@ Each branch will have detailed READMEs describing exact syntax.
 
 Examples
 --------
-To download the 5.10.15-1.0.0 release
+To download the 5.15.5-1.0.0 release
 repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-honister -m imx-5.15.5-1.0.0.xml
 
 Setup the build folder for a BSP release:

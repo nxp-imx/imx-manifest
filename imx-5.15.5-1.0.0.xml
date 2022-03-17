@@ -34,7 +34,7 @@
   <project remote="Timesys" name="meta-timesys" path="sources/meta-timesys" revision="93bf122d77e77aac1a917865538df84f148a8fcc" upstream="gatesgarth"/>
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="ed52ba982179087ecc84f7dc3b0a16cfe25f2f8e" upstream="honister"/>
 
-  <project remote="imx-release" name="meta-imx" path="sources/meta-imx" revision="honister-5.15.5-1.0.0">
+  <project remote="CAF" name="meta-imx" path="sources/meta-imx" revision="refs/tags/rel_imx_5.15.5_1.0.0" upstream="honister-5.15.5-1.0.0">
      <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
      <linkfile dest="README-IMXBSP" src="README"/>
   </project>
