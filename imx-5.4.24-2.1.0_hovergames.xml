@@ -3,8 +3,8 @@
 
   <include name="imx-5.4.24-2.1.0.xml"/>
 
-  <remote fetch="git://github.com/ros" name="ros"/>
-  <remote fetch="git://github.com/NXPmicro" name = "nxp-micro"/>
+  <remote fetch="https://github.com/ros" name="ros"/>
+  <remote fetch="https://github.com/NXPmicro" name = "nxp-micro"/>
 
   <project remote="ros" name="meta-ros" path="sources/meta-ros" revision="zeus"/>
 

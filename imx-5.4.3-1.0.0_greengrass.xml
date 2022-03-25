@@ -2,7 +2,7 @@
 <manifest>
   <include name="imx-5.4.3-1.0.0.xml"/>
 
-  <remote fetch="git://github.com/digi-embedded" name="digi"/>
+  <remote fetch="https://github.com/digi-embedded" name="digi"/>
 
   <project remote="yocto" name="meta-security" path="sources/meta-security" revision="ecd8c30af6b1b957b4fa814d3f25c40f060b3ac1"/>
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="69f08a9f5672468fc41081e2dbb0dcc666684b64"/>

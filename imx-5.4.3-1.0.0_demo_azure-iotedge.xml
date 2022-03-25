@@ -2,7 +2,7 @@
 <manifest>
   <include name="imx-5.4.3-1.0.0.xml"/>
 
-  <remote fetch="git://github.com/Azure"   name="Azure"/>
+  <remote fetch="https://github.com/Azure"   name="Azure"/>
 
   <project name="meta-iotedge" path="sources/meta-iotedge" remote="Azure" revision="ffd829d144eef4e255af9f8b4bd814567114a700" upstream="thud"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="7685c7d415e0002c448007960837ae8898cd57a5" upstream="thud"/>

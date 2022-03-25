@@ -3,7 +3,7 @@
 
   <include name="imx-5.4.24-2.1.0.xml"/>
 
-  <remote fetch="git://github.com/NXPmicro" name = "nxp-micro"/>
+  <remote fetch="https://github.com/NXPmicro" name = "nxp-micro"/>
 
   <project remote="nxp-micro" name="meta-nxp-hovergames" path="sources/meta-nxp-hovergames" revision="demo" >
      <linkfile src="README-DEMO.md" dest="README-HOVERGAMES-DEMO.md"/>
