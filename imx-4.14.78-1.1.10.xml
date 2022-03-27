@@ -4,10 +4,10 @@
   <default sync-j="2"/>
 
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  <remote fetch="git://github.com/Freescale" name="community"/>
-  <remote fetch="git://github.com/openembedded" name="oe"/>
-  <remote fetch="git://github.com/OSSystems" name="OSSystems"/>
-  <remote fetch="git://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
 
   <project remote="yocto" revision="64a257fa22126c4a40ff7e03424a404e360ebe1e" name="poky" path="sources/poky"/>

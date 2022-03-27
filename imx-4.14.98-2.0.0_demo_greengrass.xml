@@ -2,7 +2,7 @@
 <manifest>
   <include name="int-4.14.98-2.0.0_ga.xml"/>
 
-  <remote fetch="git://github.com/digi-embedded" name="digi"/>
+  <remote fetch="https://github.com/digi-embedded" name="digi"/>
 
   <project remote="yocto" name="meta-security" path="sources/meta-security" revision="2160c5de874234045ba4e201a0703185b65dbae4"/>
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="ed2038c935777d1336c17989d454f4e9c95fea7f"/>
