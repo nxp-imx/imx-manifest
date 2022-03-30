@@ -83,6 +83,13 @@ Examples:
 - Setup for XWayland.
 $: MACHINE=imx8mnevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 
+Note: Use HTTPS protocol to clone github repositories instead of SSH in your recipes.
+To change that, please append those lines to your `~/.gitconfig` file:
+```shell
+[url "https://github.com/"]
+        insteadOf = git@github.com:
+```
+
 Build an image:
 ---------------
 bitbake <image recipe>
