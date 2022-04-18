@@ -1,3 +1,8 @@
+Date 4/1/2022
+5.10.72-2.2.1
+- Updates for i.MX 8QuadMax, i.MX 8QuadXPlus, i.MX 8DXL A1 (tested on these boards only)
+- Fixes for Arm Trusted Firmware, seco and System controller firmware.
+
 Date 12/25/2021
 5.10.72-2.2.0
 - GA release for Kernel 5.10 i.MX 6, 7 and 8 Series.
