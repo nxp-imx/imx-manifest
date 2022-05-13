@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-automotive-12.0.0_1.1.0.xml"/>
+
+  <remote  name="android-imx"
+           fetch="https://source.codeaurora.org/external/imx/aosp/"
+           review="" />
+
+  <remote  name="android-imx-orig"
+           fetch="https://source.codeaurora.org/external/imx/android-imx"
+           review="" />
+
+  <remote  name="imx-linux-sdk"
+           fetch="https://source.codeaurora.org/external/imx/"
+           review="" />
+
+  <remote  name="imx-proprietary"
+           fetch="https://github.com/nxp/"
+           review="" />
+
+  <remote  name="wireless-regdb"
+           fetch="https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/"
+           review="" />
+
+  <remote  name="github"
+           fetch="https://github.com/"
+           review="" />
+
+  <project path="external/wireless-regdb" name="wireless-regdb" remote="wireless-regdb" revision="2ce78ed90f71955f7b223c17b5cda6c8a7708efe" />
+
+  <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="refs/tags/automotive-12.0.0_1.1.0" />
+
+  <!-- For imx public git. -->
+  <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/nxp-mwifiex" name="mwifiex" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/automotive-12.0.0_1.1.0" />
+
+  <project path="device/nxp" name="device/fsl" remote="android-imx-orig" revision="refs/tags/automotive-12.0.0_1.1.0" >
+    <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+  </project>
+  <project path="vendor/nxp-opensource/imx" name="platform/hardware/imx" remote="android-imx-orig" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="vendor/nxp-opensource/fsl_imx_demo" name="platform/packages/apps/fsl_imx_demo" remote="android-imx-orig" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="hardware/nxp/libbt" name="platform/hardware/nxp/libbt" remote="android-imx-orig" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="hardware/nxp/wlan" name="platform/hardware/nxp/wlan" remote="android-imx-orig" revision="refs/tags/automotive-12.0.0_1.1.0" />
+
+
+  <!-- For imx changed aosp git. -->
+  <project path="bootable/recovery" name="platform/bootable/recovery" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="development" name="platform/development" groups="developers,pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="packages/apps/Camera2" name="platform/packages/apps/Camera2" groups="pdk-fs" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="hardware/google/camera" name="platform/hardware/google/camera" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="external/tinyalsa" name="platform/external/tinyalsa" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="frameworks/av" name="platform/frameworks/av" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="frameworks/base" name="platform/frameworks/base" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="frameworks/native" name="platform/frameworks/native" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0"/>
+  <project path="frameworks/opt/net/wifi" name="platform/frameworks/opt/net/wifi" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/bt" name="platform/system/bt" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/core" name="platform/system/core" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/keymaster" name="platform/system/keymaster" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/memory/libion" name="platform/system/memory/libion" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/vold" name="platform/system/vold" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/hardware/interfaces" name="platform/system/hardware/interfaces" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" groups="pdk-fs" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="packages/services/Car" name="platform/packages/services/Car" groups="pdk-cw-fs,pdk-fs" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="system/sepolicy" name="platform/system/sepolicy" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="packages/modules/adb" name="platform/packages/modules/adb" groups="pdk" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+  <project path="packages/apps/Car/SystemUI" name="platform/packages/apps/Car/SystemUI" groups="pdk-fs" remote="android-imx" revision="refs/tags/automotive-12.0.0_1.1.0" />
+
+  <!-- For 3rd party public git. -->
+  <project path="external/glm" name="g-truc/glm" remote="github" revision="bf71a834948186f4097caa076cd2663c69a10e1e" />
+</manifest>
