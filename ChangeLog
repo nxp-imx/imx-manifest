@@ -1,0 +1,15 @@
+Date 6/30/2022
+5.15.32-2.0.0
+- GA release for Kernel 5.15 i.MX 6, 7 and 8 Series.
+- Kernel upgrade to 5.15.32
+- Yocto Project upgrade to Kirkstone (4.0) release.
+- U-boot upgrade to v2022.04
+- TF-A upgrade to v2.6
+
+Date 4/1/2022
+5.15.5-1.0.0
+- GA release for Kernel 5.15 i.MX 6, 7 and 8 Series.
+- Kernel upgrade to 5.15.5
+- Yocto Project upgrade to Honister release.
+- Qt upgrade to Qt6
+- Openssl upgrade to 3.0.1
