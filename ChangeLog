@@ -1,3 +1,11 @@
+Date 7/12/2022
+5.10.72-2.2.2
+- GA maintenance release for Kernel 5.10 i.MX 6, 7 and 8 Series.
+- Upgrade Graphics to 6.4.3.p2.6
+- Upgrade SCFW to 1.11.2
+- Upgrade SECO to 3.8.5
+- Bug Fixes in Kernel/u-boot/Optee-os
+
 Date 4/1/2022
 5.10.72-2.2.1
 - Updates for i.MX 8QuadMax, i.MX 8QuadXPlus, i.MX 8DXL A1 (tested on these boards only)
@@ -14,7 +22,6 @@ Date 10/1/2021
 5.10.52-2.1.0
 - GA release for Kernel 5.10 i.MX 6, 7 and 8 Series.
 - Kernel upgrade to 5.10.52
-
 
 Date 6/25/2021
 5.10.35-2.0.0
