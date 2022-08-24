@@ -20,10 +20,11 @@ Get the proprietary tarball from nxp.com and setup build:
 For imx-android-12.0.0_1.0.0.tar.gz          - Download imx-android-12.0.0_1.0.0.tar.gz from nxp.com.
 For imx-automotive-12.0.0_1.1.0.tar.gz       - Download imx-automotive-12.0.0_1.1.0.tar.gz from nxp.com.
 For imx-android-12.0.0_2.0.0.tar.gz          - Download imx-android-12.0.0_2.0.0.tar.gz from nxp.com.
+For imx-automotive-12.0.0_2.1.0.tar.gz       - Download imx-automotive-12.0.0_2.1.0.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below
-- This donwloads the public Android open source and copies the proprietary to the appropriate locations
+- This downloads the public Android open source and copies the proprietary to the appropriate locations
 
 Example below
 $: tar xvf imx-android-12.0.0_1.0.0.tar.gz
