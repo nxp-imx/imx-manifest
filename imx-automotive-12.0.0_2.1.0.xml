@@ -23,7 +23,7 @@
   <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_2.1.0" />
   <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_2.1.0" />
   <project path="vendor/nxp-opensource/nxp-mwifiex" name="mwifiex" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_2.1.0" />
-  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp_vvcam" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_2.1.0" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/automotive-12.0.0_2.1.0" />
   <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/automotive-12.0.0_2.1.0" />
 
   <project path="device/nxp" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/automotive-12.0.0_2.1.0" >
