@@ -1,3 +1,7 @@
+Date 9/10/2022
+5.4.70-2.3.10
+- Patch release for i.MX 8QuadMax, i.MX 8QuadXPlus and i.MX 8DXL
+
 Date 8/30/2022
 Update all source.codeaurora.org referneces to github.nxp/nxp-imx*
 
