@@ -11,7 +11,7 @@
   <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
   <remote fetch="https://github.com/meta-rust"  name="rust"/>
   <remote fetch="git://git.openembedded.org"  name="python2"/>
-  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="01488a237cdf45b3087420e169c9f67b84fd7373">
     <linkfile dest="README" src="README"/>
@@ -24,7 +24,7 @@
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="ca27d12e4964d1336e662bcc60184bbff526c857"/>
 
-  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="c4fe39a37226029044c4a0c2d01b1cb77a9b8d8e" upstream="zeus-5.4.24-2.1.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="c4fe39a37226029044c4a0c2d01b1cb77a9b8d8e" upstream="zeus-5.4.24-2.1.0">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>

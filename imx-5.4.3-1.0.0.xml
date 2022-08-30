@@ -10,7 +10,7 @@
   <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
   <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
   <remote fetch="https://github.com/meta-rust"  name="rust"/>
-  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
 
   <project remote="yocto" revision="0275e68b0576cdefc19718e4b1977044f9f43f48" name="poky" path="sources/poky"/>
   <project remote="yocto" revision="0be39721cea6e04c589a419f4bb07fabd0da6704" name="meta-freescale" path="sources/meta-freescale"/>
@@ -31,7 +31,7 @@
 
   <project remote="Timesys" revision="ef776166d7a4f7c8677137adbfd6adee6a0e2389" name="meta-timesys" path="sources/meta-timesys" />
 
-  <project remote="CAF" revision="f227d2449291456e947786cb935276cd7ce72ca0" name="meta-imx" path="sources/meta-imx" >
+  <project remote="nxp-imx" revision="f227d2449291456e947786cb935276cd7ce72ca0" name="meta-imx" path="sources/meta-imx" >
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>

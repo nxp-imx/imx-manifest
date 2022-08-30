@@ -3,9 +3,9 @@
 
   <include name="imx-5.4.3-2.0.0.xml"/>
 
-  <remote fetch="https://source.codeaurora.org/external/imxat/ecockpit" name="imxat"/>
+  <remote fetch="https://github.com/nxp-archive/imxat_ecockpit" name="imxat"/>
 
-  <project remote="imxat" revision="refs/tags/ecockpit_caf_07_00" name="meta-ecockpit" path="sources/meta-ecockpit" >
+  <project remote="imxat" revision="refs/tags/ecockpit_caf_07_00" name="ecockpit_meta-ecockpit" path="sources/meta-ecockpit" >
      <linkfile src="tools/nxp-setup-ecockpit.sh" dest="nxp-setup-ecockpit.sh"/>
   </project>
 

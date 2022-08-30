@@ -19,7 +19,7 @@ $: PATH=${PATH}:~/bin
 To execute 
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
 $: repo sync
 
 Each branch will have detailed READMEs describing exact syntax.
@@ -27,49 +27,49 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 To download the 5.4.70-2.3.9 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.9.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.9.xml
 
 To download the 5.4.70-2.3.8 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.8.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.8.xml
 
 To download the 5.4.70-2.3.7 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.7.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.7.xml
 
 To download the 5.4.70-2.3.6 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.6.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.6.xml
 
 To download the 5.4.70-2.3.5 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.5.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.5.xml
 
 To download the 5.4.70-2.3.4 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.4.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.4.xml
 
 To download the 5.4.70-2.3.3 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.3.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.3.xml
 
 To download the 5.4.70-2.3.2 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.2.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.2.xml
 
 To download the 5.4.70-2.3.1 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.1.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.1.xml
 
 To download the 5.4.70-2.3.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.70-2.3.0.xml
 
 To download the 5.4.47-2.2.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.47-2.2.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.47-2.2.0.xml
 
 To download the 5.4.24-2.1.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.24-2.1.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.24-2.1.0.xml
 
 To download the 5.4.3-2.0.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-2.0.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-2.0.0.xml
 
 To download the 5.4.3-1.0.1 patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-1.0.1.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-1.0.1.xml
 
 To download the 5.4.3-1.0.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-1.0.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-1.0.0.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
