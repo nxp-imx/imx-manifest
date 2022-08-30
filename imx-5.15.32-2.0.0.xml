@@ -3,7 +3,7 @@
 
   <default sync-j="2"/>
 
-  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
   <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="https://code.qt.io/yocto"  name="QT6"/>
   <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
@@ -11,7 +11,7 @@
   <remote fetch="https://github.com/Freescale" name="community"/>
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
-  <remote fetch="https://source.codeaurora.org/external/imxsupport" name="imx-support"/>
+  <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
 
   <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
     <linkfile dest="README" src="README"/>
@@ -23,7 +23,7 @@
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="de0eb1408150d77f9cce97c559f9a5a3c71e5d6c" upstream="kirkstone"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="fc15f5003043da23212596be7366ae2547c308ad" upstream="kirkstone"/>
 
-  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="refs/tags/rel_imx_5.15.32_2.0.0" upstream="kirkstone-5.15.32-2.0.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.32_2.0.0" upstream="kirkstone-5.15.32-2.0.0">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>

@@ -28,7 +28,7 @@ Download the Yocto Project BSP
 ```
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
 $: repo sync
 ```
 
@@ -39,7 +39,7 @@ Examples
 
 To download the 5.15.32-2.0.0 release
 ```
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-kirkstone -m imx-5.15.32-2.0.0.xml
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-kirkstone -m imx-5.15.32-2.0.0.xml
 ```
 
 Setup the build folder for a BSP release:
