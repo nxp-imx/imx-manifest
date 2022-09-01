@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<include name="aosp-android-12.0.0_1.0.0.xml"/>
+
+<remote name="imx-android" fetch="https://github.com/nxp-imx-android" review="" />
+<remote name="imx-linux-sdk" fetch="https://github.com/nxp-imx" review="" />
+<remote name="imx-proprietary" fetch="https://github.com/nxp/" review="" />
+<remote name="wireless-regdb" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/" review="" />
+<remote name="github" fetch="https://github.com/" review="" />
+
+<project path="external/wireless-regdb" name="wireless-regdb" remote="wireless-regdb" revision="2ce78ed90f71955f7b223c17b5cda6c8a7708efe" />
+
+<project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="refs/tags/android-12.0.0_1.0.0" />
+
+<!-- For imx public git. -->
+<project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/nxp-mwifiex" name="mwifiex" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/android-12.0.0_1.0.0" />
+
+<project path="device/nxp" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" >
+<linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+</project>
+<project path="vendor/nxp-opensource/imx" name="android-imx_platform_hardware_imx" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx_platform_packages_apps_fsl_imx_demo" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="hardware/nxp/libbt" name="android-imx_platform_hardware_nxp_libbt" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="hardware/nxp/wlan" name="android-imx_platform_hardware_nxp_wlan" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+
+
+<!-- For imx changed aosp git. -->
+<project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="development" name="aosp_platform_development" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="hardware/google/camera" name="aosp_platform_hardware_google_camera" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="frameworks/base" name="aosp_platform_frameworks_base" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0"/>
+<project path="frameworks/opt/net/wifi" name="aosp_platform_frameworks_opt_net_wifi" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="packages/providers/MediaProvider" name="aosp_platform_packages_providers_MediaProvider" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="system/bt" name="aosp_platform_system_bt" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="system/core" name="aosp_platform_system_core" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="system/keymaster" name="aosp_platform_system_keymaster" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="system/vold" name="aosp_platform_system_vold" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="system/hardware/interfaces" name="aosp_platform_system_hardware_interfaces" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+<project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" remote="imx-android" revision="refs/tags/android-12.0.0_1.0.0" />
+
+<!-- For 3rd party public git. -->
+<project path="external/glm" name="g-truc/glm" remote="github" revision="bf71a834948186f4097caa076cd2663c69a10e1e" />
+</manifest>
