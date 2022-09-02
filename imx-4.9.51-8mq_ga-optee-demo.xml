@@ -3,7 +3,7 @@
 
   <include name="imx-4.9.51-8mq_ga.xml"/>
 
-  <project remote="CAF" name="meta-imx-optee" path="sources/meta-imx-optee" revision="morty-4.9.51-8mq_ga">
+  <project remote="nxp-imx" name="meta-imx-optee" path="sources/meta-imx-optee" revision="morty-4.9.51-8mq_ga">
     <linkfile src="tools/nxp-setup-optee.sh" dest="nxp-setup-optee.sh"/>
   </project>
 
