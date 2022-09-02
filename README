@@ -20,23 +20,23 @@ $: PATH=${PATH}:~/bin
 To excute 
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
 
 Each branch will have detailed READMEs describing exact syntax.
 
 Examples
 --------
 To download the 4.9.123-2.3.0 i.MX 8MM GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.123-2.3.0-8mm_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.123-2.3.0-8mm_ga.xml
 
 To download the 4.9.88-2.2.0 i.MX 8QXP Beta2 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.2.0-8qxp_beta2.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.2.0-8qxp_beta2.xml
 
 To download the 4.9.88-2.1.0 i.MX 8MM Alpha release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.1.0-8mm_alpha.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.1.0-8mm_alpha.xml
 
 To download the 4.9.88-2.0.0 GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.0.0_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-rocko -m imx-4.9.88-2.0.0_ga.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
