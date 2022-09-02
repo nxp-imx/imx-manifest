@@ -15,7 +15,7 @@ Download the Yocto Project Environment into your directory:
 -----------------------------------------------------------
 $: mkdir imx-yocto-bsp
 $: cd imx-yocto-bsp
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-morty -m <manifest>
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-morty -m <manifest>
 $: repo sync
 
 <manifest>                      Description
@@ -35,25 +35,25 @@ See ChangeLog for description of patch releases and tags for each update.
 Examples
 --------
 To download the 4.9.51-8mq_ga release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8mq_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8mq_ga.xml
 
 To download the 4.9.51-8qm_beta2 and 4.9.51-8qxp_beta release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta2.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta2.xml
 
 To download the 4.9.51-8qm_beta2 Machine Learning release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta2_ml.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta2_ml.xml
 
 To download the 4.9.51-8mq_beta release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8mq_beta.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8mq_beta.xml
 
 To download the 4.9.51-8qm_beta1 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta1.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qm_beta1.xml
 
 To download the 4.9.51-8qxp_alpha release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qxp_alpha.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.51-8qxp_alpha.xml
 
 To download the 4.9.11-1.0.0_ga release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-morty -m imx-4.9.11-1.0.0_ga.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
