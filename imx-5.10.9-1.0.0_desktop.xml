@@ -3,7 +3,7 @@
 
   <include name="imx-5.10.9-1.0.0.xml"/>
 
-  <project name="meta-nxp-desktop" path="sources/meta-nxp-desktop" remote="CAF" revision="refs/tags/rel_imx_5.10.9_1.0.0_desktop" upstream="imx-5.10-gatesgarth" >
+  <project name="meta-nxp-desktop" path="sources/meta-nxp-desktop" remote="nxp-imx" revision="refs/tags/rel_imx_5.10.9_1.0.0_desktop" upstream="imx-5.10-gatesgarth" >
     <linkfile src="tools/imx-setup-desktop.sh" dest="imx-setup-desktop.sh"/>
     <linkfile src="README.md" dest="README-DESKTOP"/>
   </project>

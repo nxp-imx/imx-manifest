@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="CAF" fetch="https://source.codeaurora.org/external/imx"/>
+  <remote name="nxp-imx" fetch="https://github.com/nxp-imx"/>
   <remote name="OSSystems" fetch="https://github.com/OSSystems"/>
   <remote name="QT5" fetch="https://github.com/meta-qt5"/>
   <remote name="Timesys" fetch="https://github.com/TimesysGit"/>
   <remote name="clang" fetch="https://github.com/kraj"/>
   <remote name="community" fetch="https://github.com/Freescale"/>
-  <remote name="imx-support" fetch="https://source.codeaurora.org/external/imxsupport"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
   <remote name="oe" fetch="https://github.com/openembedded"/>
   <remote name="python2" fetch="https://git.openembedded.org"/>
   <remote name="rust" fetch="https://github.com/meta-rust"/>
@@ -23,7 +23,7 @@
   <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="41d4f625c6db7a778f0f9a735c2cb48e023bc49b"/>
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="b85d08a55cb833bfc4e8b5034ff804286c67620e"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="11be3f01962df8436c5c7b0d61cd3dbd1b872905"/>
-  <project name="meta-imx" path="sources/meta-imx" remote="CAF" revision="refs/tags/rel_imx_5.10.9_1.0.0" upstream="gatesgarth-5.10.9-1.0.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.10.9_1.0.0" upstream="gatesgarth-5.10.9-1.0.0">
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>

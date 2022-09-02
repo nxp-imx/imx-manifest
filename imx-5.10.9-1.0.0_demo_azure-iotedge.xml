@@ -8,7 +8,7 @@
   <project name="meta-iotedge" path="sources/meta-iotedge" remote="Azure" revision="ffd829d144eef4e255af9f8b4bd814567114a700" upstream="thud"/>
   <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="0c9fec907e2e70de9a0ca0244ed362ed853c9f8f" upstream="gatesgarth"/>
 
-  <project name="meta-imx-iotedge" path="sources/meta-imx-iotedge" remote="CAF" revision="77562f48a07ba3b627ede68d800585d2efd655e3" upstream="gatesgarth">
+  <project name="meta-imx-iotedge" path="sources/meta-imx-iotedge" remote="nxp-imx" revision="77562f48a07ba3b627ede68d800585d2efd655e3" upstream="gatesgarth">
       <linkfile src="tools/imx-azure-setup.sh" dest="imx-azure-setup.sh"/>
   </project>
 
