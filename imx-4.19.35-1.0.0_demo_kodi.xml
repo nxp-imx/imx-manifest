@@ -3,7 +3,7 @@
 
   <include name="imx-4.19.35-1.0.0.xml"/>
 
-  <project remote="CAF" name="meta-nxp-xbmc" path="sources/meta-nxp-xbmc" revision="ded3759d70e16b12894b6a89b39096e4f5b21109">
+  <project remote="nxp-imx" name="meta-nxp-xbmc" path="sources/meta-nxp-xbmc" revision="ded3759d70e16b12894b6a89b39096e4f5b21109">
       <linkfile src="README" dest="README-kodi"/>
       <linkfile src="tools/nxp-setup-kodi.sh" dest="nxp-setup-kodi.sh"/>
   </project>

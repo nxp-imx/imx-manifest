@@ -11,7 +11,7 @@
 
   <project remote="yocto" revision="31dc4e7532fa7a82060e0b50e5eb8d0414aa7e93" upstream="thud" name="meta-security" path="sources/meta-security"/>
 
-  <project remote="CAF" revision="bf53053595665536504812bcee3061f8d52c4596" upstream="thud" name="meta-nxp-agl" path="sources/meta-nxp-agl">
+  <project remote="nxp-imx" revision="bf53053595665536504812bcee3061f8d52c4596" upstream="thud" name="meta-nxp-agl" path="sources/meta-nxp-agl">
     <linkfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
     <linkfile src="README" dest="README-IMX-AGL"/>
   </project>
