@@ -8,7 +8,7 @@
   <project remote="yocto" name="meta-virtualization" path="sources/meta-virtualization" revision="bda5b6ab326a4926aedd32f137de5f3837c8cdb8"/>
   <project remote="digi" name="meta-digi" path="sources/meta-digi" revision="a332ff445f46cf116e330cb1e059d9e59c2fca42"/>
 
-  <project remote="CAF" name="meta-imx-greengrass" path="sources/meta-imx-greengrass" revision="master">
+  <project remote="nxp-imx" name="meta-imx-greengrass" path="sources/meta-imx-greengrass" revision="master">
       <linkfile src="tools/setup-greengrass" dest="setup-greengrass"/>
   </project>
 
