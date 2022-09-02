@@ -19,7 +19,7 @@ $: PATH=${PATH}:~/bin
 To execute 
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
 $: repo sync
 
 Each branch will have detailed READMEs describing exact syntax.
@@ -27,7 +27,7 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 To download the 4.19.35-1.0.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-warrior -m imx-4.19.35-1.1.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-warrior -m imx-4.19.35-1.1.0.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------

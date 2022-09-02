@@ -24,7 +24,7 @@ Download the demo source:
 ```
 mkdir imx-greengrass
 cd imx-greengrass
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-warrior -m imx-VERSION_demo_greengrass.xml
+repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-warrior -m imx-VERSION_demo_greengrass.xml
 repo sync
 ```
 
