@@ -2,7 +2,7 @@
 <manifest>
 
    <include name="imx-4.14.98-2.3.3.xml"/>
-   <remote fetch="https://source.codeaurora.org/external/imxat/ecockpit" name="imxat"/>
+   <remote fetch="https://github.com/nxp-archive/imxat_ecockpit" name="imxat"/>
 
    <project remote="imxat" revision="refs/tags/ecockpit_caf_06_02" name="meta-ecockpit" path="sources/meta-ecockpit">
      <linkfile src="tools/nxp-setup-ecockpit.sh" dest="nxp-setup-ecockpit.sh"/>

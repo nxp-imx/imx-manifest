@@ -8,7 +8,7 @@
   <remote fetch="https://github.com/openembedded" name="oe"/>
   <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
   <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
-  <remote fetch="https://source.codeaurora.org/external/imx" name="CAF"/>
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
 
 
   <project remote="yocto" revision="cbb677e9a09d5dad34404a851f7c23aeb5122465" name="poky" path="sources/poky"/>
@@ -27,7 +27,7 @@
   <project remote="OSSystems" revision="75640e14e325479c076b6272b646be7a239c18aa" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="d4e7f73d04e8448d326b6f89908701e304e37d65" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="CAF" revision="refs/tags/rel_imx_4.14.98_2.3.1" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
+  <project remote="nxp-imx" revision="refs/tags/rel_imx_4.14.98_2.3.1" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
