@@ -19,7 +19,7 @@ $: PATH=${PATH}:~/bin
 To execute 
 $: mkdir <release>
 $: cd <release>
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b <branch name> [ -m <release manifest>]
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
 $: repo sync
 
 Each branch will have detailed READMEs describing exact syntax.
@@ -27,52 +27,52 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 To download the 4.14.98-2.3.3 Patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.3.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.3.xml
 
 To download the 4.14.98-2.3.2 Patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.2.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.2.xml
 
 To download the 4.14.98-2.3.1 Patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.1.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.1.xml
 
 To download the 4.14.98-2.3.0 i.MX 8QXP C0 GA && i.MX 8MN Post GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.3.0.xml
 
 To download the 4.14.98-2.2.0 i.MX 8MN GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.2.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.2.0.xml
 
 To download the 4.14.98-2.1.0 i.MX 8MN alpha release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.1.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.1.0.xml
 
 To download the 4.14.98-2.0.1 Patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.1_patch.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.1_patch.xml
 
 To download the Virtualization 4.14.98-4.11-0.10 GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-virt-4.14.98-4.11-0.10_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-virt-4.14.98-4.11-0.10_ga.xml
 
 To download the 4.14.98-2.0.0 GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.0_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.0_ga.xml
 
 To download the 4.14.98-2.0.0 GA release with meta-timesys layer(Vigiles)
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.0_ga-vigiles.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.0_ga-vigiles.xml
 
 To download the Machine Learning 4.14.78-1.0.0 release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.0_machinelearning.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.0_machinelearning.xml
 
 To download the Virtualization 4.14.78-4.11-0.9.1 Beta release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-virt-4.14.78-4.11-0.9.1_beta.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-virt-4.14.78-4.11-0.9.1_beta.xml
 
 To download the 4.14.78-1.1.0 Patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.1.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.1.0.xml
 
 To download the 4.14.78-1.0.4 Patch release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.4_patch.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.4_patch.xml
 
 To download the 4.14.78-1.0.0 GA release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.0_ga.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.78-1.0.0_ga.xml
 
 To download the 4.14.62-1.0.0 Beta release
-repo init -u https://source.codeaurora.org/external/imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.62-1.0.0_beta.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.62-1.0.0_beta.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------

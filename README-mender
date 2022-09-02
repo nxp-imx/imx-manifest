@@ -39,7 +39,7 @@ $: PATH=${PATH}:~/bin
 
 With the 'repo' tool installed you can proceed with the following,
 
-$: repo init -u https://source.codeaurora.org/external/imx/imx-manifest -b imx-linux-sumo -m imx-4.14.98-2.0.0_demo_mender.xml
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-sumo -m imx-4.14.98-2.0.0_demo_mender.xml
 $: repo sync
 $: DISTRO=fsl-imx-xwayland MACHINE=imx8mqevk . fsl-setup-mender.sh -b build
 $: bitbake core-image-base
