@@ -1,3 +1,10 @@
+Date 9/23/2022
+5.15.52-2.1.0
+- GA release for Kernel 5.15 i.MX 6, 7 and 8 Series.
+- Beta release for Kernel 5.15 i.MX 8ULP.
+- Alpha release for Kernel 5.15 i.MX 93.
+- Kernel upgrade to 5.15.52
+
 Date 6/30/2022
 5.15.32-2.0.0
 - GA release for Kernel 5.15 i.MX 6, 7 and 8 Series.
