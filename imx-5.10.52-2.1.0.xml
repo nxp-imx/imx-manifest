@@ -23,7 +23,7 @@
   <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="2027a8045384463b7c793381dd887b0591037e2f"/>
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="060967a7df43e8505568aa3d54fd8addcecab98d"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="916df6d24c0a33a3b1533bde70b6a2724ec77af4"/>
-  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.10.52_2.1.0" upstream="hardknott-5.10.52-2.1.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.10.52_2.1.0_gh" upstream="hardknott-5.10.52-2.1.0">
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
