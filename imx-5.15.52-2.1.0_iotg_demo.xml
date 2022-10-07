@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-5.15.52-2.1.0.xml"/>
+
+  <project remote="yocto" name="meta-security" path="sources/meta-security" revision="c79262a30bd385f5dbb009ef8704a1a01644528e"/>
+
+  <project remote="nxp-imx" name="meta-imx-iot-gateway" path="sources/meta-imx-iot-gateway" revision="refs/tags/L5.15.32_2.0.0-kirkstone">
+    <linkfile src="README" dest="README-iot-gateway"/>
+    <linkfile src="meta-iot-gateway/setup" dest="setup-iot-gateway"/>
+  </project>
+</manifest>
