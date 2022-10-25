@@ -84,12 +84,12 @@
   <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="7eb9a421f547e347c9da23463734758568e13f95" upstream="kirkstone"/>
   <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="98b2b2c34f186050e6092bc4f17ecb69aef6148a" upstream="master"/>
 
-  <project remote="nxp-imx" name="meta-imx" revision="588de72b567bc51cb36a98414627e6e8b4388328" upstream="kirkstone-5.15.32-2.0.0" path="external/meta-imx">
+  <project remote="nxp-imx" name="meta-imx" revision="refs/tags/rel_imx_5.15.52_2.1.0" path="external/meta-imx">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>
 
-  <project remote="nxp-imx" name="meta-nxp-agl" revision="refs/tags/kirkstone-5.15.32-2.0.0" path="external/meta-nxp-agl">
+  <project remote="nxp-imx" name="meta-nxp-agl" revision="refs/tags/kirkstone-5.15.52-2.1.0" path="external/meta-nxp-agl">
     <linkfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
     <linkfile src="README" dest="README-IMX-AGL"/>
   </project>
