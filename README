@@ -4,7 +4,7 @@ This repo is used to download manifests for i.MX Android BSP releases.
 
 The imx-android-oreo branch will include all release manifests for Android i.MX Oreo releases.
 The code is not distributed as patches as previous i.MX Android releases.
-Instead the i.MX Android open source is distributed on the https://source.codeaurora.org/external/imx
+Instead the i.MX Android open source is distributed on the https://github.com
 and the proprietary is distributed on nxp.com.   Please download from nxp.com first the proprietary
 release and follow the README directions for configuring.  Below are directions for preparation.
 
