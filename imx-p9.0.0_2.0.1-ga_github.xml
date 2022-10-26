@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<include name="aosp-p9.0.0_2.0.0-ga.xml"/>
+
+<remote name="imx-android" fetch="https://github.com/nxp-imx-android" review="" />
+<remote name="imx-linux-sdk" fetch="https://github.com/nxp-imx" review="" />
+<remote name="imx-proprietary" fetch="https://github.com/nxp/" review="" />
+
+<remote name="kernel"
+fetch="https://git.kernel.org/pub/scm/linux/kernel/git/firmware/"
+review="" />
+
+<project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="6a99c832e2222eff652d58f95faf2ea1aed54ce0" />
+<project path="external/linux-firmware" name="linux-firmware" remote="kernel" revision="bf04291309d3169c0ad3b8db52564235bbd08e30" />
+
+<!-- For imx public git. -->
+<project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/p9.0.0_2.0.1-ga" />
+
+<project path="device/fsl" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/imx" name="android-imx_platform_hardware_imx" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx_platform_packages_apps_fsl_imx_demo" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+
+
+<!-- For imx changed aosp git. -->
+<project path="art" name="aosp_platform_art" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga"/>
+<project path="build/make" name="aosp_platform_build" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" >
+<copyfile src="core/root.mk" dest="Makefile" />
+<linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+<linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+<linkfile src="core" dest="build/core" />
+<linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+<linkfile src="target" dest="build/target" />
+<linkfile src="tools" dest="build/tools" />
+</project>
+<project path="build/soong" name="aosp_platform_build_soong" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" >
+<linkfile src="root.bp" dest="Android.bp" />
+<linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+</project>
+<project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="development" name="aosp_platform_development" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="external/avb" name="aosp_platform_external_avb" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="external/nanopb-c" name="aosp_platform_external_nanopb-c" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="external/wpa_supplicant_8" name="aosp_platform_external_wpa_supplicant_8" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="frameworks/base" name="aosp_platform_frameworks_base" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="frameworks/opt/net/ethernet" name="aosp_platform_frameworks_opt_net_ethernet" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="frameworks/opt/net/wifi" name="aosp_platform_frameworks_opt_net_wifi" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="hardware/broadcom/libbt" name="aosp_platform_hardware_broadcom_libbt" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="hardware/qcom/bt" name="aosp_platform_hardware_qcom_bt" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="hardware/qcom/wlan" name="aosp_platform_hardware_qcom_wlan" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga"  />
+<project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/Car/Hvac" name="aosp_platform_packages_apps_Car_Hvac" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/Gallery2" name="aosp_platform_packages_apps_Gallery2" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/Launcher3" name="aosp_platform_packages_apps_Launcher3" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/LegacyCamera" name="aosp_platform_packages_apps_LegacyCamera" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/Settings" name="aosp_platform_packages_apps_Settings" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/apps/UnifiedEmail" name="aosp_platform_packages_apps_UnifiedEmail" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="packages/services/Car" name="aosp_platform_packages_services_Car" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="system/core" name="aosp_platform_system_core" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="system/extras" name="aosp_platform_system_extras" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="system/media" name="aosp_platform_system_media" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="system/sepolicy" name="aosp_platform_system_sepolicy" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+<project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" remote="imx-android" revision="refs/tags/p9.0.0_2.0.1-ga" />
+</manifest>
