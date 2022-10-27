@@ -10,7 +10,8 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
-  <remote name="nxp-imx" fetch="ssh://bitbucket.sw.nxp.com/imx"/>
+  <remote name="nxp-imx" fetch="https://github.com/nxp-imx" />
+
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="needlefish"/>
 
@@ -84,13 +85,9 @@
   <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="7eb9a421f547e347c9da23463734758568e13f95" upstream="kirkstone"/>
   <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="98b2b2c34f186050e6092bc4f17ecb69aef6148a" upstream="master"/>
 
-  <project remote="nxp-imx" name="meta-imx" revision="588de72b567bc51cb36a98414627e6e8b4388328" upstream="kirkstone-5.15.32-2.0.0" path="external/meta-imx">
-    <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
-    <linkfile dest="README-IMXBSP" src="README"/>
-  </project>
-
-  <project remote="nxp-imx" name="meta-nxp-agl" revision="refs/tags/kirkstone-5.15.32-2.0.0" path="external/meta-nxp-agl">
-    <linkfile src="tools/nxp-setup-agl.sh" dest="nxp-setup-agl.sh"/>
+  <!-- NXP layers -->
+  <project name="meta-imx" path="external/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.32_2.0.0_agl" upstream="kirkstone-5.15.32-2.0.0"/>
+  <project name="meta-nxp-agl" path="meta-nxp-agl" remote="nxp-imx" revision="refs/tags/kirkstone-5.15.32-2.0.0" upstream="master">
     <linkfile src="README" dest="README-IMX-AGL"/>
   </project>
 
