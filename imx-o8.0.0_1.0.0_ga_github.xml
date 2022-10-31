@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-O8.0.0-1.0.0.xml"/>
+
+<remote name="imx-android" fetch="https://github.com/nxp-imx-android" review="" />
+<remote name="imx-linux-sdk" fetch="https://github.com/nxp-imx" review="" />
+<remote name="imx-proprietary" fetch="https://github.com/nxp/" review="" />
+
+  <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="87ba304b9efbb2e8dbdd54af4c087584fb259535" />
+
+  <!-- For imx public git. -->
+  <project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/o8.0.0_1.0.0-ga" />
+
+<project path="device/fsl" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+<project path="vendor/nxp-opensource/imx" name="android-imx_platform_hardware_imx" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+<project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx_platform_packages_apps_fsl_imx_demo" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+
+  <!-- For imx changed aosp git. -->
+  <project path="build/make" name="aosp_platform_build" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="aosp_platform_build_soong" groups="pdk,tradefed" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="bootable/recovery" name="aosp_platform_bootable_recovery" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+  <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+  <project path="external/f2fs-tools" name="aosp_platform_external_f2fs-tools" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+  <project path="frameworks/av" name="aosp_platform_frameworks_av" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="frameworks/base" name="aosp_platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="frameworks/layoutlib" name="aosp_platform_frameworks_layoutlib" groups="pdk-cw-fs,pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="frameworks/native" name="aosp_platform_frameworks_native" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="hardware/broadcom/libbt" name="aosp_platform_hardware_broadcom_libbt" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="packages/apps/Bluetooth" name="aosp_platform_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="packages/apps/DeskClock" name="aosp_platform_packages_apps_DeskClock" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+  <project path="packages/apps/Gallery2" name="aosp_platform_packages_apps_Gallery2" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+  <project path="packages/apps/LegacyCamera" name="aosp_platform_packages_apps_LegacyCamera" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="packages/apps/Music" name="aosp_platform_packages_apps_Music" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="packages/inputmethods/LatinIME" name="aosp_platform_packages_inputmethods_LatinIME" groups="pdk-fs" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+  <project path="system/core" name="aosp_platform_system_core" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="system/extras" name="aosp_platform_system_extras" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga" />
+  <project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" groups="pdk" remote="imx-android" revision="refs/tags/o8.0.0_1.0.0-ga"/>
+
+</manifest>
