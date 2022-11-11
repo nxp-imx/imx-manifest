@@ -1,3 +1,8 @@
+Date 11/11/2022
+5.4.70-2.3.11
+- Patch release for i.MX 8QuadMax, i.MX 8QuadXPlus and i.MX 8DXL
+- FIPS support for i.MX 8DXL B0 DL2 (full FIPS both SECO and V2X) nad 8DXL B0 DL3 (SECO only FIPS) boards with SECO updated to 5.9.0
+
 Date 9/10/2022
 5.4.70-2.3.10
 - Patch release for i.MX 8QuadMax, i.MX 8QuadXPlus and i.MX 8DXL
