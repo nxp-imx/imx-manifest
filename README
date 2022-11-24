@@ -26,17 +26,20 @@ Each branch will have detailed READMEs describing exact syntax.
 
 Examples
 --------
+To download the 5.10.72-2.2.3 release
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.72-2.2.3.xml
+
 To download the 5.10.72-2.2.2 release
-repo init -u https://github.com/nxp-imx/external/imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.72-2.2.2.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.72-2.2.2.xml
 
 To download the 5.10.72-2.2.0 release
-repo init -u https://github.com/nxp-imx/external/imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.72-2.2.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.72-2.2.0.xml
 
 To download the 5.10.52-2.1.0 release
-repo init -u https://github.com/nxp-imx/external/imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.52-2.1.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.52-2.1.0.xml
 
 To download the 5.10.35-2.0.0 release
-repo init -u https://github.com/nxp-imx/external/imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.35-2.0.0.xml
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-hardknott -m imx-5.10.35-2.0.0.xml
 
 Setup the build folder for a BSP release:
 -----------------------------------------
