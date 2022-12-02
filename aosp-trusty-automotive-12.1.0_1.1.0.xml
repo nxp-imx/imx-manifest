@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+  <default remote="aosp"
+           sync-j="4" />
+
+  <!-- superproject name="trusty/superproject" remote="aosp" / -->
+  <!-- contactinfo bugurl="go/repo-bug" / -->
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/headers" name="trusty/external/headers" groups="trusty" revision="fe7222b7341192abe23982374f4fc11061255965"/>
+  <project path="external/trusty/bootloader" name="trusty/external/trusty" groups="trusty" revision="a4d2e0908814b9c1d98541ebafb8795498101dcf"/>
+  <project path="external/trusty/musl" name="trusty/external/musl" groups="trusty" revision="60773c9268e9694f6e278103cc3d8ba607a4863d"/>
+
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN apps projects  -->
+  <project path="trusty/user/app/sample" name="trusty/app/sample" groups="trusty" revision="3ebd2634275502136f9c0a2d2cdf3d260aee939a"/>
+  <project path="trusty/user/app/cast-auth" name="trusty/app/cast-auth" groups="trusty" revision="89ca25e8814f5fbc8a7c755f7dd6bc98fcf37ff4"/>
+  <project path="trusty/user/app/keymint" name="trusty/app/keymint" groups="trusty" revision="8945301d70c0f61d7670e9e8138f289ee82786f8"/>
+  <!-- END apps projects -->
+
+  <!-- BEGIN platform projects -->
+  <!-- Android/Trusty shared repo will pin to android-12.1.0_r11 tag -->
+  <project path="external/boringssl" name="platform/external/boringssl" groups="trusty" revision="debcae10a0f90dfc83a118fc3e33faaba092c90c"/>
+  <project path="external/fmtlib" name="platform/external/fmtlib" groups="trusty" revision="df5816f7433b6cf56a80af57fe24471fb6399341"/>
+  <project path="external/freetype" name="platform/external/freetype" groups="trusty" revision="bcfcd92aa3f257bbff5fe25bcd2965004e8563a8"/>
+  <project path="external/googletest" name="platform/external/googletest" groups="trusty" revision="5979ba80cc9137d44409c889ca74eadd9da010a7"/>
+  <project path="external/libcppbor" name="platform/external/libcppbor" groups="trusty" revision="61d9bff9605ad2ffd877bd99a3bde414e21f01a2"/>
+  <project path="external/libcxx" name="platform/external/libcxx" groups="trusty" revision="bf9a0bcb47de1ddadca272a7227071a46d4d5fac"/>
+  <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="trusty" revision="4b96903904aa97dad7f89f97ee22920cf5a3e112"/>
+  <project path="external/nanopb-c" name="platform/external/nanopb-c" groups="trusty" revision="d2d08a45ace70bf4e57da6b9542a7540abaf20ae"/>
+  <project path="external/open-dice" name="platform/external/open-dice" groups="trusty" revision="845f174dec78eececae089287b31daa7eea23eee"/>
+  <project path="external/protobuf" name="platform/external/protobuf" groups="trusty" revision="64930e52bfab382bf12e0a1f9ee60a0036b7847d"/>
+  <project path="external/scudo" name="platform/external/scudo" groups="trusty" revision="fbcbf9fe520ea02aac2f3ec7e5c470561e835a43"/>
+  <project path="frameworks/native" name="platform/frameworks/native" groups="trusty" revision="5361fff6a8904b09d619f4b929c40cb10167125f"/>
+  <project path="system/core" name="platform/system/core" groups="trusty" revision="cae6aec3881db4ef5925bcd14d8d4c26912377af"/>
+  <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="trusty" revision="764d6b35d038b8077b2185c77d84fbdca8fe2927"/>
+  <project path="system/iot/attestation" name="platform/system/iot/attestation" groups="trusty" revision="1ce107c299a915d4e4022660ec9be65cb65a653c"/>
+  <project path="system/keymint" name="platform/system/keymint" groups="trusty" revision="2f9e6795d71b01fdcd8d8aae3a8e03c766e32dab"/>
+  <project path="system/libbase" name="platform/system/libbase" groups="trusty" revision="d78d20d2d1afb349f17feec1e7ea7be623c46dfd"/>
+  <project path="tools/repohooks" name="platform/tools/repohooks" groups="trusty" revision="e0447aa1766a3e1cb73c82c41ff9d411d45b57fb"/>
+  <!-- END platform projects -->
+
+  <!-- BEGIN trusty device projects -->
+  <project path="trusty/device/arm/generic-arm64" name="trusty/device/arm/generic-arm64" groups="trusty" revision="3554964f284db5524100f394378085fcdd31bacd"/>
+  <project path="trusty/device/arm/vexpress-a15" name="trusty/device/arm/vexpress-a15" groups="trusty" revision="acc5296c8a69789f57338f5b4dcbc4ff8c271c6a"/>
+  <project path="trusty/device/x86/generic-x86_64" name="trusty/device/x86/generic-x86_64" groups="trusty" revision="7f321c48df4d31bc06347707a11c21a71fd41c4c"/>
+  <!-- END trusty device projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx7d" name="trusty/device/nxp/imx7d" groups="trusty" revision="b89ff2015485562c65efe3792bc4da3c7ada15fc"/>
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN toolchains -->
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="trusty" revision="93641b23bad98066ccd99ddf78b6d76d06b5c954" clone-depth="1"/>
+  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="trusty" revision="a7e96bd5fb4ac4d76040b952713795cc9caf523a" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="trusty" clone-depth="1" revision="914f9e5ae603f1a290c92160e3958c251184d3f0" />
+  <project path="prebuilts/libprotobuf" name="platform/prebuilts/libprotobuf/linux" groups="trusty" revision="10812113a483a5ea697c65e1135cb543532141b5" clone-depth="1"/>
+  <project path="trusty/prebuilts/aosp" name="trusty/prebuilts/aosp" groups="trusty" revision="cad7aa95873842177a8078ae3246b87c192c71c8" clone-depth="1"/>
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="trusty" revision="c35e352c55871e741de10bb3bb902ee4d613bc08" clone-depth="1" />
+  <!-- END toolchains -->
+
+  <!-- BEGIN external rust crates -->
+   <!-- These crates are pinned because their trusty build files live in the trusty tree and need to be manually updated -->
+   <project path="external/rust/crates/bitflags" name="platform/external/rust/crates/bitflags" groups="trusty" revision="603997526e625fcde6764452bb866662435ca1e1" />
+   <project path="external/rust/crates/cfg-if" name="platform/external/rust/crates/cfg-if" groups="trusty" revision="3a0379aa3da7a72be33132486b87df59254d6354" />
+   <project path="external/rust/crates/ciborium" name="platform/external/rust/crates/ciborium" groups="trusty" revision="98df581ed41275602fdb43ba68e73a3754fc290c" />
+   <project path="external/rust/crates/ciborium-io" name="platform/external/rust/crates/ciborium-io" groups="trusty" revision="eaeefa649040f31d5be71b1928a6bd8c1e84fdda" />
+   <project path="external/rust/crates/ciborium-ll" name="platform/external/rust/crates/ciborium-ll" groups="trusty" revision="c1c6232a79f0111d8f82909a4b493279db8562af" />
+   <project path="external/rust/crates/coset" name="platform/external/rust/crates/coset" groups="trusty" revision="d1d62f5d6e2c494aa2d503ea68f772141d07a50e" />
+   <project path="external/rust/crates/enumn" name="platform/external/rust/crates/enumn" groups="trusty" revision="2f975df577f1413d869988c92ec5461c21479dff" />
+    <project path="external/rust/crates/foreign-types" name="platform/external/rust/crates/foreign-types" groups="trusty" revision="a063310d99662e54ee2c5338b0f1a63aebd929b5" />
+    <project path="external/rust/crates/foreign-types-shared" name="platform/external/rust/crates/foreign-types-shared" groups="trusty" revision="5233dd5f46488af99d0c3de1b13822e2771a2e24" />
+   <project path="external/rust/crates/half" name="platform/external/rust/crates/half" groups="trusty" revision="17251f84ffd605638f1e53d686324b8b768e05d4" />
+   <project path="external/rust/crates/libc" name="platform/external/rust/crates/libc" groups="trusty" revision="122e586e93a534160230dc10ae3474cf31dd8f7f" />
+   <project path="external/rust/crates/log" name="platform/external/rust/crates/log" groups="trusty" revision="d3a6baa591a726f3216df9e0cf4a8f3bb1a2f5f7" />
+    <project path="external/rust/crates/once_cell" name="platform/external/rust/crates/once_cell" groups="trusty" revision="9bb9cf9fd83b61101f25cabc6e5f5bd16515b7f5" />
+   <project path="external/rust/crates/proc-macro2" name="platform/external/rust/crates/proc-macro2" groups="trusty" revision="0dbe64a68761c53ad18a6fa505e64baf629373db" />
+   <project path="external/rust/crates/quote" name="platform/external/rust/crates/quote" groups="trusty" revision="a17b36b511c23ec39fdc5b6c6feb71e6f89dd3d2" />
+    <project path="external/rust/crates/rust-openssl" name="platform/external/rust/crates/openssl" groups="trusty" revision="6719c3a0c9e7fd29c28ed02fc05d347feb536b68" />
+   <project path="external/rust/crates/serde" name="platform/external/rust/crates/serde" groups="trusty" revision="2fd73219ce5f3464ae74ed046ba27499cd3f3c28" />
+   <project path="external/rust/crates/serde_derive" name="platform/external/rust/crates/serde_derive" groups="trusty" revision="5bd7a1932475cf8fbdfbd8003fb82e407ee7d8ac" />
+   <project path="external/rust/crates/syn" name="platform/external/rust/crates/syn" groups="trusty" revision="0f7d984f79a1ff8f5ba53dcf2acf8719ca7b7028" />
+   <project path="external/rust/crates/unicode-xid" name="platform/external/rust/crates/unicode-xid" groups="trusty" revision="b8d1a747d48fa8e08eaf73c735377081ac3f7c0b" />
+   <!-- END external rust crates -->
+
+  <!-- BEGIN aux external projects -->
+  <project path="external/linux" name="kernel/common" groups="trusty" revision="cba24f622ec5df300adc9a990ca2d427df1435c2"/>
+  <project path="external/qemu" name="trusty/external/qemu" groups="trusty" revision="44a0c36c76aa8ddc01f5c874f80c11c82eb74cf2"/>
+  <project path="external/capstone" name="platform/external/capstone" groups="trusty" revision="f1f1cbc054db7021d4167a96b55783e087e1b7b4"/>
+  <project path="external/dtc" name="platform/external/dtc" groups="trusty" revision="11f671ae84ff775a9dcefc747271247b5f361e7d"/>
+  <project path="external/qemu-keycodemapdb" name="trusty/external/qemu-keycodemapdb" groups="trusty" revision="6b3d716e2b6472eb7189d3220552280ef3d832ce"/>
+  <project path="external/arm-trusted-firmware" name="trusty/external/trusted-firmware-a" groups="trusty" revision="f22f41824b6eff0982e7f69ba5f78e4a4dd220ab"/>
+  <!-- END aux external projects -->
+
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+</manifest>
