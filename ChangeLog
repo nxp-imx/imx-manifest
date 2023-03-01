@@ -1,3 +1,9 @@
+Date 3/1/2023
+- Patch release for 5.4.3-2.0.2 Patch release
+
+Date 12/1/2022
+- Update all manifests to point to github instead of CAF
+
 Date 11/11/2022
 5.4.70-2.3.11
 - Patch release for i.MX 8QuadMax, i.MX 8QuadXPlus and i.MX 8DXL

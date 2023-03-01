@@ -68,6 +68,9 @@ repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5
 To download the 5.4.24-2.1.0 release
 repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.24-2.1.0.xml
 
+To download the 5.4.3-2.0.2 release
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-2.0.2.xml
+
 To download the 5.4.3-2.0.0 release
 repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-zeus -m imx-5.4.3-2.0.0.xml
 
