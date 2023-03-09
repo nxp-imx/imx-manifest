@@ -1,0 +1,7 @@
+Date 4/1/2023
+6.1.1-1.0.0
+- GA release for Kernel 6.1 i.MX 6, 7 and 8 Series.
+- Beta release for i.MX 8ULP.
+- Beta release for i.MX 93.
+- Kernel upgrade to 6.1.1.
+- Yocto Project upgrade to Langdale (4.1) release.
