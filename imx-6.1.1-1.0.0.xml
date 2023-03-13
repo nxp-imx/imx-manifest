@@ -35,6 +35,6 @@
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
      <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="3c76bc34698ad829bd4e7fe2dc9b3401774a787c" upstream="langdale"/>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="c057a681cf11923b22e16b9cdb0ad2b9187eced2" upstream="langdale-6.1.1-1.0.0"/>
 
 </manifest>
