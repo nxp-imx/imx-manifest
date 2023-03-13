@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-6.1.1-1.0.0.xml"/>
+
+  <remote name="nxp" fetch="https://github.com/NXP"/>
+
+  <project remote="nxp" revision="fba16f2ad817eeb88003c29eebd8a2fee1d33aa9" name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" >
+    <linkfile src="tools/imx-harpoon-setup-release.sh" dest="imx-harpoon-setup-release.sh"/>
+  </project>
+
+</manifest>
