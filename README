@@ -47,6 +47,9 @@ repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4
 To download the 4.14.98-2.1.0 i.MX 8MN alpha release
 repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.1.0.xml
 
+To download the 4.14.98-2.0.13 Patch release
+repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.13.xml
+
 To download the 4.14.98-2.0.1 Patch release
 repo init -u https://github.com/nxp-imx/imx-manifest  -b imx-linux-sumo -m imx-4.14.98-2.0.1_patch.xml
 
