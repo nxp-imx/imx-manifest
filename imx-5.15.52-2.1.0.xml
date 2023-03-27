@@ -28,7 +28,7 @@
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>
 
-  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="c3bd9b4789d87fc259d1fb2c2ffa27b39f1310b5" upstream="kirkstone"/>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="c3bd9b4789d87fc259d1fb2c2ffa27b39f1310b5" upstream="kirkstone-5.15.52-2.1.0"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="8f2dc1023482863e2630d1b94052c41ce748b38f" upstream="kirkstone"/>
   <project name="meta-qt6" path="sources/meta-qt6" remote="QT6" revision="41ddf0b33167ea28df0ce5b56583976c20e7f187" upstream="6.3"/>
   <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="d1ad27bfacc937048e7f9084b17f4d7c917d2004" upstream="master"/>
