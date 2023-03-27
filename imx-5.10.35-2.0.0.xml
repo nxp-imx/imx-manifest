@@ -27,7 +27,7 @@
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
     <linkfile src="README" dest="README-IMXBSP"/>
   </project>
-  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="46107357abd2d2da9ffd702c87fce3984a422435" upstream="imx_5.10.y" dest-branch="imx_5.10.y"/>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="609a49c51cea3ff114b9b202d8bf7b785b7d01ed" upstream="hardknott-5.10.35-2.0.0" dest-branch="hardknott-5.10.35-2.0.0"/>
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="c3a36263f91e42302ad7c347e051cf1cd83e39f6"/>
   <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="810d6d842f103eb59f18b06426106462b15de7e2"/>
   <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="a00af3eae082b772469d9dd21b2371dd4d237684"/>
