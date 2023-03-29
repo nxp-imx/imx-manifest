@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://github.com/meta-qt5"  name="QT5"/>
+  <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
+  <remote fetch="https://github.com/meta-rust"  name="rust"/>
+  <remote fetch="git://git.openembedded.org"  name="python2"/>
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
+
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="01488a237cdf45b3087420e169c9f67b84fd7373">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+
+  <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="5f365ef0f842ba4651efe88787cf9c63bc8b6cb3"/>
+
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="c2a0d924f6200eea1fb1d1b61e7420ea5da2f8fb"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="dbcc686f52c3c84db8cb86aa8973a4e373651b98"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="ca27d12e4964d1336e662bcc60184bbff526c857"/>
+
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.4.24_2.1.4" upstream="zeus-5.4.24-2.1.4">
+    <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
+    <linkfile dest="README-IMXBSP" src="README"/>
+  </project>
+
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="9e60d30669a2ad0598e9abf0cd15ee06b523986b"/>
+  <project name="meta-python2" path="sources/meta-python2" remote="python2" revision="231c3d74cfcf734c3415e86ea8dd97f73ddced9d"/>
+  <project name="meta-qt5" path="sources/meta-qt5" remote="QT5" revision="b8bcf8cb576d072f435a0177375e54424f67d1c9"/>
+  <project name="meta-rust" path="sources/meta-rust" remote="rust" revision="a012a1027defe28495f06ed522a7a82bdd59a610"/>
+
+  <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="e97b31ca34018393544f82f68855bf5f82a32da4"/>
+
+  <project name="poky" path="sources/poky" remote="yocto" revision="cba967414370e195d109353e51510bd829aa86c3"/>
+
+</manifest>
