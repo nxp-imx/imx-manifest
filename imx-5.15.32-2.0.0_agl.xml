@@ -87,7 +87,7 @@
 
   <!-- NXP layers -->
   <project name="meta-imx" path="external/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.32_2.0.0_agl" upstream="kirkstone-5.15.32-2.0.0"/>
-  <project name="meta-nxp-agl" path="meta-nxp-agl" remote="nxp-imx" revision="refs/tags/kirkstone-5.15.32-2.0.0" upstream="master">
+  <project name="meta-nxp-agl" path="meta-nxp-agl" remote="nxp-imx" revision="refs/tags/kirkstone-5.15.32-2.0.0" upstream="kirkstone">
     <linkfile src="README" dest="README-IMX-AGL"/>
   </project>
 
