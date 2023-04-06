@@ -26,7 +26,7 @@
   <project remote="OSSystems" revision="10f6e3778d823ee1be106c126216c6f941088fbf" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="ff073f04109900fc07bf81e2f1df63c626caf342" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="nxp-imx" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="daba3340ecd8b358e0c6c415baeee0fcae95c525" >
+  <project remote="nxp-imx" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" revision="refs/tags/morty-4.9.11-1.0.0_gh" upstream="imx-morty">
       <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
       <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
