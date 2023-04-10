@@ -23,7 +23,7 @@
   <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="6d8213fc5ec192c33f963b8095d1f01af1574eea" upstream="kirkstone"/>
   <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="fc15f5003043da23212596be7366ae2547c308ad" upstream="kirkstone"/>
 
-  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.52_2.1.0" upstream="kirkstone-5.15.52-2.1.0">
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.52_2.1.0_gh" upstream="kirkstone-5.15.52-2.1.0">
     <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
     <linkfile dest="README-IMXBSP" src="README"/>
   </project>
