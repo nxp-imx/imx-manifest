@@ -10,6 +10,8 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
+  <remote name="nxp-imx" fetch="https://github.com/nxp-imx" />
+  <remote name="community"   fetch="https://github.com/Freescale"/>
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="next"/>
@@ -29,32 +31,32 @@
   <!-- YOCTO & OE -->
 
   <!-- Yocto/OpenEmbedded things. -->
-  <project name="poky" path="external/poky" remote="yocto" revision="5673f731f7a1c028b240ad48ed3661c02cc7f81d" upstream="master" />
+  <project name="poky" path="external/poky" remote="yocto" revision="b50f718e4cb73214e7ad298484ecdadd6cfeb866" upstream="langdale"/>
   <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="c4829fa338dae008c75cfffd4a712813a99c33c4" upstream="master" />
 
 
   <!-- UPSTREAM COMPONENTS -->
 
   <!-- meta-virtualization -->
-  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="9f41aca8e6cd31ba2752dba5d375cf19009a6ec3" upstream="master"/>
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="d1cbc4c9fc44f0c5994a1276e38cdbb7bdb5bbd3" upstream="langdale"/>
 
   <!-- Qt things -->
-  <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="1a917695e439d602ec85e1db4e0478533cfbfaa8" upstream="master"/>
+  <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="aec1934cb2708236c033f2d205d5c3fbbebf7555" upstream="langdale"/>
 
   <!-- Security layer -->
-  <project name="meta-security" path="external/meta-security" remote="yocto" revision="f991b20f56de8cdf40556681e0e9276ae6b81cfa" upstream="master"/>
+  <project name="meta-security" path="external/meta-security" remote="yocto" revision="2aa48e6f4e519abc7d6bd56da2c067309a303e80" upstream="langdale"/>
 
   <!-- SELinux layer -->
-  <project name="meta-selinux" path="external/meta-selinux" remote="yocto" revision="506daf988c844e857c674ef70a46476a005bf17b" upstream="master"/>
+  <project name="meta-selinux" path="external/meta-selinux" remote="yocto" revision="f6d73a35d3853ab09297fa1738890706901f43b8" upstream="langdale"/>
 
   <!-- meta-codescanner - support for using CodeScanner during the build -->
   <project name="dl9pf/meta-codechecker" path="external/meta-codechecker" remote="github" revision="38f9a4a68349b6ce32fdaa320f378991e29d09e9" upstream="master"/>
 
   <!-- meta-spdxscanner - support for fossology -->
-  <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="8b07df1535fe1203b07fc87f8c6a1e34311e2a1d" upstream="master"/>
+  <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="8b07df1535fe1203b07fc87f8c6a1e34311e2a1d" upstream="langdale"/>
 
   <!-- clang support -->
-  <project name="kraj/meta-clang" path="external/meta-clang" remote="github" revision="f71d12dc480550ebf88d7bc47a34d7b20ee0707f" upstream="master"/>
+  <project name="kraj/meta-clang" path="external/meta-clang" remote="github" revision="aa46b8e9599c1d3cc165b79355100adbc4c8effa" upstream="langdale"/>
 
   <!-- meta-python2 as stop-gap to allow chromium to build until upstream fixes the dependencies -->
   <project name="meta-python2" path="external/meta-python2" remote="openembedded" revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" upstream="master" />
@@ -65,23 +67,30 @@
   <!-- BSPs -->
 
   <!-- Renesas Gen3 specific things -->
-  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="0e6f9a1c74a71622161e4e145b43f9f9b4f6d39a" upstream="kirkstone-dev"/>
+  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="94babf8ad5a33762e23a528b7626a9a7fb3b3910" upstream="langdale-dev"/>
   <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="511808a3e794ad0e35386f83d3d159c9ba48b4be" upstream="kirkstone-Yocto-v5.9.0"/>
   <project name="AGL/meta-agl-refhw" path="bsp/meta-agl-refhw" />
 
   <!-- consolidate on meta-freescale from git.yoctoproject.org -->
-  <project name="meta-freescale" path="bsp/meta-freescale" remote="yocto" revision="cdc56a683fe009ea2889ea6354d3a44b562454d7" upstream="master"/>
-  <project name="Freescale/meta-freescale-3rdparty" path="bsp/meta-freescale-3rdparty" remote="github" revision="6f9430d11d133d38e356776508377def72163f99" upstream="master"/>
+  <project name="meta-freescale" path="bsp/meta-freescale" remote="community" revision="6b76bef852e103438ad66a3e803fb551e9608ffc" upstream="master"/>
+  <project name="meta-freescale-3rdparty" path="bsp/meta-freescale-3rdparty" remote="community" revision="6301ad2622761aceda42bdca110168b2fe10198c" upstream="master"/>
+  <project name="meta-freescale-distro" path="bsp/meta-freescale-distro" remote="community" revision="a4efa17a9f6b25d8d9290dfee8275059d40b83df" upstream="master"/>
 
   <!-- TI Vayu / Jacinto 6 / DRA7 -->
-  <project name="meta-arm" path="bsp/meta-arm" remote="yocto" revision="257c69f11fb534384a4e1f34898095fb6cac285c" upstream="master"/>
-  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="2124e7ecd88d1aded320e86da62785c3ab171b27" upstream="master"/>
+  <project name="meta-arm" path="bsp/meta-arm" remote="yocto" revision="04071ec9f5091ec76da202ce610e256d8d347a60" upstream="langdale"/>
+ <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="2124e7ecd88d1aded320e86da62785c3ab171b27" upstream="master"/>
 
   <!-- Raspberry Pi 4 -->
-  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="93dadf336ce11e3ed3ba75c7638b57fad60d6fdb" upstream="master"/>
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="7f6285beb0ce35d260360c8ab17db7213601bce3" upstream="langdale"/>
 
   <!-- Sancloud BSP layers -->
   <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="7eb9a421f547e347c9da23463734758568e13f95" upstream="kirkstone"/>
   <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="032a394e7569d1254cd17a0358475b986e64a5a4" upstream="master"/>
+
+  <!-- NXP layers -->
+  <project name="meta-imx" path="external/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_6.1.1_1.0.0" upstream="langdale-6.1.1-1.0.0"/>
+  <project name="meta-nxp-agl" path="meta-nxp-agl" remote="nxp-imx" revision="refs/tags/langdale-6.1.1-1.0.0" upstream="langdale">
+    <linkfile src="README" dest="README-IMX-AGL"/>
+  </project>
 
 </manifest>
