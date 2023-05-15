@@ -37,6 +37,11 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 
+To download the 6.1.1-1.0.1 patch release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-langdale -m imx-6.1.1-1.0.1.xml
+```
+
 To download the 6.1.1-1.0.0 release
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-langdale -m imx-6.1.1-1.0.0.xml
