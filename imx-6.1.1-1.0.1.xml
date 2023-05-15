@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="yocto"       fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"          fetch="https://github.com/openembedded"/>
+  <remote name="kraj"        fetch="https://github.com/kraj"/>
+
+  <remote name="community"   fetch="https://github.com/Freescale"/>
+  <remote name="ossystems"   fetch="https://github.com/OSSystems"/>
+  <remote name="qt"          fetch="https://code.qt.io/yocto"/>
+  <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
+
+  <remote name="nxp-imx"     fetch="https://github.com/nxp-imx"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+
+  <project name="meta-arm" path="sources/meta-arm" remote="yocto" revision="025124814e8676e46d42ec5b07220283f1bdbcd0" upstream="langdale"/>
+  <project name="meta-security" path="sources/meta-security" remote="yocto" revision="2aa48e6f4e519abc7d6bd56da2c067309a303e80" upstream="langdale"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="8857b36ebfec3d548755755b009adc491ef320ab" upstream="langdale"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="b50f718e4cb73214e7ad298484ecdadd6cfeb866" upstream="langdale"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="c354f92778c1d4bcd3680af7e0fb0d1414de2344" upstream="langdale"/>
+  <project name="meta-clang" path="sources/meta-clang" remote="kraj" revision="22f1cc330d3501923d2dc27cd3fc424c69c3a73a" upstream="master"/>
+
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="master">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="09c47379218167dda9fb0098129909a667fea2ec" upstream="master"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="96c1f6a6c2cad246687cd695e0873fcc6cdde935" upstream="master"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="1069c2f210b18cd707a4d8a82140a684a42a4ff6" upstream="master"/>
+  <project name="meta-browser" path="sources/meta-browser" remote="ossystems" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
+  <project name="meta-qt6" path="sources/meta-qt6" remote="qt" revision="4f7d02004cd78f0fca77489deb7487bfb301ea36" upstream="6.4"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="timesys" revision="33a45eb06bead2509f1bf5bf46a5bbc85d66583b" upstream="langdale"/>
+
+  <project name="meta-imx" remote="nxp-imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.1.1_1.0.1" upstream="langdale-6.1.1-1.0.0" >
+     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+     <linkfile src="README" dest="README-IMXBSP"/>
+  </project>
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="c057a681cf11923b22e16b9cdb0ad2b9187eced2" upstream="langdale-6.1.1-1.0.0"/>
+
+</manifest>
