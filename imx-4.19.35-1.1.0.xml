@@ -13,7 +13,7 @@
   <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
 
   <project remote="yocto" revision="6d2e12e79211b31cdf5ea824fb9a8be54ba9a9eb" name="poky" path="sources/poky"/>
-  <project remote="yocto" revision="2142f7ded1b3115ccc21f7575fd83e2376247193" name="meta-freescale" path="sources/meta-freescale"/>
+  <project remote="yocto" revision="2ee3f2a9f254adab6a6d42a6e3085d05fbc8ac07" name="meta-freescale" path="sources/meta-freescale"/>
 
   <project remote="oe" revision="3bdbf72e3a4bf18a4a2c7afbde4f7ab773aeded9" name="meta-openembedded" path="sources/meta-openembedded"/>
 
