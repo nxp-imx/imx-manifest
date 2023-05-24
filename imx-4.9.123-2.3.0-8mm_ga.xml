@@ -27,7 +27,7 @@
   <project remote="OSSystems" revision="2ae23f16309d228ec6f1a25e404b3941115083ee" name="meta-browser" path="sources/meta-browser" />
   <project remote="QT5" revision="682ad61c071a9710e9f9d8a32ab1b5f3c14953d1" name="meta-qt5" path="sources/meta-qt5" />
 
-  <project remote="nxp-imx" revision="2f76097309ceb20025af6f0dd853e0f4b641d40a" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
+  <project remote="nxp-imx" revision="refs/tags/rocko-4.9.123-2.3.0_8mm_ga_gh" name="meta-fsl-bsp-release" path="sources/meta-fsl-bsp-release" >
      <linkfile src="imx/tools/fsl-setup-release.sh" dest="fsl-setup-release.sh"/>
      <linkfile src="imx/README" dest="README-IMXBSP"/>
   </project>
