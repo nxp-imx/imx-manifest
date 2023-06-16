@@ -2,7 +2,7 @@ i.MX Matter Trusty OS Repo Manifest README
 
 This repo is used to download the Trusty OS code for the i.MX Matter release.
 
-The imx_matter_2023_q1 branch contains the Trusty OS repo manifest for the i.MX Matter 2023 Q1 release.
+The imx-matter-trusty branch contains the Trusty OS repo manifest for the i.MX Matter release.
 The NXP i.MX Matter Trusty OS repo open source is available at https://www.github.com.
 
 To build the i.MX Matter Trusty OS for the i.MX8M Mini platform, please follow this guide.
