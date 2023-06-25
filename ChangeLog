@@ -1,0 +1,9 @@
+Date 6/25/2023
+6.1.22-2.0.0
+- GA release for Kernel 6.1 i.MX 6, 7, 8 and 8M Series.
+- GA release for i.MX 8ULP A2.
+- Beta release for i.MX 93.
+- Kernel upgrade to 6.1.22.
+- u-Boot upgrade to 2023.04.
+- OP-TEE upgrade to 3.21.
+- Yocto Project upgrade to Mickledore (4.2) release.
