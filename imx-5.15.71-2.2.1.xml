@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="2"/>
+
+  <remote fetch="https://github.com/nxp-imx" name="nxp-imx"/>
+  <remote fetch="https://github.com/OSSystems" name="OSSystems"/>
+  <remote fetch="https://code.qt.io/yocto"  name="QT6"/>
+  <remote fetch="https://github.com/TimesysGit"  name="Timesys"/>
+  <remote fetch="https://github.com/kraj" name="clang"/>
+  <remote fetch="https://github.com/Freescale" name="community"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/nxp-imx-support" name="imx-support"/>
+
+  <project name="fsl-community-bsp-base" path="sources/base" remote="community" revision="60f79f7af60537146298560079ae603260f0bd14" upstream="kirkstone">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  <project name="meta-browser" path="sources/meta-browser" remote="OSSystems" revision="e232c2e21b96dc092d9af8bea4b3a528e7a46dd6"/>
+  <project name="meta-clang" path="sources/meta-clang" remote="clang" revision="c728c3f9168c8a4ed05163a51dd48ca1ad8ac21d" upstream="kirkstone"/>
+  <project name="meta-freescale" path="sources/meta-freescale" remote="community" revision="c82d4634e7aba8bc0de73ce1dfc997b630051571" upstream="kirkstone"/>
+  <project name="meta-freescale-3rdparty" path="sources/meta-freescale-3rdparty" remote="community" revision="5977197340c7a7db17fe3e02a4e014ad997565ae" upstream="kirkstone"/>
+  <project name="meta-freescale-distro" path="sources/meta-freescale-distro" remote="community" revision="d5bbb487b2816dfc74984a78b67f7361ce404253" upstream="kirkstone"/>
+
+  <project name="meta-imx" path="sources/meta-imx" remote="nxp-imx" revision="refs/tags/rel_imx_5.15.71_2.2.1" upstream="kirkstone-5.15.71-2.2.1">
+    <linkfile dest="imx-setup-release.sh" src="tools/imx-setup-release.sh"/>
+    <linkfile dest="README-IMXBSP" src="README"/>
+  </project>
+
+  <project name="meta-nxp-demo-experience" path="sources/meta-nxp-demo-experience" remote="imx-support" revision="52eaf8bf42f8eda2917a1c8c046003c8c2c8f629" upstream="kirkstone-5.15.71-2.2.0"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="744a4b6eda88b9a9ca1cf0df6e18be384d9054e3" upstream="kirkstone"/>
+  <project name="meta-qt6" path="sources/meta-qt6" remote="QT6" revision="ed785a25d12e365d1054700d4fc94a053176eb14" upstream="6.3"/>
+  <project name="meta-timesys" path="sources/meta-timesys" remote="Timesys" revision="d1ad27bfacc937048e7f9084b17f4d7c917d2004" upstream="master"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="9482648daf0bb42ff3475e7892542cf99f3b8d48" upstream="master"/>
+  <project name="poky" path="sources/poky" remote="yocto" revision="24a3f7b3648185e33133f5d96b184a6cb6524f3d" upstream="kirkstone"/>
+</manifest>
