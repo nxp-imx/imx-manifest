@@ -5,7 +5,7 @@
 
   <remote name="nxp" fetch="https://github.com/NXP"/>
 
-  <project remote="nxp" revision="15ccd17c91079ec0afe64b1b6136137c14ff6030" name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" >
+  <project remote="nxp" revision="8760589659382d5d46b8fabda4533d217fcedd3c" name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" >
     <linkfile src="tools/imx-harpoon-setup-release.sh" dest="imx-harpoon-setup-release.sh"/>
   </project>
 
