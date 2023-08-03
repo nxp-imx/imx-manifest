@@ -5,6 +5,44 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+6.4.11P1 GA for L6.1.1-1.0.1
+======================
+Key Features
+    - Weston 11.0.1
+    - libdrm 2.4.114
+    - VULKAN CTS 1.3.1.1
+
+Improvements and Bug fixes
+
+IMX-2711	patch review: coverity fix + mapsMutex fix
+IMX-2859	VKCTS 1.3.1 support (Vulkan12 API support)
+Bug 33333	[es30_cts]: "ES3-CTS.gtf.GL3Tests.framebuffer_blit.framebuffer_blit_functionality_linear_filter_color_blit " case test will failed on imx6dq_linux board_51505
+Bug 32296	[vkcts1.2.6.2/vkcts1.3.1]meet random GPU hang on imx8mscale wayland board
+Bug 28634	the saschwillems(oit) hang on imx8mscale/imx8qxp wayland.
+IMX-2977	6.4.11: Wayland build break with driver_build_sample_wl.sh
+IMX-2954	[Android13-Graphic-CTS] Some Graphic CTS failures on Android13 Partial fix
+Bug 33940	[Openvx1.3] ovx1.3_CTS_NN_extenstion many case fail and ovx1.3_CTS_NN_extenstion global_context meet GPU Hang on imx8mscale wayland
+Bug 34111	[haluts] some case fail on imx6sx wld with 6411 release driver.
+IMX-2969	[8ulp A1]test_buffers cost very long execution time(several hours) randomly
+Bug 32806	[vkcts1.2.6.2]:8 cases failed on 8qm_qnx with 64x & 64x_22Q2 driver
+IMX-2979	6.4.11: VXC tool report error for bilateral_filter bilateral_filter.vx
+IMX-2986	6.4.11: OpenVX.Stereo failed with error VX_ERROR_INVALID_REFERENCE
+IMX-2985	6.4.11: OpenCL CTS hang on 6QP
+IMX-3007	6.4.11: Build failed when disable gcd_2D_PERF_TIMER
+IMX-3004	[weston 11.0] New gbm api (gbm_bo_create_with_modifiers2) needed for weston 11.0
+IMX-3024	Most cases render error at weston/vulkan/gles2/gles3/glmark2 on 865 wayland on 22Q2_NXP tree upon g2d mode
+IMX-3015	6.4.11: Build break with 5.15-langdale toolchain
+IMX-3033	clk_enable_count doesn't return to zero after cat /sys/kernel/debug/gc/load with 6.4.11 GPU driver
+IMX-3040	Enable GPU frequency scaling feature for LS1028
+IMX-3054	incorrect path for cover_flow
+IMX-3014	6.4.11: Upgrade support for vulkan cts 1.3.3.1 version==>Partial fix
+IMX-3056	6.4.11[weston-11.0] weston-simple-egl meet wrong color issue
+IMX-3029	6.4.11 [8MP] AXI BUS ERROR when enable memory region with 6.4.11 GPU driver
+LF-8005		fix GPU 2D address type change
+MA-14029	Add libnngpu binary in android_update_gpu_libs.sh
+LF-8111		display is abnormal with MIPI-panel on 8MM
+LF-8320		Fix 6QP kernel oom for OpenCL CTS test
+
 6.4.3P4 GA for L5.15.71-2.2.1
 ======================
 Key Features
