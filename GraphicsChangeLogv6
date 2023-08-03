@@ -5,6 +5,136 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+6.4.3P4 GA for L5.15.71-2.2.1
+======================
+Key Features
+    - No change
+
+Improvements and Bug fixes
+
+IMX-2927	Fix GPU probe failure caused by new kernel
+IMX-2925	[android12-8m] Meet app crash when trying to open customer app a second time.
+IMX-2926	[QNX] GPU hang when contiguous memory overlaps direct mapping range
+IMX-2878	[Android12_L5.15] GPU lock warning when enable some kernel debug configure
+IMX-2935	[QNX] OCL - fix message Library cannot be found
+IMX-2929	[8ULP_EVK] GPU GPU hang at opencv_test_stitching in OpenCV stress test
+IMX-2559	[8MP_EVK]opencv_test_rgbd has 1 failed case
+IMX-2930	[QNX] Add support for CMA_LIMIT flag
+IMX-2921	chromium v101.0.4951.54 meet damage picture issue
+IMX-2874	Some apps display abnormal on 8mp Ubuntu board
+IMX-2934	[8MP8MN8MQ] Ubuntu the content of Help document flipped 180 degrees. 100%
+Bug 33356	[cl_sobel]meet many performance drop on imx815wayland board
+IMX-2764	[8MM_EVK8MP] GPUXWLD cannot run webgl 1.0.3 cts and performance test on g2d compositor.
+IMX-2955	GPU AXI BUS error
+IMX-2958	[android12]GPU dump with cts 12.1_r3 when run CtsDeqpTestCases
+IMX-2968	Improve GPU subsystem to support upstream GPU device entry
+IMX-2970	A number of files that do not have copyrights and licenses
+IMX-2965	[android13_imx8] Support HAL_PIXEL_FORMAT_YCBCR_P010 format in Gralloc
+IMX-2865	[android-12][vts]vts_core_meminfo_test SysMemInfo#TestGpuTotalUsageKb fail
+IMX-2923	[android12-8mq8mp8qm] cannot access one link with firefox
+IMX-2952	[8mm]Ubuntu 22.04 windowfonts broken when gui apps run as root
+Bug 33998	[NXP][3dmark2.0] sling shotsling shot extreme performance drop on imx8qm Android S on 234062 branch
+IMX-2994	Fused activation function RELU6 costs a lot of cycles
+IMX-2934	[8MP8MN8MQ] Ubuntu the content of Help document flipped 180 degrees. 100% 
+IMX-2966	[8MM]GPU display abnormal with gl compositor when connecting MIPI-panel.
+IMX-2969	[8ulp A1]test_buffers cost very long  execution time(several hours) randomly
+Bug 34022	UI render error on imx8mm Android T with 234062 branch
+IMX-2993	[westong2d] enable g2d super tile modifier supported
+IMX-2928	Add configuration to enable runtime GPU timeout
+IMX-3006	Add a patch to fix nn memory leak, please help review
+IMX-3016	[8MQ] error -ENXIO IRQ irq_2d and irq_vg not found
+IMX-2974	Enable 4GB above GPU memory region for 8MP
+IMX-3017	[8ULP_EVK] GPUXWLD GPU hang after running clblast_tuner_xdot
+IMX-3001	[iMX6] [iMX8] Random crashes while creating eglContext
+IMX-3019	[QNX] vdksample1_es20 crashing on assert 
+IMX-3018	[QNX] GLES-CTS fail on assert 
+IMX-3020	[QNX] VK CTS fail on assert   
+IMX-3021	[QNX, 8MM] tutorial3_es20 crashing on assert 
+IMX-3025	[iMX8MP] Corruption in EGL resulting into libc abort at random time
+IMX-3003	[android13-cts][8mq]CtsMediaV2TestCases android.mediav2.cts.DecodeGlAccuracyTest  fail  
+IMX-3034	[QNX] Stack overflow when running gfxbench50
+IMX-3013	643.p4 [android 13] skiaglthreaded 20% performance drop compared with gles render
+IMX-3078	[QNX] Syncup gcoOS_AllocateVideoMemorygcoOS_FreeVideoMemory with linux hal
+IMX-3076	643.p4 [QNXlibVSC] Crash caused by gcSHADER_ReadShaderFromFile
+Bug 34980	[OpenCL.SoftISPkernel badpixel]meet many performance drop on imx8mscaleimx8qxpimx865imx815 wld
+MGS-5514-2	fix YV12 physical address setting
+MGS-6798	Fix newly detected high impact issues after Coverity update
+MGS-6842	Add a config to disable OpenCL in g2d build
+MGS-6835	fix build error of incompatible-pointer-types
+MGS-6775	WebGL Motionmark performance drop
+MGS-6868	Add zero point check for _genEnlargeEntryFunc
+LF-7133		image flicker when running Crank Cluster
+MGS-6461-10	fix clblast crash issue on 8MQ
+LF-7860		Optimize G2D conversion from YUYV to I420
+MA-20995	Add copy libNNArchPerf.so and libarchmodelSw.so
+MGS-7085	Correct a writing mistake in g2d license claim
+LF-8444		vpu pm stress test met suspend fail
+MGS-6887	corruption in EGL resulting into libc abort at random time
+MGS-7034	Add update_vxcbinary.sh to update vxc binaries
+MA-20764	Fixed opencl regression isuse
+MA-21079	Fix 8mn camera preview CPU power consumation increased issue
+MGS-7083	bugfix[6QP6Q] Examples in OpenVG 2D failed
+MGS-6855	Only 2 buffers per display inspite of setting the GBM_MULTI_BUFFER to 3
+
+6.4.3P4 GA for L5.15.52-2.1.0
+======================
+Key Features:
+    - GLES CTS 3.2.8.0
+    - OpenCV 4.6.0
+
+Improvements and Bug fixes
+
+IMX-2732	[Android12-8mm] SurfaceFlinger crash issue on 8mm on android12
+IMX-2713	[Android12-Graphic-CTS] Some Graphic CTS failures on Android12 
+IMX-2708	[Android11-8ulp] Some Graphic CTS cases fail on 8ulp board
+IMX-2697	[Android11-imx8] Antutu V8/V9 benchmark not work well on 8QM/8QXP/8MP
+IMX-2857	es20 cts regression on 7ulp (FB backend) with 20220415 6.4.3.p4 patch release
+IMX-2787	An abnormal color block shown in gfxbench vulkan test
+IMX-2593	Vulkan is still slower than GLES3 with Unity's Linux Backend 
+IMX-2847	[android-nn]Replace nnAssert with CHECK
+IMX-2869	Add defer probe to gpu_probe
+IMX-2875	[8ULP] run weston-simple-egl meeting damage image
+IMX-2877	TIM-VX 1.1.42 unit test failure on GC7000 Lite
+Bug 3268	[SASCHAWILLEMS:computenbody/oit]meet 6% performance drop on imx815/imx865 wayland board
+IMX-2883	add order check for gpu gfp_allocator
+IMX-2582	[android12-NN]  build fail in android-s-beta-1 and android12
+IMX-2860	OpenGL ES 3.2.8.0 CTS upgrade 
+IMX-2768	OpenCL DMA buffer extension
+IMX-2897	[MX8QM][GPU] openCV test ends in kernel panic
+IMX-2886	[android12-8mp]System UI stuck when run customer app
+IMX-2880	[8QM] Vulkan application causes GPU to hang when single gpu core is enabled
+IMX-2889	gbm cause display error on Ubuntu 22.04
+IMX-2773	_ReleaseVideoMemory: check retvals for gckVIDMEM_HANDLE_Dereference and gckVIDMEM_NODE_Dereference
+IMX-2884	[8MM]GPU/XWLD: chromium v96 display abnormally. 100%
+IMX-2902	[Android12]OpenCL 3.0 cause camera cpu loading continuously high
+IMX-2836	eglDestroyContext() call clears gl context even when not current
+Bug 2766	gfxbench5.0: vulkan_5_high/normal_off render error on imx8qm/imx8mscale/865/815/8qxp wayland(5.4_rc2) 
+IMX-2909	[QNX] iMX8MP support
+IMX-2910	[QNX] Vulkan WSI update
+Bug 3296	[TIM-VX]Pad.constant fail on imx815/imx8mscale wayland L5.15.05 with 234062 branch
+IMX-2913	Can't run chromium on Ubuntu22.04
+IMX-2885	met segmentation fault due to VIR_INVALID_DEF_INDEX in Update_Liveness_Local_Gen  when testing QT quick3d example principledmaterial  
+IMX-2904	[Android-12-GTS] Two GPU related GTS fail from GtsGraphicsHostTestCases
+IMX-2914	[i.MX8MP][OpenVX][VIP8000Nano] OpenVX User kernel scalar parameter must be uint32
+IMX-2898	Problems running Basemark BATS 
+IMX-2916	[QNX] iMX8MP/QXP support, GLES CTS gpu dump when contiguous memory is 2MB
+IMX-2908	[imx6q] weston-10.0 start fail with gl compositor
+IMX-2801	Patch review - [8QM][5.15][GPU] OpenVX conformance test fails with internal error
+LF-6430 	fix g2d hardware conflict for multiple threads
+MGS-6704	weston build break with drm-backend for imx93
+MGS-6704-2	add missing include path to g2dExt.h
+MGS-6719	add vendor.2d.ocl.enable prop
+MGS-6662-2	Fix stack-use-after-scope issue
+MGS-6662-3	Fix stack-buffer-overflow issue
+MGS-6662-4	Fix memory leak issues
+MGS-6662-5	clean up CL 3.0 shader copy kernel
+MGS-6662-6	Modify some print messages
+LF-6166		skip fbo sync to optimize chromium rendering performance
+MGS-6742	fix kernel NULL pointer dereference in G2D
+MGS-6759	optimize gcoMATH_Float16ToFloat with ARM fcvt instruction
+MGS-6778	Change vulkan libs name to libvulkan_VSI*
+MGS-6776	enable RGBA half float formats to fix WebGL 2.0 CTS failure
+
 6.4.3P4 GA for L5.15.32-2.0.0
 ============================
 Key Features:
