@@ -5,8 +5,59 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+6.4.11P1 GA for L6.1.22-2.0.0
+=============================
+Key Features
+    - VULKAN CTS 1.3.3.1
+    - OpenCV 4.7.0
+
+Improvements and Bug fixes
+
+Bug 34984	[mm07 AA] performance drop on imx8mm android with 234062 banch
+IMX-3032	6.4.11 [8MQ] Output has defects/hang when running vulkan sascha case oit
+IMX-3014	6.4.11: Upgrade support for vulkan cts 1.3.3.1 version
+IMX-3043	6.4.11  [8ULP]GPU/XWLD: opencv_perf_calib3d&opencv_test_calib3d met gpu dump. 
+IMX-3046	[8QXP][L6.1][GPU] openvx : vxcanny cause gpu hang
+IMX-3069	643.p2 [WindRiver] Review fixes done in GLES driver from customer
+IMX-3072	6.4.11 [8MQ] Slab memory leak 
+IMX-3055	6.4.11: [8ULP] GPU/XWLD: g2d_yuv_test had abnormal output.yuv with yuyv-yu12 format. 100% 
+IMX-3083	6.4.11 [MX6SX][6.1] Division by zero when querying load
+IMX-3078	6.4.11 [QNX] Syncup gcoOS_AllocateVideoMemory/gcoOS_FreeVideoMemory with linux hal
+IMX-3077	6.4.11: [QNX] Startup failed when reserved memory is above 4G
+IMX-3074	6.4.11  Patch review: 6.4.11.p1 GPU driver build warnings
+IMX-3089	6.4.11 [android13] kernel build error 
+IMX-3093	6.4.11: Build issue caused by kernel 6.2 update
+IMX-3080	6.4.11 glslsandbox-player issues ==>Partial fix
+IMX-3044	6.4.11: [8MP] GPU/XWLD: display image is abnormal when running renderdoc replay test 
+IMX-3098	6.4.11: [8MN] Met OOM in vulkancts 1.3.3.1 test
+IMX-3109	QNX iMX8QM, glslsandbox hit assert 
+IMX-3079	VTK tool VTK-6.2.4-p4-1-7-12 generate different binary program from the same shader input 
+IMX-3053	643.p4/6411 [QNX] gfxbench, compiler crash when running gl_manhattan311_fixed_wqhd_off 
+Bug 34863	[clpeak]global memory bandwidth float16 performance drop about 10% on imx815 wayland with 64x branch
+IMX-3071	6.4.11 Performance Drop on 8MP with 6.4.11 GPU driver 
+IMX-3106	6.4.11 QNX GLES CTS, compiler caps race condition
+IMX-3107	6.4.11 QNX Vulkan CTS, assertion in VIR_VecConstVal_GetAbs
+IMX-3116	6.4.11 Vulkan CTS, assert fail in _VIR_LoopInfo_DetectLoopLowbound=
+IMX-3120	6.4.11 Vulkan CTS, assert fail in VIR_LoopInfo_ComputeConstLoopIterations
+IMX-3122	6.4.11 Vulkan CTS, assert fail in _VIR_RA_LS_AssignColorFromFlow
+IMX-3114	[android13] [8mn] camera preview CPU power consumation increased 49%
+IMX-3125	6.4.3p4: [6QP/6Q] Examples in OpenVG failed
+IMX-3085	643.P4/6.4.11: vkmark can't work on ubuntu using driver 6.4.3.p4
+IMX-3101	[8ULP]GPU/XWLD: qt quick3d test met random gpu dump. 3/5. 
+MMFMWK-9204	Add workaround to fix the function that the Cheese App cannot show frame.
+LF-8486		[i.MX8ULP/MP-EVK@Linux_IMX_6.1.1_1.0.0] G2D CSC : YV12 format converts with wrong output.
+MGS-7075	[i.MX8MP/Axiomtek] Enable G2D feature then weston freeze
+MGS-7021	[QNX, QM] OpenVX CTS failing
+MGS-6760	Remove the redundant interface data copy from user to kernel
+MGS-7015	Optimize GPU kernel event queue
+MGS-7133	remove the unused BUILD_GL4_DRI_BUILD config
+IMX-3103	QT demo qt6-cinematic-experience met segmentation fault
+IMX-3030	Only 2 buffers per display inspite of setting the GBM_MULTI_BUFFER to 3
+MGS-7150	add GPU timeout scale to avoid false hang issue
+IMX-3140	fixed 8mq start camera preview meet call trace issue
+
 6.4.11P1 GA for L6.1.1-1.0.1
-======================
+============================
 Key Features
     - Weston 11.0.1
     - libdrm 2.4.114
@@ -44,7 +95,7 @@ LF-8111		display is abnormal with MIPI-panel on 8MM
 LF-8320		Fix 6QP kernel oom for OpenCL CTS test
 
 6.4.3P4 GA for L5.15.71-2.2.1
-======================
+=============================
 Key Features
     - No change
 
@@ -115,7 +166,7 @@ MGS-7083	bugfix[6QP6Q] Examples in OpenVG 2D failed
 MGS-6855	Only 2 buffers per display inspite of setting the GBM_MULTI_BUFFER to 3
 
 6.4.3P4 GA for L5.15.52-2.1.0
-======================
+=============================
 Key Features:
     - GLES CTS 3.2.8.0
     - OpenCV 4.6.0
@@ -174,7 +225,7 @@ MGS-6778	Change vulkan libs name to libvulkan_VSI*
 MGS-6776	enable RGBA half float formats to fix WebGL 2.0 CTS failure
 
 6.4.3P4 GA for L5.15.32-2.0.0
-============================
+=============================
 Key Features:
     - No change
 
@@ -189,7 +240,7 @@ Key Features:
     - Qt6
 
 6.4.3P2 GA for L5.10.52-2.1.0
-======================
+=============================
 Key Features:
 8ULP GPU alpha
     - ESCTS 3.2.7.0
