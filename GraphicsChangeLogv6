@@ -5,6 +5,47 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+6.4.11P2 GA for L6.1.36-2.1.0
+======================
+Key Features
+    - VULKAN API 1.3 (iMX8 except iMX8ULP)
+    - Weston 11.0.2 (iMX8 and iMX9)
+    - Weston 10.0.4 (iMX6 and iMX7)
+
+Improvements and Bug fixes
+
+IMX-3032	6.4.11 [8MQ] Output has defects/hang when running vulkan sascha case oit==> Fixed the UI issue
+IMX-3136	[QNX] gfxbench assert fail on gl_manhattan test
+IMX-3158	[L6.4] Update pin_user_pages( ) usage
+IMX-3142	[L6.3] Update class_create() usage
+IMX-3141	[L6.2] Update vm_flags with modifier calls
+Bug 35488	[glslsandbox-player:214]meet performance drop on imx8mscale wayland board
+IMX-3119 	[QNX, iMX8MM] glslsandbox regression in 6.4.11.p1
+IMX-3134 	6.4.11.p1: [6QP] escts regression with 20230412 patch release
+IMX-3156	Potential memory leak in gckCOMMAND_DumpExecutingBuffer
+IMX-3161	[QNX] Coverity issue on 6.4.11.p1
+IMX-3160	[android13_imx8mp] opencl unit test cl_copy() blocked in cl_g2d_flush() on cached memory
+IMX-3157	redefinate the built-in acosh function when run glslsandbox-player
+Bug 35960	[clblast tuner xgemm] meet GPU hang on imx815 wld with 6411 NXP branch
+Bug 36137	[opencv test gapi] 28 failed on imx865_wld upon 6411_22Q2_NXP
+Bug 35884	[SASCHAWILLEMS/vkmark]meet performance drop on imx815/imx8mscale wayland board with 6.4.11_22Q2_NXP driver.
+IMX-3151	[android13_imx8mq] GPU deadlock issue when do video stream stress test
+IMX-3180	Coverity high impact issues in 6.4.11.p2
+IMX-2777	[android-11-8mp] AbemaTV  shows frequent black frame inserted while the content playback.
+IMX-2693	[android-11-8mp] UI freeze when play youtube with ads
+IMX-3189	[IMX8] conflicting types for '_QuerySignal'
+IMX-3193	[Android14] build error on fsl_6.4.11.p1/fsl_6.4.11.p2
+IMX-3192	Has memory leak in running vulkan cts Higher priority
+IMX-2109	6.4.11: [8QM/8MN/8DX/8QXP/865S] OpenCL test using piglit framework with 305 cases failed. ==>Partial fix
+IMX-3080	6.4.11 glslsandbox-player issues
+Bug 36137	[opencv test/perf gapi/imgproc] add failed cases on imx865_wld upon 6411_22Q2_NXP
+IMX-3173	stack-buffer-overflow in running vkcts cases
+IMX-3184	[8MP/8MN] warning log is printed when playback some streams
+IMX-3206	[android-13]Meet GPU dump(AXI BUS ERROR) on more than 4G DDR board when run nn cts
+IMX-3186	Test failed in the case Vulkan.NativeWindowTest
+MGS-7295	VSI GPU - Load shader patch binary to avoid SPV decode and compile
+MGS-7338	Fix Vulkan wl_compositor warning log
+
 6.4.11P1 GA for L6.1.22-2.0.0
 =============================
 Key Features
