@@ -62,7 +62,6 @@
 <project path="packages/apps/Contacts" name="aosp_platform_packages_apps_Contacts" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
 <project path="packages/apps/Launcher3" name="aosp_platform_packages_apps_Launcher3" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
 <project path="packages/apps/Settings" name="aosp_platform_packages_apps_Settings" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
-<project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" remote="imx-android" revision="6c15484c46c6c42a5e388e0d68b7231a8a8b66b6" />
 <project path="packages/modules/Connectivity" name="aosp_platform_packages_modules_Connectivity" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
 <project path="system/apex" name="aosp_platform_system_apex" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
 <project path="system/core" name="aosp_platform_system_core" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
@@ -70,7 +69,6 @@
 <project path="system/libvintf" name="aosp_platform_system_libvintf" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
 <project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
 <project path="system/sepolicy" name="aosp_platform_system_sepolicy" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0" />
-<project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" remote="imx-android" revision="e2c77aebf72d56beb50329e9ce873ea834e02164" />
 <project path="system/teeui" name="aosp_platform_system_teeui" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0"/>
 <project path="packages/inputmethods/LatinIME" name="aosp_platform_packages_inputmethods_LatinIME" remote="imx-android" revision="refs/tags/android-13.0.0_2.2.0"/>
 <!-- For 3rd party public git. -->
