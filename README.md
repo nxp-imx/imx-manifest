@@ -37,6 +37,10 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 
+To download the 5.15.71-2.2.2 release (5.15 maintenance release 2023H2)
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-kirkstone -m imx-5.15.71-2.2.2.xml
+```
 To download the 5.15.71-2.2.1 release (5.15 maintenance release 2023H1)
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-kirkstone -m imx-5.15.71-2.2.1.xml

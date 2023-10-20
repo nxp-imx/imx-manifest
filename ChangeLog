@@ -1,4 +1,9 @@
-Date 07/10/2022
+Date 10/20/2023
+5.15.71-2.2.2
+- Maintenance release for Kernel 5.15 i.MX 6, 7 and 8 Series.
+- Upgrade graphics from 6.4.3.p4.8 to 6.4.3.p4.10
+
+Date 07/10/2023
 5.15.71-2.2.1
 - Maintenance release for Kernel 5.15 i.MX 6, 7 and 8 Series.
 - Upgrade graphics from 6.4.3.p4.6 to 6.4.3.p4.8
