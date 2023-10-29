@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-6.1.36-2.1.0.xml"/>
+<project name="meta-imx-orangebox" remote="nxp-imx" path="sources/meta-imx-orangebox" revision="mickledore-6.1.36-2.1.0" />
+  <project name="meta-imx-scfw" remote="nxp-imx" path="sources/meta-imx-scfw" revision="master" />
+
+</manifest>
