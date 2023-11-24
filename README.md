@@ -37,6 +37,10 @@ Each branch will have detailed READMEs describing exact syntax.
 Examples
 --------
 
+To download the 6.1.55-2.2.0 release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-mickledore -m imx-6.1.55-2.2.0.xml
+```
 To download the 6.1.36-2.1.0 release
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-mickledore -m imx-6.1.36-2.1.0.xml

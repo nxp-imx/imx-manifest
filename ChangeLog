@@ -1,3 +1,10 @@
+Date 12/15/2023
+6.1.55-2.2.0
+- GA release for Kernel 6.1 i.MX 6, 7, 8, 8M and 8ULP Series.
+- GA release for i.MX 93 A1 (11x11, 9x9, 14x14).
+- GA release for i.MX 91P.
+- Kernel upgrade to 6.1.55.
+
 Date 9/25/2023
 6.1.36-2.1.0
 - GA release for Kernel 6.1 i.MX 6, 7, 8, 8M and 8ULP Series.
