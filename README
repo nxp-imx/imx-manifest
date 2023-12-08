@@ -24,6 +24,7 @@ For imx-android-13.0.0_2.2.0.tar.gz          - Download imx-android-13.0.0_2.2.0
 For imx-automotive-13.0.0_1.1.0.tar.gz       - Download imx-automotive-13.0.0_1.1.0.tar.gz from nxp.com.
 For imx-automotive-13.0.0_1.3.0.tar.gz       - Download imx-automotive-13.0.0_1.3.0.tar.gz from nxp.com.
 For imx-automotive-13.0.0_2.1.0.tar.gz       - Download imx-automotive-13.0.0_2.1.0.tar.gz from nxp.com.
+For imx-automotive-13.0.0_2.3.0.tar.gz       - Download imx-automotive-13.0.0_2.3.0.tar.gz from nxp.com.
 
 - unzip the package
 - Run the build setup script in the tarball as specified in the README - example below

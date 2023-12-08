@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-trusty-automotive-13.0.0_2.3.0.xml"/>
+
+  <remote name="imx-android" fetch="https://github.com/nxp-imx-android" review="" />
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/lk" name="aosp_trusty_lk_common" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0">
+    <copyfile src="makefile" dest="makefile" />
+  </project>
+  <project path="external/boringssl" name="aosp_platform_external_boringssl" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/kernel" name="aosp_trusty_lk_trusty" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/user/app/avb" name="aosp_trusty_app_avb" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/user/app/gatekeeper" name="aosp_trusty_app_gatekeeper" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/user/app/keymaster" name="aosp_trusty_app_keymaster" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/user/app/storage" name="aosp_trusty_app_storage" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/user/app/confirmationui" name="aosp_trusty_app_confirmationui" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/user/base" name="aosp_trusty_lib" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN platform projects -->
+  <project path="system/keymaster" name="aosp_platform_system_keymaster" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="hardware/libhardware" name="aosp_platform_hardware_libhardware" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="system/teeui" name="aosp_platform_system_teeui" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <!-- END platform projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx8" name="aosp_trusty_device_nxp_imx8m" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <project path="trusty/hardware/nxp" name="aosp_trusty_lk_nxp" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0"/>
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN trusty vendor projects -->
+  <project path="trusty/vendor/google/aosp" name="aosp_trusty_vendor_google_aosp" remote="imx-android" revision="refs/tags/trusty-automotive-13.0.0_2.3.0">
+    <!-- Install lk_inc.mk into trusty root -->
+    <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
+  </project>
+  <!-- END trusty vendor projects -->
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp-automotive-13.0.0_2.3.0.xml"/>
+
+  <remote name="imx-android" fetch="https://github.com/nxp-imx-android" review="" />
+  <remote name="imx-linux-sdk" fetch="https://github.com/nxp-imx" review="" />
+  <remote name="imx-proprietary" fetch="https://github.com/nxp/" review="" />
+  <remote name="wireless-regdb" fetch="https://git.kernel.org/pub/scm/linux/kernel/git/sforshee/" review="" />
+  <remote name="github" fetch="https://github.com/" review="" />
+
+  <project path="external/wireless-regdb" name="wireless-regdb" remote="wireless-regdb" revision="991b1ef696b7a034a5bf001cf31ab7735888c6e1" />
+
+  <project path="vendor/nxp/imx-firmware" name="imx-firmware" remote="imx-proprietary" revision="refs/tags/automotive-13.0.0_2.3.0" />
+
+  <!-- For imx public git. -->
+  <project path="vendor/nxp-opensource/uboot-imx" name="uboot-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/arm-trusted-firmware" name="imx-atf" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/imx-lib" name="imx-lib" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/imx-mkimage" name="imx-mkimage" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/kernel_imx" name="linux-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/libdrm-imx" name="libdrm-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/nn-imx" name="nn-imx" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/nxp-mwifiex" name="mwifiex" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/verisilicon_sw_isp_vvcam" name="isp-vvcam" remote="imx-linux-sdk" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp/vpu_wrapper" name="imx-vpuwrap" remote="imx-proprietary" revision="refs/tags/automotive-13.0.0_2.3.0" />
+
+  <project path="device/nxp" name="android-imx_device_fsl" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" >
+    <linkfile src="common/tools/imx-make.sh" dest="imx-make.sh" />
+  </project>
+  <project path="vendor/nxp-opensource/imx" name="android-imx_platform_hardware_imx" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="vendor/nxp-opensource/fsl_imx_demo" name="android-imx_platform_packages_apps_fsl_imx_demo" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="hardware/nxp/libbt" name="android-imx_platform_hardware_nxp_libbt" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="hardware/nxp/wlan" name="android-imx_platform_hardware_nxp_wlan" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+
+  <!-- For imx changed aosp git. -->
+  <project path="build/make" name="aosp_platform_build" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="development" name="aosp_platform_development" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="external/perfetto" name="aosp_platform_external_perfetto" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="external/tinycompress" name="aosp_platform_external_tinycompress" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="external/wpa_supplicant_8" name="aosp_platform_external_wpa_supplicant_8" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="frameworks/base" name="aosp_platform_frameworks_base" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0"/>
+  <project path="frameworks/opt/net/wifi" name="aosp_platform_frameworks_opt_net_wifi" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="hardware/google/camera" name="aosp_platform_hardware_google_camera" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="kernel/configs" name="aosp_kernel_configs" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/apps/Calendar" name="aosp_platform_packages_apps_Calendar" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/apps/Contacts" name="aosp_platform_packages_apps_Contacts" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/apps/Launcher3" name="aosp_platform_packages_apps_Launcher3" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/apps/Settings" name="aosp_platform_packages_apps_Settings" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/modules/Connectivity" name="aosp_platform_packages_modules_Connectivity" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="system/core" name="aosp_platform_system_core" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="system/extras" name="aosp_platform_system_extras" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="system/libvintf" name="aosp_platform_system_libvintf" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="system/sepolicy" name="aosp_platform_system_sepolicy" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="system/teeui" name="aosp_platform_system_teeui" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0"/>
+  <project path="packages/inputmethods/LatinIME" name="aosp_platform_packages_inputmethods_LatinIME" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0"/>
+  <project path="packages/apps/Car/LocalMediaPlayer" name="aosp_platform_packages_apps_Car_LocalMediaPlayer" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/services/Car" name="aosp_platform_packages_services_Car" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0_gh" />
+  <project path="packages/modules/Bluetooth" name="aosp_platform_packages_modules_Bluetooth" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0" />
+  <project path="packages/modules/Wifi" name="aosp_platform_packages_modules_Wifi" remote="imx-android" revision="refs/tags/automotive-13.0.0_2.3.0"/>
+  <!-- For 3rd party public git. -->
+  <project path="external/glm" name="g-truc/glm" remote="github" revision="bf71a834948186f4097caa076cd2663c69a10e1e" />
+
+</manifest>
