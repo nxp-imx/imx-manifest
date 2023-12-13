@@ -3,6 +3,6 @@
 
   <include name="imx-6.1.55-2.2.0.xml"/>
 
-  <project name="meta-nxp-security-reference-design" remote="nxp-imx" path="sources/meta-nxp-security-reference-design" revision="mickledore-6.1.55-2.2.0" />
+  <project name="meta-nxp-security-reference-design" remote="imx-support" path="sources/meta-nxp-security-reference-design" revision="mickledore-6.1.55-2.2.0" />
 
 </manifest>
