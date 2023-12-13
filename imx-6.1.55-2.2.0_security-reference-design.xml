@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-6.1.55-2.2.0.xml"/>
+
+  <project name="meta-nxp-security-reference-design" remote="nxp-imx" path="sources/meta-nxp-security-reference-design" revision="mickledore-6.1.55-2.2.0" />
+
+</manifest>
