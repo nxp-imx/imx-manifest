@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="imx-6.1.55-2.2.0.xml"/>
+
+  <project name="meta-nxp-desktop" remote="nxp-imx" path="sources/meta-nxp-desktop" revision="refs/tags/rel_lf_6.1.55_2.2.0_ldp" upstream="lf-6.1.55-2.2.0-mickledore" >
+    <linkfile src="tools/imx-setup-desktop.sh" dest="imx-setup-desktop.sh"/>
+    <linkfile src="README.md" dest="README-DESKTOP"/>
+  </project>
+
+</manifest>
