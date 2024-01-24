@@ -39,8 +39,8 @@
 <!-- For imx changed aosp gits. -->
 <project path="bootable/recovery" name="aosp_bootable_recovery" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
 <project path="development" name="aosp_development" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="external/wpa_supplicant_8" name="external/wpa_supplicant_8" remote="external/wpa_supplicant_8" revision="refs/tags/android-14.0.0_1.0.0" groups="pdk"/>
-<project path="external/tinyalsa" name="external/tinyalsa" remote="external/tinyalsa" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="external/wpa_supplicant_8" name="external/wpa_supplicant_8" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" groups="pdk"/>
+<project path="external/tinyalsa" name="external/tinyalsa" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
 <project path="frameworks/av" name="aosp_frameworks_av" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
 <project path="frameworks/base" name="aosp_frameworks_base" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
 <project path="frameworks/native" name="aosp_frameworks_native" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
