@@ -37,29 +37,29 @@
 <project path="system/tools/bpt" name="aosp_platform_system_tools_bpt" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" />
 
 <!-- For imx changed aosp gits. -->
-<project path="bootable/recovery" name="aosp_bootable_recovery" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="development" name="aosp_development" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="external/wpa_supplicant_8" name="aosp_external_wpa_supplicant_8" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" groups="pdk"/>
-<project path="external/tinyalsa" name="aosp_external_tinyalsa" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="frameworks/av" name="aosp_frameworks_av" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="frameworks/base" name="aosp_frameworks_base" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="frameworks/native" name="aosp_frameworks_native" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="frameworks/opt/net/wifi" name="aosp_frameworks_opt_net_wifi" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="hardware/google/camera" name="aosp_hardware_google_camera" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="hardware/interfaces" name="aosp_hardware_interfaces" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="packages/apps/Camera2" name="aosp_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="packages/apps/Launcher3" name="aosp_packages_apps_Launcher3" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="packages/apps/Settings" name="aosp_packages_apps_Settings" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="packages/apps/SoundRecorder" name="aosp_packages_apps_SoundRecorder" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" />
+<project path="bootable/recovery" name="aosp_platform_bootable_recovery" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="development" name="aosp_platform_development" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="external/wpa_supplicant_8" name="aosp_platform_external_wpa_supplicant_8" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" groups="pdk"/>
+<project path="external/tinyalsa" name="aosp_platform_external_tinyalsa" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="frameworks/av" name="aosp_platform_frameworks_av" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="frameworks/base" name="aosp_platform_frameworks_base" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="frameworks/native" name="aosp_platform_frameworks_native" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="frameworks/opt/net/wifi" name="aosp_platform_frameworks_opt_net_wifi" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="hardware/google/camera" name="aosp_platform_hardware_google_camera" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="hardware/interfaces" name="aosp_platform_hardware_interfaces" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="packages/apps/Camera2" name="aosp_platform_packages_apps_Camera2" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="packages/apps/Launcher3" name="aosp_platform_packages_apps_Launcher3" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="packages/apps/Settings" name="aosp_platform_packages_apps_Settings" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="packages/apps/SoundRecorder" name="aosp_platform_packages_apps_SoundRecorder" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" />
 <project path="packages/modules/adb" name="aosp_platform_packages_modules_adb" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="packages/modules/NeuralNetworks" name="aosp_packages_modules_NeuralNetworks" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" />
-<project path="packages/services/DeviceAsWebcam" name="aosp_packages_services_DeviceAsWebcam" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="system/core" name="aosp_system_core" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="system/extras" name="aosp_system_extras" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="system/memory/libion" name="aosp_system_memory_libion" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="system/sepolicy" name="aosp_system_sepolicy" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="system/teeui" name="aosp_system_teeui" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
-<project path="packages/inputmethods/LatinIME" name="aosp_packages_inputmethods_LatinIME" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="packages/modules/NeuralNetworks" name="aosp_platform_packages_modules_NeuralNetworks" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0" />
+<project path="packages/services/DeviceAsWebcam" name="aosp_platform_packages_services_DeviceAsWebcam" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="system/core" name="aosp_platform_system_core" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="system/extras" name="aosp_platform_system_extras" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="system/memory/libion" name="aosp_platform_system_memory_libion" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="system/sepolicy" name="aosp_platform_system_sepolicy" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="system/teeui" name="aosp_platform_system_teeui" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
+<project path="packages/inputmethods/LatinIME" name="aosp_platform_packages_inputmethods_LatinIME" remote="imx-android" revision="refs/tags/android-14.0.0_1.0.0"/>
 
 <!-- For 3rd party public git. -->
 <project path="external/glm" name="g-truc/glm" remote="github" revision="bf71a834948186f4097caa076cd2663c69a10e1e" />
