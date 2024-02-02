@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <include name="int-5.15.52-2.1.0.xml"/>
-  <project remote="imx-release" revision="master" name="meta-imx-integrity" path="sources/meta-imx-integrity" >
+  <include name="imx-5.15.52-2.1.0.xml"/>
+  <project remote="nxp-imx" revision="main" name="meta-imx-integrity" path="sources/meta-imx-integrity" >
     <linkfile src="tools/imx-integrity-setup-release.sh" dest="imx-integrity-setup-release.sh"/>
   </project>
 
