@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default revision="nanbield" sync-j="4"/>
+
+  <remote name="yp"          fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"          fetch="https://github.com/openembedded"/>
+  <remote name="kraj"        fetch="https://github.com/kraj"/>
+
+  <remote name="community"   fetch="https://github.com/Freescale"/>
+  <remote name="ossystems"   fetch="https://github.com/OSSystems"/>
+  <remote name="qt"          fetch="https://code.qt.io/yocto"/>
+  <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
+
+  <remote name="nxp-imx"     fetch="https://github.com/nxp-imx"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+
+  <project name="poky" remote="yp" path="sources/poky" revision="046b70083f3bc9e25f547e8026400032f5c563d9" upstream="nanbield"/>
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="1750c66ae8e4268c472c0b2b94748a59d6ef866d" upstream="nanbield"/>
+  <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="9b08495e6bcef524789aefb6a7cc80fdfd2ff409" upstream="master"/>
+
+  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="84df0b1ff416c6739472f7f7eadff04fa90d38f6" upstream="master">
+    <linkfile dest="README" src="README"/>
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="0a73d1bdd7713a6189482e463c98043c9939a2a2" upstream="master"/>
+  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="7725256e3859b62f1ff201db7f2cf7026c17656d" upstream="master"/>
+  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="4f1f101ebab5eb054bfbed10b247fc0547b30793" upstream="master"/>
+
+  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="4d22f982bce8dff6f8c4d11845c47a4d39f961c6" upstream="master"/>
+  <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="fd054cf5fc1b50d50cd606384ab338c6d9206437" upstream="6.5.3"/>
+  <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="dc31889c0899971def535dc1c040edf18bc16691"/>
+  <project name="meta-security" remote="yp" path="sources/meta-security" revision="070a1e82cc59424d230a23c0b2a104b01fbaa2ad" upstream="master"/>
+  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="a0c1f045016fd54406888f3750c1355188ffed63" upstream="master"/>
+  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="9e92984ff47b3ca2106b1d27a93af061b28d1e8a" upstream="nanbield"/>
+
+  <project name="meta-imx" remote="nxp-imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.6.3_1.0.0" upstream="nanbield-6.6.3-1.0.0">
+     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+     <linkfile src="README" dest="README-IMXBSP"/>
+  </project>
+  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="nanbield-6.6.3-1.0.0" />
+
+</manifest>
