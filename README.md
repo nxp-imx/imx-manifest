@@ -3,12 +3,11 @@ i.MX Repo Manifest README
 
 This repo is used to download manifests for i.MX BSP releases.
 
-Specific instructions will reside in READMEs in each branch.
+Specific instructions reside in READMEs in each branch.
 
-The branch will be based on the release type Linux or Android with release manifests in each branch tied to the base releases.
+The branch name is based on the release type, Linux or Android, and the Yocto Project release name, with manifests in each branch tied to the base BSP release.
 
-For example for i.MX Linux Yocto Project releases the branches will be imx-linux-<Yocto Project release> so `imx-linux-kirkstone` with
-all manifests tied to releases on `Kirkstone` in this branch.
+For example, for i.MX Linux BSP releases based on Yocto Project `Nanbield`, the branch is `imx-linux-nanbield`.
 
 Install the `repo` utility:
 ---------------------------
@@ -32,7 +31,7 @@ $: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <r
 $: repo sync
 ```
 
-Each branch will have detailed READMEs describing exact syntax.
+Each branch has detailed READMEs describing exact syntax.
 
 Examples
 --------
@@ -58,7 +57,7 @@ $: [MACHINE=<machine>] [DISTRO=fsl-imx-<backend>] source ./imx-setup-release.sh 
     fb          Framebuffer (not supported for mx8)
 ```
 
-Note if the poky community distro is used then build breaks will happen with some
+Note: If the poky community distro is used, then build breaks will happen with some
 components using our `meta-imx` layer.
 
 Examples:
