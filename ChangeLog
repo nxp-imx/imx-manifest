@@ -1,0 +1,31 @@
+Date 3/29/2024
+6.6.3-1.0.0
+- GA release for Kernel 6.6 i.MX 6, 7, 8, 8M, 8ULP and 93 Series.
+- Alpha release for i.MX 95 A0/A1 (19x19).
+- Alpha release for i.MX 93 PF09.
+- Kernel upgrade to 6.6.3.
+
+Date 12/15/2023
+6.1.55-2.2.0
+- GA release for Kernel 6.1 i.MX 6, 7, 8, 8M and 8ULP Series.
+- GA release for i.MX 93 A1 (11x11, 9x9, 14x14).
+- GA release for i.MX 91P.
+- Kernel upgrade to 6.1.55.
+
+Date 9/25/2023
+6.1.36-2.1.0
+- GA release for Kernel 6.1 i.MX 6, 7, 8, 8M and 8ULP Series.
+- GA release for i.MX 93 (11x11).
+- Beta release for i.MX 93 (9x9).
+- Alpha release for i.MX 91P.
+- Kernel upgrade to 6.1.36.
+
+Date 6/25/2023
+6.1.22-2.0.0
+- GA release for Kernel 6.1 i.MX 6, 7, 8 and 8M Series.
+- GA release for i.MX 8ULP A2.
+- Beta release for i.MX 93.
+- Kernel upgrade to 6.1.22.
+- u-Boot upgrade to 2023.04.
+- OP-TEE upgrade to 3.21.
+- Yocto Project upgrade to Mickledore (4.2) release.
