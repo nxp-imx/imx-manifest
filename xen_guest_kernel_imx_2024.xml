@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="aosp" fetch="https://android.googlesource.com" review="https://android-review.googlesource.com/"/>
+  
+  <default remote="aosp" revision="main-kernel-build-2023" sync-j="4"/>
+  
+  <project name="kernel/build" path="build/kernel" revision="01aece85af33ea8a6aea50c09be185cad146e6b0" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023">
+    <linkfile src="kleaf/bazel.sh" dest="tools/bazel"/>
+    <linkfile src="kleaf/bazel.WORKSPACE" dest="WORKSPACE"/>
+    <linkfile src="build_test.sh" dest="build/build_test.sh"/>
+    <linkfile src="config.sh" dest="build/config.sh"/>
+  </project>
+  <project name="kernel/common" path="common" revision="ac90f0829243d0c6d2f9b219b519c0d0be696ab6" upstream="android14-6.1" dest-branch="android14-6.1"/>
+  <project name="kernel/common-modules/virtual-device" path="common-modules/virtual-device" revision="836cf537ab62946f405003cdf7c815b686056c0b" upstream="android14-6.1" dest-branch="android14-6.1"/>
+  <project name="kernel/configs" revision="07e726fb7d0dc50ba6d8dcbbbe8def8d5ee9c573" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="kernel/prebuilts/build-tools" path="prebuilts/kernel-build-tools" revision="e905be252a53d20c52bd9e59df3ff8fdd46b9eab" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="kernel/tests" revision="a2acaf18ab3d4ba873060a3041a90f68b2f1a414" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="platform/build/bazel_common_rules" path="build/bazel_common_rules" revision="b4f0919269ec78d28ec32a34ca90e107c3a41f4e" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="platform/external/bazel-skylib" path="external/bazel-skylib" revision="f998e5dc13c03f0eae9e373263d3afff0932c738" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="platform/external/python/absl-py" path="external/python/absl-py" revision="2f199605a9875340569e039657f8b4c72d51b84d" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="platform/external/stardoc" path="external/stardoc" revision="e83f522ee95419e55d2c5654aa6e0143beeef595" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="platform/prebuilts/bazel/linux-x86_64" path="prebuilts/bazel/linux-x86_64" revision="7bfbec9e829bbae6816d5f39aba345df76e627c1" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="c181f690fe9b76142b3203c2ab959b6299d4d1fd" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="f08a96e4015aed7c0341b880ccd85500b1b44a26" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="7775eb113f960bc69a780b621d03a715914d4bca" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="f6d40532273c8bd628b960ecc0970c7294c8d891" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" revision="649eec4416e2ed6298af49a56876772767a0e5ae" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  <project name="platform/system/tools/mkbootimg" path="tools/mkbootimg" revision="615a1fced5f8e2755642d30357674d3bfa21b85e" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023"/>
+  <project name="toolchain/prebuilts/ndk/r23" path="prebuilts/ndk-r23" revision="19ac7e4eded12adb99d4f613490dde6dd0e72664" upstream="main-kernel-build-2023" dest-branch="main-kernel-build-2023" clone-depth="1"/>
+  
+  <superproject name="kernel/superproject" revision="common-android14-6.1"/>
+</manifest>
