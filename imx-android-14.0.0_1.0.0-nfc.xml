@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+<include name="imx-android-14.0.0_1.0.0.xml"/>
+
+<!-- add new remote sources -->
+<remote name="nxp-nfc-project" fetch="https://github.com/NXPNFCProject/" review="" />
+
+<!-- remove projects in upper xml -->
+<remove-project name="platform/hardware/nxp/nfc" />
+<remove-project name="platform/hardware/nxp/secure_element" />
+<remove-project name="platform/packages/apps/Nfc" />
+<remove-project name="platform/system/nfc" />
+
+<!-- replace with new projects in new remote sources -->
+<project path="hardware/nxp/nfc" name="nfcandroid_nfc_hidlimpl" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="hardware/nxp/secure_element" name="nfcandroid_se_hidlimpl" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="packages/apps/Nfc" name="NFC_NCIHAL_Nfc" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="system/nfc" name="NFC_NCIHAL_libnfc-nci" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+
+<!-- add new projects -->
+<project path="hardware/nxp/secure_element_extns" name="nfcandroid_nxp_ese_clients" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp-opensource/nfcandroid_frameworks" name="nfcandroid_frameworks" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp-opensource/NXPNFC_Reference" name="NXPNFC_Reference" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp-opensource/nfc-NXPNFCC_FW" name="nfc-NXPNFCC_FW" remote="imx-proprietary" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp-opensource/nxpnfc" name="NXPNFC_I2CDriver" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp-opensource/nxpese" name="NXPESE_SPIDriver" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+
+</manifest>
