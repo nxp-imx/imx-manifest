@@ -22,7 +22,7 @@
 <project path="hardware/nxp/secure_element_extns" name="nfcandroid_nxp_ese_clients" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
 <project path="vendor/nxp-opensource/nfcandroid_frameworks" name="nfcandroid_frameworks" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
 <project path="vendor/nxp-opensource/NXPNFC_Reference" name="NXPNFC_Reference" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
-<project path="vendor/nxp-opensource/nfc-NXPNFCC_FW" name="nfc-NXPNFCC_FW" remote="imx-proprietary" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp-opensource/nfc-NXPNFCC_FW" name="nfc-NXPNFCC_FW" remote="imx-proprietary" revision="refs/tags/NFC_AR_00_7E800_15.0B.00_OpnSrc" />
 <project path="vendor/nxp-opensource/nxpnfc" name="NXPNFC_I2CDriver" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
 <project path="vendor/nxp-opensource/nxpese" name="NXPESE_SPIDriver" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
 
