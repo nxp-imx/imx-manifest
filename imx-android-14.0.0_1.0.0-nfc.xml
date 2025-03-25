@@ -5,6 +5,7 @@
 
 <!-- add new remote sources -->
 <remote name="nxp-nfc-project" fetch="https://github.com/NXPNFCProject/" review="" />
+<remote name="nxp-imx-support" fetch="https://github.com/nxp-imx-support/" review="" />
 
 <!-- remove projects in upper xml -->
 <remove-project name="platform/hardware/nxp/nfc" />
@@ -25,5 +26,6 @@
 <project path="vendor/nxp-opensource/nfc-NXPNFCC_FW" name="nfc-NXPNFCC_FW" remote="imx-proprietary" revision="refs/tags/NFC_AR_00_7E800_15.0B.00_OpnSrc" />
 <project path="vendor/nxp-opensource/nxpnfc" name="NXPNFC_I2CDriver" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
 <project path="vendor/nxp-opensource/nxpese" name="NXPESE_SPIDriver" remote="nxp-nfc-project" revision="refs/tags/NFC_AR_00_3E800_14.0E.00_OpnSrc" />
+<project path="vendor/nxp/mcu-sdk/imx8ulp_watch" name="imx8ulp-cm33-usecase" remote="nxp-imx-support" revision="refs/heads/imx8ulp_sdk_2.13.1_watch_github" />
 
 </manifest>
