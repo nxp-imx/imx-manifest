@@ -6,6 +6,43 @@ Key Features of the Mali Driver Series
     - Vulkan 1.3
     - OpenCL 3.0
 
+L6.6.52-2.2.1
+======================
+Key Features
+    - Weston 12.0.5 (iMX 8/9)
+
+MGS-8167,MGS-8128,MGS-8080,MGS-8042,MGS-7751   many CVE patches
+MGS-8088	rm abspath to fix Yocto QA issue
+MGS-7975	free devices before dpy destroy
+YOCIMX-8416	fix build error with GCC14.2
+MA-22444	add HAL_DATASPACE_JFIF support
+MA-23017	Fix two failures in CtsDeqpTestCases dEQP-VK.api group.
+LF-13629	mali: remove deprecated no_llseek
+MGS-7915	Add shader and tiler utilization
+MGS-7869	gputop issue u32 type will make busy_time and idle_time overflow which resulting crazy output in kernle debugfs dvfs_utilization output data
+
+L6.6.52-2.2.0
+======================
+Key Features
+    - libdrm 2.4.116
+    - Weston 12.0.4 (iMX 8/9)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.10.0
+
+LF-13187	extend the fence timeout to 5s
+YOCIMX-8416	fix build error with GCC 14
+MGS-7891	init the blend state
+MGS-7848	fix uninitialized in malioc
+MGS-7631	update the GLES 1.0 header file
+MGS-7848	fix resource leak in malioc
+LF-13489	enable pm warning check in debug build
+MGS-7838	fix gles update buffer
+LF-13411	use MIN/MAX in minmax.h
+MGS-7574	skip the huge fence timeout print
+LF-13276	get the simple_ondemand data from dts
+LF-12971	add gpu clk notifier
+MGS-7824	correct api_version in vulkan icd conf file
+
 L6.6.36-2.1.0
 ======================
 Key Features
@@ -127,6 +164,27 @@ Key Features of the Vivante 6.x Driver Series
       plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
+
+
+
+6.4.11P2 GA for L6.6.52-2.2.0
+======================
+Key Features
+    - libdrm 2.4.116
+    - Weston 12.0.4 (iMX 8)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.10.10
+
+Improvements and Bug fixes
+IMX-3311    Fix converity issues.
+IMX-3291    [Android14] Support skiavk and skiavkthreaded render engine on android 14   ==>Partial fix
+IMX-3238    [Android14] Fix 8mq second open a navigation apk meet crash.
+IMX-3332    make platform_driver::remove() return void
+IMX-3329    move FMODE_UNSIGNED_OFFSET to fop_flags
+IMX-3328    Add all supported gbm formats to format support list
+IMX-3270    Refine runtime pm feature in gpu subsystem
+IMX-3339    Correct gpu physSize from dtb
+IMX-3342    Remove deprecated no_llseek in gpu driver
 
 6.4.11P2 GA for L6.6.36-2.1.0
 ======================
