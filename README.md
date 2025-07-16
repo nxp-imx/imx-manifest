@@ -42,6 +42,10 @@ Each branch has detailed READMEs describing exact syntax.
 Examples
 --------
 
+To download the 6.6.52-2.2.1 release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.52-2.2.1.xml
+```
 To download the 6.6.52-2.2.0 release
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-scarthgap -m imx-6.6.52-2.2.0.xml

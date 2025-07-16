@@ -1,3 +1,10 @@
+Date 7/16/2025
+6.6.52-2.2.1
+- Post GA release for Kernel 6.6 i.MX 6, 7, 8, 8M, 8ULP, 91 and 93 Series.
+- Beta2 release for i.MX 95 A1 (19x19, 15x15).
+- Alpha release for i.MX 95 B0 (19x19).
+- Graphics upgrade mali to r50p4, Weston to v12.0.5.
+
 Date 12/16/2024
 6.6.52-2.2.0
 - GA release for Kernel 6.6 i.MX 6, 7, 8, 8M, 8ULP, 91 and 93 Series.
