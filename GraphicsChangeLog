@@ -165,7 +165,21 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
-
+6.4.11P2 GA for L6.6.52-2.2.1
+======================
+Key Features
+    - libdrm 2.4.116
+    - Weston 12.0.5 (iMX 8)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.10.0
+   
+Improvements and Bug fixes
+MGS-7950    Fix coverity issue in mxc/gpu: free of array-typed value
+LF-13727    [i.MX8QXP] Fix GFXBench gles GPU dump on Long Duration test
+MGS-7873    Fix TGE_LV_Conformance_ES30 failed on 6QP
+MGS-7935    Solve some coverity issues.
+MA-23484    [Android_8MP/8MN_EVK]Fix random UI hang during split screen test.
+MGS-8056    [i.MX6DQP/Actia] Remove 6QP shader cache flush to fix Qt sporadic crash
 
 6.4.11P2 GA for L6.6.52-2.2.0
 ======================
@@ -173,18 +187,18 @@ Key Features
     - libdrm 2.4.116
     - Weston 12.0.4 (iMX 8)
     - Weston 10.0.5 (iMX 6/7)
-    - OpenCV 4.10.10
+    - OpenCV 4.10.0
 
 Improvements and Bug fixes
-IMX-3311    Fix converity issues.
-IMX-3291    [Android14] Support skiavk and skiavkthreaded render engine on android 14   ==>Partial fix
-IMX-3238    [Android14] Fix 8mq second open a navigation apk meet crash.
-IMX-3332    make platform_driver::remove() return void
-IMX-3329    move FMODE_UNSIGNED_OFFSET to fop_flags
-IMX-3328    Add all supported gbm formats to format support list
-IMX-3270    Refine runtime pm feature in gpu subsystem
-IMX-3339    Correct gpu physSize from dtb
-IMX-3342    Remove deprecated no_llseek in gpu driver
+MGS-7800    Fix converity issues.
+MA-22885    [Android14] Support skiavk and skiavkthreaded render engine on android 14   ==>Partial fix
+MA-21679    [Android14] Fix 8mq second open a navigation apk meet crash.
+MGS-7841    make platform_driver::remove() return void
+LF-13445    move FMODE_UNSIGNED_OFFSET to fop_flags
+LF-13442    Add all supported gbm formats to format support list
+MGS-7834    Refine runtime pm feature in gpu subsystem
+MGS-7871    Correct gpu physSize from dtb
+MGS-7888    Remove deprecated no_llseek in gpu driver
 
 6.4.11P2 GA for L6.6.36-2.1.0
 ======================
