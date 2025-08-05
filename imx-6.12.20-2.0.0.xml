@@ -19,7 +19,7 @@
   <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="0d2d2d193a1619b6dbebaf335f1ef785478049e3" upstream="walnascar" />
   <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="2c9678cce413fa6c6c84a8a631f4635a4f862f11" upstream="walnascar" />
 
-  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="master" upstream="master">
+  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="84df0b1ff416c6739472f7f7eadff04fa90d38f6" upstream="master">
     <linkfile dest="README" src="README" />
     <linkfile dest="setup-environment" src="setup-environment" />
   </project>
