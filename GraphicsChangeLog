@@ -6,6 +6,28 @@ Key Features of the Mali Driver Series
     - Vulkan 1.4
     - OpenCL 3.0
 
+L6.12.34-2.1.0
+======================
+Key Features
+    - libdrm 2.4.123
+    - Weston 14.0.2 (iMX 8/9)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.12.0
+    - Vulkan 1.4
+
+Improvements and Bug fixes
+MA-23482	Enable GPU profiler support for android evk_95.
+MA-22781-1	remove the deprecated MALI_PAGE_SIZE_AGNOSTIC config
+MGS-8315	IPA counter is more than available Three new shader core counters added by LF-15292 above 6 shader core counters registered by tvax power module in IPA control exceeds max IPA block counters which is 8. Replace shader core counter with fragment starving counter which is already in power shader counters to make total shader counters to be 8 to fix ipa register error
+MGS-7487	fix Vulkan test report warning msg
+MGS-6283	Add support of VK_COMPOSITE_ALPHA_OPAQUE_BIT_KHR feature
+MGS-8280	generate catch.hpp by ddk script to fix the build issue
+MGS-8280	fix remove_if build error when integrate r54p1
+MGS-8232	mali r54p1 release
+LF-15292	Add more gpu hardware unit utilization in kernel debugfs
+MGS-8197	upstream kernel fix from 6.12 ~ 6.16
+MGS-8196	coverity fix
+
 L6.12.20-2.0.0
 ======================
 Key Features
