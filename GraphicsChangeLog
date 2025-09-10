@@ -233,6 +233,36 @@ Key Features of the Vivante 6.x Driver Series
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
 
+L6.12.34-2.1.0
+======================
+Key Features
+    - libdrm 2.4.123
+    - Weston 14.0.2 (iMX 8/9)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.12.0
+
+Improvements and Bug fixes
+MGS-8076    [L6.13] fix the using of MODULE_IMPORT_NS
+MGS-8077    [L6.13] remove driver date from struct drm_driver
+IMX-3317    [android15-early]Android 15 graphics CTS issues     ==>Partial fix
+MA-23384    [android]refine android_update_gpu_libs.sh
+IMX-3201    [android14-early]Fix Android 14 graphics CTS issues     ==>Partial fix
+IMX-3369    [Android15] run CtsSkQPTestCases module meet process crash issue and failures on gpu driver
+MA-23484    [Android_8MP/8MN_EVK] GUI: Crash happened and UI had no responding during split screen test. (50%)
+MGS-8146    [Chromium] Angle gles backend for chromium on i.MX8
+LF-14567    [6.12][QM][Thermal] System fails to transition state for gpu-thermal when emulating temperature above trip point
+MA-23151    [Android_8MQ_WEVK] UsbCamera: fail to open camera when test all resulotion usb camera taken picture with chitu apk (100%)
+MGS-8076    [L6.13] fix the using of MODULE_IMPORT_NS
+MGS-8077    [L6.13] remove driver date from struct drm_driver
+MGS-8180    [GPU 2D] update g2d header for imx_2.4 release
+MGS-8056    [i.MX6DQP/Actia] Dual Qt applications - Sporadic crash
+MA-23382    [Android15 imx8mm cts-on-gsi]process crash while running cts-on-gsi test
+MGS-8177    [i.MX6QP/Bosch] With MSAA(4x), Color difference across diagonal line issue
+MGS-8312    [G2d] Fix the g2d head file format annotation error
+MGS-7926    Confused Deputy Vulnerability
+IMX-3326    [Android15] [regression]8mn 8qm run CtsDeqpTestCases case with vulkan 1.3.9 meet gpu dump
+MGS-8002    Angle with vulkan backend on Vsi
+
 6.4.11P3 GA for L6.12.20-2.0.0
 ======================
 Key Features
