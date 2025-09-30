@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!--
+    This branch is a main side branch and is configured to have all project
+    specific rules. When updating this manifest file, please also update the
+    project rule in google3 to ensure new projects get testing.
+    See go/side-branch-testing for details.
+-->
+
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com/"
+           review="https://android-review.googlesource.com/" />
+  <default revision="refs/tags/android-15.0.0_r20"
+           remote="aosp"
+           sync-j="4" />
+
+  <superproject name="trusty/superproject" remote="aosp"/>
+  <contactinfo bugurl="go/repo-bug" />
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/headers" name="trusty/external/headers" groups="trusty" />
+  <project path="external/trusty/bootloader" name="trusty/external/trusty" groups="trusty" />
+  <project path="external/trusty/musl" name="trusty/external/musl" groups="trusty" />
+  <project path="trusty/host/common" name="trusty/host/common" groups="trusty">
+    <linkfile src="bazel/WORKSPACE.bazel" dest="WORKSPACE.bazel" />
+    <linkfile src="bazel/bazelrc" dest=".bazelrc" />
+  </project>
+  <project path="trusty/interfaces" name="trusty/interfaces" revision="1c4fd8de9f771ad8f5c55ee42c1789f34e34e849" groups="trusty" />
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN apps projects  -->
+  <project path="trusty/user/app/authmgr" name="trusty/app/authmgr" groups="trusty" />
+  <project path="trusty/user/app/sample" name="trusty/app/sample" groups="trusty" />
+  <project path="trusty/user/app/gatekeeper" name="trusty/app/gatekeeper" groups="trusty" />
+  <project path="trusty/user/app/secretkeeper" name="trusty/app/secretkeeper" groups="trusty" />
+  <project path="trusty/user/app/cast-auth" name="trusty/app/cast-auth" groups="trusty" />
+  <!-- END apps projects -->
+
+  <!-- BEGIN platform projects -->
+  <project path="development" name="platform/development" groups="trusty" />
+  <project path="external/fmtlib" name="platform/external/fmtlib" groups="trusty" />
+  <project path="external/freetype" name="platform/external/freetype" groups="trusty" />
+  <project path="external/googletest" name="platform/external/googletest" groups="trusty" />
+  <project path="external/hafnium" name="platform/external/hafnium" revision="9a9897a78bfe7f3a526cf3e3b9b0dbbfd20cf0b1" groups="trusty" />
+  <project path="external/libcppbor" name="platform/external/libcppbor" revision="b1b998be4ec447f3086e7fd6a7f78eaec66a1c45" groups="trusty" />
+  <project path="external/libcxx" name="platform/external/libcxx" groups="trusty" />
+  <project path="external/libcxxabi" name="platform/external/libcxxabi" groups="trusty" />
+  <project path="external/nanopb-c" name="platform/external/nanopb-c" groups="trusty" />
+  <project path="external/open-dice" name="platform/external/open-dice" groups="trusty" />
+  <project path="external/protobuf" name="platform/external/protobuf" groups="trusty" />
+  <project path="external/python/jinja" name="platform/external/python/jinja" groups="trusty" />
+  <project path="external/python/six" name="platform/external/python/six" groups="trusty" />
+  <project path="external/python/markupsafe" name="platform/external/python/markupsafe" groups="trusty" />
+  <project path="external/scudo" name="platform/external/scudo" groups="trusty" />
+  <project path="frameworks/hardware/interfaces" name="platform/frameworks/hardware/interfaces" groups="trusty" />
+  <project path="hardware/interfaces" name="platform/hardware/interfaces" groups="trusty" />
+  <project path="frameworks/base" name="platform/frameworks/base" groups="trusty" />
+  <project path="frameworks/native" name="platform/frameworks/native" groups="trusty" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" groups="trusty" />
+  <project path="packages/modules/Virtualization" name="platform/packages/modules/Virtualization" groups="trusty" />
+  <project path="system/authgraph" name="platform/system/authgraph" groups="trusty" />
+  <project path="system/core" name="platform/system/core" groups="trusty" />
+  <project path="system/gatekeeper" name="platform/system/gatekeeper" groups="trusty" />
+  <project path="system/iot/attestation" name="platform/system/iot/attestation" revision="fc6768d1d99da7a504fdbd95c890cb37f93ba044" groups="trusty" />
+  <project path="system/keymaster" name="platform/system/keymaster" groups="trusty" />
+  <project path="system/libbase" name="platform/system/libbase" groups="trusty" />
+  <project path="system/secretkeeper" name="platform/system/secretkeeper" groups="trusty" />
+  <project path="system/see/authmgr" name="platform/system/see/authmgr" revision="7048b879574815030e153e089ececec27955ab5c" groups="trusty" />
+  <project path="system/tools/aidl" name="platform/system/tools/aidl" groups="trusty" />
+  <project path="tools/repohooks" name="platform/tools/repohooks" groups="trusty" />
+  <!-- END platform projects -->
+
+  <!-- BEGIN trusty device projects -->
+  <project path="trusty/device/arm/generic-arm64" name="trusty/device/arm/generic-arm64" groups="trusty" />
+  <project path="trusty/device/arm/vexpress-a15" name="trusty/device/arm/vexpress-a15" groups="trusty" />
+  <project path="trusty/device/common" name="trusty/device/common" revision="fc247e4ad87e7d744bef3345b3804bcaaecd6bb4" groups="trusty" />
+  <project path="trusty/device/x86/generic-x86_64" name="trusty/device/x86/generic-x86_64" groups="trusty" />
+  <!-- END trusty device projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx7d" name="trusty/device/nxp/imx7d" groups="trusty" />
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN trusty android desktop projects -->
+  <project path="trusty/device/desktop" name="trusty/device/desktop" revision="12a282d01f003766fe29da6283dd163caa7dc50f" groups="trusty" />
+  <project path="trusty/user/desktop" name="trusty/user/desktop" revision="bca492380285ef470fee4fc50976ab8420b79810" groups="trusty" />
+  <!-- END trusty android desktop projects -->
+
+  <!-- BEGIN toolchains -->
+  <project path="prebuilts/android-emulator" name="platform/prebuilts/android-emulator" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/clang-tools" name="platform/prebuilts/clang-tools" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="trusty" revision="2fa77dca376be7be1e51b89fb2e23c792cd6286b" clone-depth="1" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" revision="14bfeb36aa6bc305e9b1fb7bfe1d901f39de29c4" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/libprotobuf" name="platform/prebuilts/libprotobuf/linux" revision="fbc6810e0ea7322e5ed7c80662ddc4aad97fe60d" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="trusty" clone-depth="1" />
+  <project path="trusty/prebuilts/aosp" name="trusty/prebuilts/aosp" revision="4bc11d3844ccf5bc20c8133bbc8ca8515724a41f" groups="trusty" clone-depth="1" />
+  <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="trusty"
+clone-depth="1" />
+  <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" groups="trusty" clone-depth="1" />
+  <project path="build/bazel" name="platform/build/bazel" groups="trusty" clone-depth="1" >
+    <linkfile src="bazel.BUILD" dest="BUILD" />
+  </project>
+  <project path="external/bazel-skylib" name="platform/external/bazel-skylib" groups="trusty" clone-depth="1" />
+  <!-- END toolchains -->
+
+  <!-- BEGIN external rust crates -->
+  <project path="external/rust/android-crates-io" name="platform/external/rust/android-crates-io" groups="trusty" />
+  <!-- These crates are being migrated to the rust crate monorepository mapped in above -->
+  <project path="external/rust/crates/openssl" name="platform/external/rust/crates/openssl" groups="trusty" />
+  <!-- END external rust crates -->
+
+  <!-- BEGIN aux external projects -->
+  <project path="external/linux" name="kernel/common" revision="android16-6.12" groups="trusty" />
+  <project path="external/dtc" name="platform/external/dtc" revision="main" groups="trusty" />
+  <project path="external/arm-trusted-firmware" name="trusty/external/trusted-firmware-a" revision="main" groups="trusty" />
+  <!-- END aux external projects -->
+
+  <!-- BEGIN Linux kernel projects -->
+  <project path="linux/common-modules/trusty" name="kernel/common-modules/trusty" revision="main" groups="trusty" />
+  <project path="linux/common-modules/virtual-device" name="kernel/common-modules/virtual-device" revision="android16-6.12" groups="trusty" />
+  <!-- END Linux kernel projects -->
+
+  <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
+</manifest>
