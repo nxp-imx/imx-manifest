@@ -5,7 +5,7 @@
 
   <remote name="nxp" fetch="https://github.com/NXP"/>
 
-  <project remote="nxp" revision="refs/tags/lf-6.12.20_2.0.0-harpoon-3.4.0" name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" upstream="imx-linux-walnascar" >
+  <project remote="nxp" revision="refs/tags/lf-6.12.20_2.0.0-harpoon-3.4.0" name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" >
     <linkfile src="tools/imx-harpoon-setup-release.sh" dest="imx-harpoon-setup-release.sh"/>
   </project>
 

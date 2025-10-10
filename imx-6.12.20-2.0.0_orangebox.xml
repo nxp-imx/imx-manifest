@@ -3,7 +3,7 @@
 
   <include name="imx-6.12.20-2.0.0.xml"/>
 
-  <project name="meta-imx-orangebox" remote="imx" path="sources/meta-imx-orangebox" revision="refs/tags/rel_imx_6.12.20_2.0.0" upstream="walnascar-6.12.20.2.0.0" />
+  <project name="meta-imx-orangebox" remote="imx" path="sources/meta-imx-orangebox" revision="refs/tags/rel_imx_6.12.20_2.0.0" />
   <project name="meta-imx-scfw" remote="imx" path="sources/meta-imx-scfw" revision="0fb5a355244547cb1576a8e70d8dd0d407134977" upstream="master" />
   <project name="meta-nxp-web-ui" remote="imx" path="sources/meta-nxp-web-ui" revision="5b385935e6bd71a3f4eff9400ffe87df70dfa657" upstream="master" />
 
