@@ -25,7 +25,7 @@ Install essential host packages
 ------------------------------
 Your Build Host must install required packages for the Yocto build.
 Reference to the section "Build Host Packages" in the document "Yocto Project Quick build".
-- https://docs.yoctoproject.org/5.1.2/brief-yoctoprojectqs/index.html#build-host-packages
+- https://docs.yoctoproject.org/5.2.4/brief-yoctoprojectqs/index.html#build-host-packages
 
 Download the Yocto Project BSP
 ------------------------------
@@ -49,6 +49,10 @@ $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -
 To download the 6.12.34-2.1.0 release
 ```
 $: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.34-2.1.0.xml
+```
+To download the 6.12.49-2.2.0 release
+```
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.49-2.2.0.xml
 ```
 
 Setup the build folder for a BSP release:
