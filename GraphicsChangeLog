@@ -30,6 +30,20 @@ Key Features of the Mali Driver Series
     - Vulkan 1.4
     - OpenCL 3.0
 
+L6.12.49-2.2.0
+======================
+Key Features
+    - libdrm 2.4.123
+    - Weston 14.0.2 (iMX 8/9)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.12.0
+    - Vulkan 1.4
+
+Improvements and Bug fixes
+MGS-8472	Disable primitive reordering for v9 GPU's
+MGS-8461	fix build error with GCC15.2
+MGS-8397	fix CSF Iterator may fail
+
 L6.12.34-2.1.0
 ======================
 Key Features
