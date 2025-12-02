@@ -8,7 +8,18 @@ Key Features of the mesa-rvgpu-emu
     - Out-of-the-box BSP integration with NXP Linux BSP
     - Reduced CPU overhead and efficient resource utilization for embedded applications
 
-2.0.0
+L6.12.49-2.2.0
+======================
+Key Features
+    - OpenGLES 1.1/2.0 support
+    - Optimize rendering effenciency
+
+Improvements and Bug fixes
+
+MGS-8459 Fix Display issues with terrain in glmark2-es2-wayland
+MGS-8454 optimize allocate_register in shader FW
+
+L6.12.34-2.1.0
 ======================
 Key Features
     - OpenGLES 1.1/2.0 support
@@ -270,6 +281,27 @@ Key Features of the Vivante 6.x Driver Series
       plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
+
+L6.12.49-2.2.0
+======================
+Key Features
+    - libdrm 2.4.123
+    - Weston 14.0.2 (iMX 8/9)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.12.0
+Improvements and Bug fixes
+MA-24072 [android]fix dEQP-VK.image.swapchain_mutable.* on android16
+MA-23803 [android]Fix the bug that rpmsg chre module cannot be loaded
+LF-16019 [8MQ-WEVK] GPU/XWLD: Fix EGL errno=24 printed then generated lots of gplay ERRORS when do video playback and GPU es20 demo concurrent stress test.
+IMX-3403 [android]Fix CtsDeqpTestCases and CtsSkQPTestCases new failures on android16.
+MGS-8367 [Cisco][8ULP] Support TinyDRM in kernel GPU driver
+MGS-7926 Confused Deputy Vulnerability      ==>Partial fix
+MGS-6813 Improve Vivante driver to reuse upstream GPU device entry
+MGS-8391 [GPU 2D] update g2d header for imx_2.5 release
+MA-24107 [android]fix cts case android.graphics.cts.HardwareRendererTest#lockHardwareCanvasSingleBuffer
+MGS-7930 [i.MX 8MQ/Cisco] Crash in memcpy in libGAL.so
+MA-24152 [android]fix dEQP-VK.renderpass/dEQP-VK.renderpass2 with CTS 16_r2
+MA-24218 [android]fix CTS case dEQP-VK.wsi.android.swapchain.simulate_oom#min_image_count
 
 L6.12.34-2.1.0
 ======================
