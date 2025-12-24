@@ -33,11 +33,11 @@
   <project name="meta-timesys" remote="timesys" path="sources/meta-timesys"  revision="3c362eeeb68523a88c2301e29ab1fd4802284e50" upstream="master" />
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="898239e810acbb7db93299f20deec8afe434f11b" upstream="walnascar" />
 
-  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.12.34_2.1.0" upstream="walnascar-6.12.34.2.1.0">
+  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.12.34_2.1.0" >
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh" />
      <linkfile src="README.md" dest="README.md" />
   </project>
-  <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.12.34_2.1.0" upstream="imx_matter_2025_q1-post" />
-  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.34_2.1.0" upstream="walnascar-6.12.34-2.1.0" />
+  <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.12.34_2.1.0" />
+  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.34_2.1.0" />
 
 </manifest>
