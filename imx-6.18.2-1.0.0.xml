@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default revision="whinlatter" sync-j="4"/>
+
+  <remote name="yp"          fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"          fetch="https://github.com/openembedded"/>
+  <remote name="kraj"        fetch="https://github.com/kraj"/>
+
+  <remote name="community"   fetch="https://github.com/Freescale"/>
+  <remote name="ossystems"   fetch="https://github.com/OSSystems"/>
+  <remote name="qt"          fetch="https://github.com/YoeDistro"/>
+  <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
+
+  <remote name="imx"         fetch="https://github.com/nxp-imx"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+
+  <project name="bitbake" remote="oe" path="sources/bitbake" revision="6e511d035a3d1e4129dab7b0dfbf216bd8e99b47" upstream="master" />
+  <project name="openembedded-core" remote="oe" path="sources/openembedded-core" revision="9964fa3da2fa1e7243fba1a826e59f7bb1813706" upstream="whinlatter" />
+  <project name="meta-yocto" remote="yp" path="sources/meta-yocto" revision="d02d3faaf4d6075ea03e9eb47654ec7639f929a0" upstream="whinlatter" />
+  <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="cf20f8bd1366d41094c945597b95dd746e87b871" upstream="master" />
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="a4e768dcfae181dd99e39c4286fa0729ca7f4e47" upstream="whinlatter" />
+
+  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="e2b65583ca857eed5d7aa675a77712fa58096bb0" upstream="master" >
+    <linkfile dest="setup-environment" src="setup-environment"/>
+  </project>
+  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="2781242e499e601ef9454009aceed16186a48d9e" upstream="whinlatter"/>
+  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="b2b1987841018013006f909f817a3e9b034c6227" upstream="whinlatter" />
+  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="8001652aa3e2c6436c2bfce744e99f398c680858" upstream="whinlatter" />
+  <project name="meta-freescale-ml" remote="community" path="sources/meta-freescale-ml" revision="b364d313706d247fadf12feb68136559d7ff3d52" upstream="master" />
+
+  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="3752c4e4478a6dbdf7a722a261d16ebc7a4a99e5" upstream="whinlatter" />
+  <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="be7fddeb123706f9ef428e1248e9bfa3c0ba3953" upstream="6.9.3" />
+  <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="26ce9f7e67880ffb819c4012e89a8863c5f853ba" />
+  <project name="meta-security" remote="yp" path="sources/meta-security" revision="3b93a09d528fd93995a15c4994de92759b057b15" upstream="whinlatter" />
+  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="e0ce07084184e33d68058858276a0b9400c0d0c1" upstream="master" />
+  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="b9a29d2423407c1e50f19dc3f3e154d164c5f0ec" upstream="whinlatter" />
+
+  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="whinlatter-6.18.2-1.0.0" >
+     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
+     <linkfile src="README.md" dest="README.md"/>
+  </project>
+  <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="imx_matter_2025_q4-post" />
+  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="int-whinlatter-6.18.2-1.0.0" />
+
+</manifest>
