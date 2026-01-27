@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default revision="walnascar" sync-j="4"/>
+
+  <remote name="yp"          fetch="https://git.yoctoproject.org"/>
+  <remote name="oe"          fetch="https://github.com/openembedded"/>
+  <remote name="kraj"        fetch="https://github.com/kraj"/>
+
+  <remote name="community"   fetch="https://github.com/Freescale"/>
+  <remote name="ossystems"   fetch="https://github.com/OSSystems"/>
+  <remote name="qt"          fetch="https://github.com/YoeDistro"/>
+  <remote name="timesys"     fetch="https://github.com/TimesysGit"/>
+
+  <remote name="imx"         fetch="https://github.com/nxp-imx"/>
+  <remote name="imx-support" fetch="https://github.com/nxp-imx-support"/>
+
+  <remote name="rte"         fetch="https://github.com/nxp-real-time-edge-sw"/>
+  <remote name="nxp-github"  fetch="https://github.com/NXP"/>
+
+  <remote name="ros"         fetch="https://github.com/ros"/>
+
+  <remote name="imx-matter"  fetch="https://github.com/nxp-imx" />
+
+  <project name="poky" remote="yp" path="sources/poky" revision="b642d6a4a93a23d5b99886844ff7b224aa7e13bf" upstream="walnascar" />
+  <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="dca497d728792e3cb655c78455c2d649af312ce8" upstream="walnascar" />
+  <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="003cba92e982bdd565a6889f28799f8bba14957e" upstream="walnascar" />
+
+  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="84df0b1ff416c6739472f7f7eadff04fa90d38f6" upstream="master" />
+  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="167ff4ddb79299cf5477e94620a9e598659c407b" upstream="walnascar" />
+  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="68d47bf4dde321f1289758fe6c36bfbdad81fc30" upstream="walnascar" />
+  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="b9c3536b68271c420fe5de36fc284781ceaa32ab" upstream="walnascar" />
+
+  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="2de04c3d31e119d4bedbea24b9c63a8c113a1ce3" upstream="walnascar" />
+  <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="00c3bd954341a2a755fdee6b978af952f51793e7" upstream="6.8.3" />
+  <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="f988d616d37ddf160d3d747ed54d0a66d549f499" />
+  <project name="meta-security" remote="yp" path="sources/meta-security" revision="784ca4b6584101e971b2d5d76ec7b716ad1301b5" upstream="walnascar" />
+  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="3c362eeeb68523a88c2301e29ab1fd4802284e50" upstream="master" />
+  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="898239e810acbb7db93299f20deec8afe434f11b" upstream="walnascar" />
+
+  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.12.34_2.1.0" upstream="walnascar-6.12.34.2.1.0" />
+  <project name="meta-nxp-connectivity" remote="imx-matter" path="sources/meta-nxp-connectivity" revision="refs/tags/rep-1.0.0" upstream="imx_matter_2025_q3-robotics-edge" />
+  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.12.34_2.1.0" upstream="walnascar-6.12.34-2.1.0" />
+
+ <!-- Real-time Edge Edge Platform Layers -->
+  <project name="meta-rtos-industrial" remote="rte" path="sources/meta-rtos-industrial" revision="refs/tags/Real-Time-Edge-v3.3-202512" upstream="walnascar"/>
+  <project name="meta-real-time-edge" remote="rte" path="sources/meta-real-time-edge" revision="refs/tags/Real-Time-Edge-v3.3-202512" upstream="walnascar"/>
+  <project name="meta-nxp-harpoon" path="sources/meta-nxp-harpoon" remote="nxp-github" revision="refs/tags/Real-Time-Edge-v3.3-202512" upstream="real-time-edge-walnascar"/>
+  <project name="meta-nxp-avb" path="sources/meta-nxp-avb" remote="nxp-github" revision="f72454ccd17ecd0938cdb9ab58b1c663cd8cd99b"/>
+
+  <!-- Robotics Edge Platform Layers -->
+  <project name="meta-ros" path="sources/meta-ros" remote="ros" revision="c801edfa16680a57b7caa0cd43468408435cb255" upstream="walnascar"/>
+  <project name="meta-ros2-nxp" path="sources/meta-ros2-nxp" remote="imx" revision="refs/tags/v1.0.0" upstream="walnascar"/>
+  <project name="meta-ros2-bsp" path="sources/meta-ros2-bsp" remote="imx" revision="refs/tags/v1.0.0" upstream="walnascar"/>
+  <project name="meta-robotics-edge" path="sources/meta-robotics-edge" remote="imx" revision="refs/tags/v1.0.0" upstream="walnascar">
+    <linkfile src="tools/robotics-edge-setup.sh" dest="robotics-edge-setup.sh"/>
+    <linkfile src="tools/setup-environment" dest="setup-environment"/>
+  </project>
+
+</manifest>
