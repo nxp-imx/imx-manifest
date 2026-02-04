@@ -8,6 +8,22 @@ Key Features of the mesa-rvgpu-emu
     - Out-of-the-box BSP integration with NXP Linux BSP
     - Reduced CPU overhead and efficient resource utilization for embedded applications
 
+L6.18.2-1.0.0
+======================
+Key Features
+    - OpenGLES 1.1/2.0 support
+    - Optimize rendering effenciency
+
+Improvements and Bug fixes
+
+MGS-8456    [Whinlatter]Upgrade rvgpu-emu to align with mesa 25.2.5
+MGS-8401    Implement TGSI_OPCODE_TXB2
+MGS-8402    Implement TGSI_OPCODE_TXD
+MGS-8414    Add blend func PIPE_BLEND_MIN and PIPE_BLEND_MAX
+MGS-8411    Fix dEQP-GLES3.functional.texture.format.sized.*
+LF-16605    [imx93/imx943] Fix Regression: mesa change causes some streams cannot play
+LF-16845    [MX93] GPU/XWLD: Fix all flutter test demos failed with error "libEGL warning: failed to get driver name for fd -1". 100%
+
 L6.12.49-2.2.0
 ======================
 Key Features
@@ -302,6 +318,24 @@ Key Features of the Vivante 6.x Driver Series
       plus additional functionality, into core OpenGL ES. Vivante OpenGL ES 3.2 implementation has passed Khronos OpenGL ES 3.2 Conformance Test.
       And Vivante GC7000XS* GPU core has been certified by Khronos as an OpenGL ES 3.2 compliant product.
     - Backward Compatible with 5.x and 4.x Drivers. Existing OpenGL ES 3.x/2.0 applications can run on these drivers without any changes.
+
+L6.18.2-1.0.0
+======================
+Key Features
+    - libdrm 2.4.123
+    - Weston 14.0.2 (iMX 8/9)
+    - Weston 10.0.5 (iMX 6/7)
+    - OpenCV 4.12.0
+
+Improvements and Bug fixes
+
+MGS-8147    [i.MX8MP] Sporadic crash - Qt application   ==>Partial fix
+MA-24271    [Android 16] 8MQ CTS android.mediav2.cts.DecodeGlAccuracyTest is failed, 100%
+MGS-8478	[6.18 TC1]Fix g2d-dpu/gpu2d build error with GCC 15.2
+MGS-8473    [L6.17] Remove nth_page in kernel
+MGS-8480    [6.18 TC1]gpu-viv6: build error with GCC 15.2
+MA-24345    fix org.skia.skqp.SkQPRunner#UnitTest_DeviceTestVertexTransparency
+MGS-8559    [i.MX8MP] system hang when test webgl cts 2.0.0 on chromium 138.0.7204.157
 
 L6.12.49-2.2.0
 ======================
