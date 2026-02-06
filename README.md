@@ -7,7 +7,7 @@ Specific instructions reside in READMEs in each branch.
 
 The branch name is based on the release type, Linux or Android, and the Yocto Project release name, with manifests in each branch tied to the base BSP release.
 
-For example, for i.MX Linux BSP releases based on Yocto Project `Walnascar`, the branch is `imx-linux-walnascar`.
+For example, for i.MX Linux BSP releases based on Yocto Project `Whinlatter`, the branch is `imx-linux-whinlatter`.
 
 Install the `repo` utility:
 ---------------------------
@@ -42,17 +42,9 @@ Each branch has detailed READMEs describing exact syntax.
 Examples
 --------
 
-To download the 6.12.20-2.0.0 release
+To download the 6.18.2-1.0.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.20-2.0.0.xml
-```
-To download the 6.12.34-2.1.0 release
-```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.34-2.1.0.xml
-```
-To download the 6.12.49-2.2.0 release
-```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-walnascar -m imx-6.12.49-2.2.0.xml
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-whinlatter -m imx-6.18.2-1.0.0.xml
 ```
 
 Setup the build folder for a BSP release:
@@ -68,7 +60,7 @@ $: [MACHINE=<machine>] [DISTRO=fsl-imx-<backend>] source ./imx-setup-release.sh 
 <backend>   Graphics backend type
     xwayland    Wayland with X11 support - default distro
     wayland     Wayland
-    fb          Framebuffer (not supported for mx8)
+    fb          Framebuffer (not supported for i.MX 8 and 9)
 ```
 
 Note: If the poky community distro is used, then build breaks will happen with some
@@ -77,7 +69,7 @@ components using our `meta-imx` layer.
 Examples:
 - Setup for XWayland.
 ```
-$: MACHINE=imx8mnevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
+$: MACHINE=imx8mpevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
 ```
 
 Build an image:
