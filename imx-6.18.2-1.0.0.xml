@@ -36,11 +36,11 @@
   <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="e0ce07084184e33d68058858276a0b9400c0d0c1" upstream="master" />
   <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="b9a29d2423407c1e50f19dc3f3e154d164c5f0ec" upstream="whinlatter" />
 
-  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="whinlatter-6.18.2-1.0.0" >
+  <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.18.2_1.0.0" upstream="whinlatter-6.18.2-1.0.0" >
      <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
      <linkfile src="README.md" dest="README.md"/>
   </project>
-  <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="imx_matter_2025_q4-post" />
-  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="int-whinlatter-6.18.2-1.0.0" />
+  <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.18.2_1.0.0" upstream="imx_matter_2025_q4-post" />
+  <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.18.2_1.0.0" upstream="whinlatter-6.18.2-1.0.0" />
 
 </manifest>
