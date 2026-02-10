@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+      
+  <include name="imx-6.18.2-1.0.0.xml"/>
+  
+  <project name="meta-imx-orangebox" remote="imx" path="sources/meta-imx-orangebox" revision="refs/tags/rel_imx_6.18.2_1.0.0" upstream="whinlatter-6.18.2-1.0.0" />
+  <project name="meta-nxp-web-ui" remote="imx" path="sources/meta-nxp-web-ui" revision="912b4ac69655028a193eeabfba8c52b2ff5a1b96" upstream="master" />
+
+</manifest>
