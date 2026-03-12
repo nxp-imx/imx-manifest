@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="aosp" fetch="https://android.googlesource.com/" review="https://android-review.googlesource.com/"/>
+  
+  <default remote="aosp" revision="main" sync-j="4"/>
+  
+  <project name="kernel/build" path="build/kernel" revision="4377c74d6d5fe37597f2356f630f45f33b45c959" upstream="main" dest-branch="main">
+    <linkfile src="kleaf/bazel.sh" dest="tools/bazel"/>
+  </project>
+  <project name="kernel/prebuilts/build-tools" path="prebuilts/kernel-build-tools" revision="cd8fdc0396217abbf46d607b218fe6a19108d0fe" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/bootable/libbootloader" path="bootable/libbootloader" revision="62384fb519034741ee781bc513180f3b8523b115" upstream="main" dest-branch="main"/>
+  <project name="platform/build/bazel_common_rules" path="build/bazel_common_rules" revision="5fb8d26dfb2565e0e2d8b6630d241b5f5675e0b1" upstream="main" dest-branch="main"/>
+  <project name="platform/external/arm-trusted-firmware" path="external/arm-trusted-firmware" revision="29d7abb688a015031bccac0495d65f82cb41d8b7" upstream="main" dest-branch="main"/>
+  <project name="platform/external/bazel-skylib" path="external/bazel-skylib" revision="930baaa09975eb3809629a72806acbe9494dd224" upstream="main" dest-branch="main"/>
+  <project name="platform/external/bazelbuild-rules_cc" path="external/bazelbuild-rules_cc" revision="9a4853f0327e0266818c8d6b4967e2e8f36b1a88" upstream="main" dest-branch="main"/>
+  <project name="platform/external/bazelbuild-rules_license" path="external/bazelbuild-rules_license" revision="50a220cc046640f32b067a0f8aee427606fdf13e" upstream="main" dest-branch="main"/>
+  <project name="platform/external/bazelbuild-rules_python" path="external/bazelbuild-rules_python" revision="dafaab0edbb48e256c259bafc8d829b73219b1cc" upstream="main" dest-branch="main"/>
+  <project name="platform/external/bazelbuild-rules_rust" path="external/bazelbuild-rules_rust" revision="bdd24099a80555ff8a4441e8bb47f4c7cfe413f8" upstream="main" dest-branch="main"/>
+  <project name="platform/external/boringssl" path="external/boringssl" revision="dc3a035f4907d0d7a04be2a0af151e35f04b073c" upstream="main" dest-branch="main"/>
+  <project name="platform/external/compiler-rt" path="external/compiler-rt" revision="8285151b2b9b97cb8eda1455344ea7301d0c0c12" upstream="main" dest-branch="main"/>
+  <project name="platform/external/dtc" path="external/dtc" revision="5ec1ec09d03945cfde95c5c018c23b2e94552089" upstream="main" dest-branch="main"/>
+  <project name="platform/external/elfutils" path="external/elfutils" revision="6ef7065edac2d1f8f5f64900c3a0caf65cedea79" upstream="main" dest-branch="main"/>
+  <project name="platform/external/googletest" path="external/googletest" revision="05911fd931cde55ea86bdb12b5706fb5aa570544" upstream="main" dest-branch="main"/>
+  <project name="platform/external/open-dice" path="external/open-dice" revision="9366c2e73b905fbf9dce7baab4f6b8e254d20928" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/bitflags" path="external/rust/crates/bitflags" revision="6e7aa0fc8666c81ab39fb52c65e784e233200b55" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/byteorder" path="external/rust/crates/byteorder" revision="b7f57cbc5a22d1f4bbad662a9190392ce14b485c" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/cfg-if" path="external/rust/crates/cfg-if" revision="fb376feb4b96727cfffae8f0e645fb0025b61521" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/crc32fast" path="external/rust/crates/crc32fast" revision="0de2057494815cc63b2a07dcf442bc8d39910abd" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/hex" path="external/rust/crates/hex" revision="13258ba725c209ed3764aa7afdd29231a8185b5a" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/proc-macro2" path="external/rust/crates/proc-macro2" revision="f2a2bd22ce8aafe47df20f69b4b72b8822c3ff42" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/quote" path="external/rust/crates/quote" revision="83f5f28eb7d04dbde60135b14a8bd428dcc78fd7" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/syn" path="external/rust/crates/syn" revision="10d9340ef9241fddb8cd768ca99c45b908f52e1f" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/tinyjson" path="external/rust/crates/tinyjson" revision="91d0e4d229c573dcc5ebc80006f52ea6e7741485" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/unicode-ident" path="external/rust/crates/unicode-ident" revision="56480aaddbc1c0200ffb9b574f7516930af1126a" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/zerocopy" path="external/rust/crates/zerocopy" revision="521eeefe61f572eb77af1e183a5d7efce45ca1cb" upstream="main" dest-branch="main"/>
+  <project name="platform/external/rust/crates/zerocopy-derive" path="external/rust/crates/zerocopy-derive" revision="4363b0a154fd60d5acf1b72e7613106f0917d2e6" upstream="main" dest-branch="main"/>
+  <project name="platform/external/stardoc" path="external/stardoc" revision="90db889d0337642d5b1c28fc66c092243d77a128" upstream="main" dest-branch="main"/>
+  <project name="platform/external/swig" path="external/swig" revision="6ffc1dbf29ba98c4d8aa71ebc9b484e973fe1030" upstream="main" dest-branch="main"/>
+  <project name="platform/external/u-boot" path="u-boot" revision="89df3416676fa75fd03da9163778f96661f3a1a0" upstream="main" dest-branch="main">
+    <linkfile src="." dest=".source_date_epoch_dir"/>
+    <linkfile src="bazel.WORKSPACE" dest="WORKSPACE"/>
+  </project>
+  <project name="platform/external/zlib" path="external/zlib" revision="ecca3e0b49796339fb185fd1cb312bbc5537158f" upstream="main" dest-branch="main"/>
+  <project name="platform/prebuilts/bazel/linux-x86_64" path="prebuilts/bazel/linux-x86_64" revision="7a1bb74817124b8320d870b3444de4f8cf0ee36c" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="8ec937894a863300ada5311507ad817ec6a0c932" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="bf33473342630944198190ff74e6ca09a9bcfdeb" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="eff089d06c97fc7168eeb086c220607f1cb63fdd" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="dfa84be8039e99afda2a9b31fc8bb6238d4f1c62" upstream="u-boot-mainline" dest-branch="u-boot-mainline" clone-depth="1"/>
+  <project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="3b6581a8f1fca1a0a3bf9f91d9eede6de77e414c" upstream="u-boot-mainline" dest-branch="u-boot-mainline" clone-depth="1"/>
+  <project name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" revision="87b5c3d65d55af5d3298961e34c01b5013dd354d" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="4142060e4a240923e0d97a4e6b8ed03f602f7fdc" upstream="u-boot-mainline" dest-branch="u-boot-mainline" clone-depth="1"/>
+  <project name="platform/prebuilts/jdk/jdk11" path="prebuilts/jdk/jdk11" revision="8a12fb945c49644cb0fd61b52026fb0d31867fa6" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/prebuilts/rust" path="prebuilts/rust" revision="39b86977967a70dfd4c25cf390e9511746ffdf0a" upstream="main" dest-branch="main" clone-depth="1"/>
+  <project name="platform/system/tools/mkbootimg" path="tools/mkbootimg" revision="722e6fa37d508b190fafa9a8ce9f6d571fad3a8c" upstream="main" dest-branch="main"/>
+  <project name="toolchain/prebuilts/ndk/r26" path="prebuilts/ndk-r26" revision="e87abe7cbe9143d239ba54f32c64ca697adcba75" upstream="main" dest-branch="main" clone-depth="1"/>
+  
+  <superproject name="kernel/superproject" revision="u-boot-mainline"/>
+  
+  <contactinfo bugurl="go/repo-bug"/>
+</manifest>
