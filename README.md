@@ -7,7 +7,7 @@ Specific instructions reside in READMEs in each branch.
 
 The branch name is based on the release type, Linux or Android, and the Yocto Project release name, with manifests in each branch tied to the base BSP release.
 
-For example, for i.MX Linux BSP releases based on Yocto Project `Whinlatter`, the branch is `imx-linux-whinlatter`.
+For example, for i.MX Linux BSP releases based on Yocto Project `Wrynose`, the branch is `imx-linux-wrynose`.
 
 Install the `repo` utility:
 ---------------------------
@@ -25,7 +25,7 @@ Install essential host packages
 ------------------------------
 Your Build Host must install required packages for the Yocto build.
 Reference to the section "Build Host Packages" in the document "Yocto Project Quick build".
-- https://docs.yoctoproject.org/5.2.4/brief-yoctoprojectqs/index.html#build-host-packages
+- https://docs.yoctoproject.org/6.0/brief-yoctoprojectqs/index.html#build-host-packages
 
 Download the Yocto Project BSP
 ------------------------------
@@ -42,9 +42,9 @@ Each branch has detailed READMEs describing exact syntax.
 Examples
 --------
 
-To download the 6.18.2-1.0.0 release
+To download the 6.18.20-2.0.0 release
 ```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-whinlatter -m imx-6.18.2-1.0.0.xml
+$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-wrynose -m imx-6.18.20-2.0.0.xml
 ```
 
 Setup the build folder for a BSP release:
