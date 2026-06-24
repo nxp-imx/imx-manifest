@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <include name="aosp_trusty_matter_2026_q1.xml"/>
+
+  <remote  name="aosp-imx"
+           fetch="https://github.com/nxp-imx-android"
+           review="" />
+
+  <!-- BEGIN trusty core projects -->
+  <project path="external/lk" name="aosp_trusty_lk_common" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1">
+    <copyfile src="makefile" dest="makefile" />
+  </project>
+  <project path="external/boringssl" name="aosp_platform_external_boringssl" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/kernel" name="aosp_trusty_lk_trusty" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/user/app/avb" name="aosp_trusty_app_avb" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/user/app/storage" name="aosp_trusty_app_storage" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/user/app/confirmationui" name="aosp_trusty_app_confirmationui" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/user/app/keymint" name="aosp_trusty_app_keymint" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/user/base" name="aosp_trusty_lib" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <!-- END trusty core projects -->
+
+  <!-- BEGIN platform projects -->
+  <project path="system/teeui" name="aosp_platform_system_teeui" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="system/keymint" name="aosp_platform_system_keymint" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="external/open-dice" name="aosp_platform_external_open-dice" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <!-- END platform projects -->
+
+  <!-- BEGIN trusty nxp projects -->
+  <project path="trusty/device/nxp/imx8" name="aosp_trusty_device_nxp_imx8m" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <project path="trusty/hardware/nxp" name="aosp_trusty_lk_nxp" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1"/>
+  <!-- END trusty nxp projects -->
+
+  <!-- BEGIN trusty vendor projects -->
+  <project path="trusty/vendor/google/aosp" name="aosp_trusty_vendor_google_aosp" groups="trusty" remote="aosp-imx" revision="refs/tags/imx_matter_2026_q1">
+   <!-- Install lk_inc.mk into trusty root -->
+    <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
+  </project>
+  <!-- END trusty vendor projects -->
+
+</manifest>
