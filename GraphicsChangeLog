@@ -1,53 +1,7 @@
-Key Features of the mesa-rvgpu-emu
-**********************************
+Overview
+********
 
-    - Mesa-based GPU software rendering acceleration solution for NXP i.MX93/943 MPU platforms
-    - Full OpenGL ES 2.0 specification compliance with optimized software rendering pipeline
-    - Superior performance compared to native Mesa implementations with enhanced rendering speed
-    - Seamless Flutter integration for modern UI development with smooth animations
-    - Out-of-the-box BSP integration with NXP Linux BSP
-    - Reduced CPU overhead and efficient resource utilization for embedded applications
-
-L6.18.2-1.0.0
-======================
-Key Features
-    - OpenGLES 1.1/2.0 support
-    - Optimize rendering effenciency
-
-Improvements and Bug fixes
-
-MGS-8456    [Whinlatter]Upgrade rvgpu-emu to align with mesa 25.2.5
-MGS-8401    Implement TGSI_OPCODE_TXB2
-MGS-8402    Implement TGSI_OPCODE_TXD
-MGS-8414    Add blend func PIPE_BLEND_MIN and PIPE_BLEND_MAX
-MGS-8411    Fix dEQP-GLES3.functional.texture.format.sized.*
-LF-16605    [imx93/imx943] Fix Regression: mesa change causes some streams cannot play
-LF-16845    [MX93] GPU/XWLD: Fix all flutter test demos failed with error "libEGL warning: failed to get driver name for fd -1". 100%
-
-L6.12.49-2.2.0
-======================
-Key Features
-    - OpenGLES 1.1/2.0 support
-    - Optimize rendering effenciency
-
-Improvements and Bug fixes
-
-MGS-8459 Fix Display issues with terrain in glmark2-es2-wayland
-MGS-8454 optimize allocate_register in shader FW
-
-L6.12.34-2.1.0
-======================
-Key Features
-    - OpenGLES 1.1/2.0 support
-    - Optimize rendering effenciency
-
-Improvements and Bug fixes
-
-LF-16025	Fix out of bound crash for Gfxbench test
-MGS-8373	Fix particles3d crash
-MGS-8375	Fix flutter_svg hang issue
-MGS-8370	Fix gl_trex_qmatch crach in Gfxbench
-MGS-7976	Fix some glcts egl failures
+This document includes separate Changelogs for the Mali and Vivante driver series.
 
 Key Features of the Mali Driver Series
 **************************************
