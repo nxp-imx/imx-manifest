@@ -1,88 +1,167 @@
-i.MX Repo Manifest README
-=========================
+# NavQ95
 
-This repo is used to download manifests for i.MX BSP releases.
+The [IMX yocto project users guide](https://www.nxp.com/docs/en/user-guide/UG10164.pdf) contains
+detailed explanation on how to an build SD card image for the various iMX devices. For the NavQ95 there are a few exception that need to be taken
+care of.
 
-Specific instructions reside in READMEs in each branch.
+See below table containing items that deviate from the manual:
 
-The branch name is based on the release type, Linux or Android, and the Yocto Project release name, with manifests in each branch tied to the base BSP release.
+| Item                   | Original                                    | New                                               |
+| -----------------------| ------------------------------------------- | ------------------------------------------------- |
+| imx-manifest repo URL  | https://github.com/nxp-imx/imx-manifest.git | https://github.com/NXP-Robotics/imx-manifest-navq95.git |
+| Manifest file          | imx-6.18.20-2.0.0.xml                       | imx-6.18.20-2.0.0-navq.xml                        |
+| Machine                | * (eg. imx95-19x19-lpddr5-evk)              | imx95-navqbdesktop                                |
 
-For example, for i.MX Linux BSP releases based on Yocto Project `Wrynose`, the branch is `imx-linux-wrynose`.
+For a NavQ95 specific explanation refer to the [Build SD card image](#build-sd-card-image) and the [Flash image to SD card](#flash-image-to-sd-card) paragraphs on this page.
 
-Install the `repo` utility:
----------------------------
+<a name="build-sd-card-image"></a>
 
-To use this manifest repo, the `repo` tool must be installed first.
+## Build SD card image
 
-```
-$: mkdir ~/bin
-$: curl http://commondatastorage.googleapis.com/git-repo-downloads/repo  > ~/bin/repo
-$: chmod a+x ~/bin/repo
-$: PATH=${PATH}:~/bin
-```
-
-Install essential host packages
-------------------------------
-Your Build Host must install required packages for the Yocto build.
-Reference to the section "Build Host Packages" in the document "Yocto Project Quick build".
-- https://docs.yoctoproject.org/6.0/brief-yoctoprojectqs/index.html#build-host-packages
-
-Download the Yocto Project BSP
-------------------------------
-
-```
-$: mkdir <release>
-$: cd <release>
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b <branch name> [ -m <release manifest>]
-$: repo sync
+Sync repositories by manifest:
+```bash
+mkdir imx-yocto-bsp
+cd imx-yocto-bsp
+repo init -u https://github.com/NXP-Robotics/imx-manifest-navq95.git -b imx-linux-wrynose -m imx-6.18.20-2.0.0-navq.xml
+repo sync
 ```
 
-Each branch has detailed READMEs describing exact syntax.
-
-Examples
---------
-
-To download the 6.18.20-2.0.0 release
-```
-$: repo init -u https://github.com/nxp-imx/imx-manifest -b imx-linux-wrynose -m imx-6.18.20-2.0.0.xml
+Setup build:
+```bash
+MACHINE=imx95-navqbdesktop DISTRO=imx-desktop-xwayland source imx-setup-release.sh -b build-95-full
 ```
 
-Setup the build folder for a BSP release:
------------------------------------------
-
-Note: The remaining instructions are for setting up a BSP release only. For setting
-up a demo, please see `imx-manifest/README-<demo>` for further instructions.
-
-```
-$: [MACHINE=<machine>] [DISTRO=fsl-imx-<backend>] source ./imx-setup-release.sh -b bld-<backend>
-
-<machine>   defaults to `imx6qsabresd`
-<backend>   Graphics backend type
-    xwayland    Wayland with X11 support - default distro
-    wayland     Wayland
-    fb          Framebuffer (not supported for i.MX 8 and 9)
+Optionally add below lines to conf/local.conf in case the host should stay responsive
+```bash
+BB_NUMBER_THREADS = "6"
+PARALLEL_MAKE = "-j 5"
 ```
 
-Note: If the poky community distro is used, then build breaks will happen with some
-components using our `meta-imx` layer.
-
-Examples:
-- Setup for XWayland.
+Start build:
+```bash
+bitbake mc:imx95-navqdesktop:imx-image-mr
 ```
-$: MACHINE=imx8mpevk DISTRO=fsl-imx-xwayland source ./imx-setup-release.sh -b bld-xwayland
-```
-
-Build an image:
----------------
-
-```
-$: bitbake <image recipe>
+Or to start build and immediately detach the process from the console (may be convenient since this build may take a while)
+```bash
+nohup bitbake mc:imx95-navqdesktop:imx-image-mr &
 ```
 
-Some image recipes:
+To build an image with ROS2 preinstalled:
+```bash
+bitbake mc:imx95-navqdesktop:imx-image-ros
+```
 
-Image Name           | Description
----------------------|---------------------------------------------------
-imx-image-core       | core image with basic graphics and no multimedia
-imx-image-multimedia | image with multimedia and graphics
-imx-image-full       | image with multimedia and machine learning and Qt
+<a name="flash-image-to-sd-card"></a>
+
+## Flash image to SD card
+
+To flash the yocto image to an SD card use the command below. Make sure you update the output file ```of=/dev/sdX``` to the block device that belong to the SD card.
+```bash
+cd /path/to/imx-yocto-bsp/build-95-full
+
+# Deploy mc:imx95-navqdesktop:imx-image-mr on /dev/sdX
+zstdcat tmp-imx95-navq/deploy/images/imx95-navq/imx-image-mr-imx95-navq.rootfs.wic.zst | sudo dd of=/dev/sdX bs=1M conv=fsync
+
+# Deploy mc:imx95-navqdesktop:imx-image-ros on /dev/sdX
+zstdcat tmp-imx95-navq/deploy/images/imx95-navq/imx-image-ros-imx95-navq.rootfs.wic.zst | sudo dd of=/dev/sdX bs=1M conv=fsync
+```
+
+<a name="flash-nor-flash-image"></a>
+
+## Flash NOR flash image
+
+Install pyocd to flash the image through the on-board JTAG device.
+This is tested with python 3.10 but python 3.9 should suffice.
+
+Clone pyocd into a directory of your preference and checkout the `pr-imx95` branch:
+```bash
+git clone https://github.com/NXP-Robotics/pyOCD -b pr-imx95
+```
+
+Build pyocd:
+```bash
+cd pyocd-private
+python3 -m pip install .
+```
+
+Make sure the DIP switches are correctly configured as described in [Power up](#power-up-navq95).
+Remove any SD card and then apply 12V to the J9 connector to power up the board.
+
+Run below command to flash the built RTOS software to the NOR flash:
+```bash
+
+pyocd flash -t mimx95_cm33_mx25um path/to/built/file.bin -f 10m
+```
+
+> [!WARNING]
+> Writing to NOR flash is not completely stable yet. Retry the pyocd flash command until pyocd displays it had only programmed 0 pages.
+
+<a name="power-up-navq95"></a>
+
+# Power up NavQ95
+
+Before powerering up the NavQ95 make sure the DIP switches have the correct settings. They must be configured like the image below to boot from the SD card.
+
+<img src="dip-switches.png" alt="navq95 ports" style="width:20%;"/>
+
+To change the boot device see table below for different boot modes
+
+| **BOOT_MODE[3:0]** | **SW1** | **SW2** | **SW3** | **SW4** |          **Boot Device**          |
+|:------------------:|---------|---------|---------|---------|:---------------------------------:|
+| `1001`             | ON      | OFF     | OFF     | ON      | Serial Downloader on USB3.0 (J13) |
+| `1010`             | OFF     | ON      | OFF     | ON      | Boot from eMMC                    |
+| `1011`             | ON      | ON      | OFF     | ON      | Boot from SD Card                 |
+| `1100`             | OFF     | OFF     | ON      | ON      | Boot from Octal Flash             |
+
+
+
+Insert the SD card with the image installed. Then apply 9-52V to the J9 connector to power up the board.
+
+<img src="mr_navq95-ports.png" alt="navq95 ports" style="width:50%;"/>
+
+The USB port gives access to the tty's of linux and RTOS (if flashed to the NOR flash).
+
+The default linux user is 'user' (password: 'user')
+
+# Flashing the eMMC on NavQ95 (Optional)
+
+This guide explains how to flash a `.wic` image onto the NavQ95’s eMMC instead of the SD card using **UUU** (NXP’s Universal Update Utility).
+
+
+## 1. Set the Board to **Serial Downloader Mode**
+
+1. Configure the boot switches to **Serial Downloader on USB3.0 (J13)**.
+2. Connect a USB‑C cable from your host PC to **J13**.
+3. Power on the NavQ95.
+
+## 2. Install **UUU**
+
+Download and install UUU from the official repository:
+
+- https://github.com/nxp-imx/mfgtools
+
+
+## 3. Load the SPL Bootloader
+
+Load the temporary SPL loader so UUU can communicate with the board
+
+> [!NOTE]
+> The SPL image required for flashing the NavQ95 is included in this repo as **`MR-NAVQ95B-SERIAL-DOWNLOAD.bin`**
+
+```
+ ./uuu.exe -b spl MR-NAVQ95B-SERIAL-DOWNLOAD.bin
+```
+
+## 4. Flash the `.wic` Image to eMMC
+
+Replace the placeholder with the path to your image:
+
+```
+ ./uuu.exe -b emmc_all <patch.to.wic.file>
+```
+
+## 5. Final Steps
+
+1. Power off the NavQ95.
+2. Set the boot switches to Boot from eMMC.
+3. Power on the board, it should now boot from the new eMMC image.
