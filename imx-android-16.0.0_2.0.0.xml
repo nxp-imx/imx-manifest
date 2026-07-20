@@ -49,7 +49,7 @@
 <project path="vendor/nxp-opensource/imx-gbl" name="android-imx_imx-gbl" remote="imx-android" revision="refs/tags/android-16.0.0_2.0.0" />
 <project path="vendor/nxp-opensource/imx-parser" name="imx-parser" remote="imx-linux-sdk" revision="refs/tags/android-16.0.0_2.0.0" />
 <project path="vendor/nxp-opensource/imx-mp4-parser" name="imx-mp4-parser" remote="imx-linux-sdk" revision="refs/tags/android-16.0.0_2.0.0" />
-<project path="vendor/nxp-opensource/imx_android_mm" name="android-imx_android_mm" remote="imx-linux-sdk" revision="refs/tags/android-16.0.0_2.0.0" />
+<project path="vendor/nxp-opensource/imx_android_mm" name="android-imx_android_mm" remote="imx-android" revision="refs/tags/android-16.0.0_2.0.0" />
 <project path="vendor/nxp-opensource/imx_opencl_converter" name="imx-opencl-converter" remote="imx-linux-sdk" revision="refs/tags/android-16.0.0_2.0.0" />
 <project path="hardware/nxp/libbt" name="android-imx_platform_hardware_nxp_libbt" remote="imx-android" revision="refs/tags/android-16.0.0_2.0.0" />
 <project path="hardware/nxp/wlan" name="android-imx_platform_hardware_nxp_wlan" remote="imx-android" revision="refs/tags/android-16.0.0_2.0.0" />
