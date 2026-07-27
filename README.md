@@ -89,7 +89,6 @@ Remove any SD card and then apply 12V to the J9 connector to power up the board.
 
 Run below command to flash the built RTOS software to the NOR flash:
 ```bash
-
 pyocd flash -t mimx95_cm33_mx25um path/to/built/file.bin -f 10m
 ```
 
@@ -122,6 +121,39 @@ Insert the SD card with the image installed. Then apply 9-52V to the J9 connecto
 The USB port gives access to the tty's of linux and RTOS (if flashed to the NOR flash).
 
 The default linux user is 'user' (password: 'user')
+
+# NavQ-B camera / display modules (DT overlays)
+
+Two 22-pin connectors. Boot the base DTB and apply one `.dtbo` per connector:
+
+- `csi_b2b`    — port A, CSI-only  (CSI0), camera only
+- `dsicsi_b2b` — port B, CSI/DSI combo (CSI1 or DSI), camera input or display output
+
+## Check status (U-Boot shell)
+
+```sh
+=> run modules_help          # list overlays + current selection
+=> printenv csi_b2b dsicsi_b2b
+```
+
+## Swap a module
+
+```sh
+=> setenv csi_b2b    imx95-navqb-csi_b2b-imx708.dtbo
+=> setenv dsicsi_b2b imx95-navqb-dsicsi_b2b-disp-7inch.dtbo
+=> saveenv
+=> reset
+```
+
+Use `none` to leave a connector empty.
+
+Available `.dtbo` files live in `/boot` and are built from
+`arch/arm64/boot/dts/freescale/`:
+
+| Connector | Modules | Filename pattern |
+|---|---|---|
+| `csi_b2b` | `imx219`, `imx477`, `imx708`, `os08a20` | `imx95-navqb-csi_b2b-<module>.dtbo` |
+| `dsicsi_b2b` | `imx219`, `imx477`, `imx708`, `os08a20`, `disp-7inch`, `disp-5inch` | `imx95-navqb-dsicsi_b2b-<module>.dtbo` |
 
 # Flashing the eMMC on NavQ95 (Optional)
 

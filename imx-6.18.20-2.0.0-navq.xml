@@ -44,7 +44,7 @@
   </project>
   <project name="meta-nxp-connectivity" remote="imx" path="sources/meta-nxp-connectivity" revision="refs/tags/rel_imx_6.18.20_2.0.0" upstream="imx_matter_2026_q1-post" />
   <project name="meta-nxp-demo-experience" remote="imx-support" path="sources/meta-nxp-demo-experience" revision="refs/tags/rel_imx_6.18.20_2.0.0" upstream="wrynose-6.18.20-2.0.0" />
-  <project name="meta-nxp-mr" remote="nxp-robotics" path="sources/meta-nxp-mr" revision="8bf5d77490b044bec680229cd8f9de3151c5de5d" upstream="lf-6.18.2-2.0.0-wrynose-navq95">
+  <project name="meta-nxp-mr" remote="nxp-robotics" path="sources/meta-nxp-mr" revision="265eb60b2ed953829d7bd68b115fa5293cd18fd8" upstream="lf-6.18.2-2.0.0-wrynose-navq95">
     <linkfile src="tools/imx-setup-release.sh" dest="imx-setup-release.sh"/>
   </project>
   <project name="meta-zephyr" remote="yp" path="sources/meta-zephyr" revision="ec31a030bd69b5ef3a947a3fc390e7745bd06038" upstream="wrynose" />
