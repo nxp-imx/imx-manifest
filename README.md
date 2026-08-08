@@ -18,6 +18,15 @@ For a NavQ95 specific explanation refer to the [Build SD card image](#build-sd-c
 
 ## Build SD card image
 
+### Host prerequisites
+
+BitBake requires unprivileged user namespaces, which AppArmor restricts by
+default on Ubuntu 24.04 (noble) hosts. Enable them before building (the
+setting resets on reboot):
+```bash
+echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
+```
+
 Sync repositories by manifest:
 ```bash
 mkdir imx-yocto-bsp
@@ -171,6 +180,13 @@ This guide explains how to flash a `.wic` image onto the NavQ95’s eMMC instead
 Download and install UUU from the official repository:
 
 - https://github.com/nxp-imx/mfgtools
+
+> [!NOTE]
+> Use uuu release 1.5.243 or newer. Older releases, including the version
+> packaged in Ubuntu 24.04, cannot parse i.MX95 boot containers and fail at
+> the SDPV stage with "Unknown Image type, can't use skipspl". If a transfer
+> aborts with LIBUSB_ERROR_NO_DEVICE, stop ModemManager before retrying:
+> `sudo systemctl stop ModemManager`
 
 
 ## 3. Load the SPL Bootloader
