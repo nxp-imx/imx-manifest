@@ -21,20 +21,20 @@
   <project name="meta-clang" remote="kraj" path="sources/meta-clang" revision="ef0d22f21910a0c30c967eeb17d8f209806e2d81" upstream="wrynose" />
   <project name="meta-openembedded" remote="oe" path="sources/meta-openembedded" revision="6bf0d8ad57b33950bab4c7f6c037e1ccb6f6e2eb" upstream="wrynose" />
 
-  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="1d8c41be87979d063b34a98044cc5f8e1279eb2c" upstream="master" >
+  <project name="fsl-community-bsp-base" remote="community" path="sources/base" revision="1d8c41be87979d063b34a98044cc5f8e1279eb2c" upstream="wrynose" >
     <linkfile dest="setup-environment" src="setup-environment"/>
   </project>
-  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="ca31f33c5b5e433939c5f8442d2de56925d638bd" upstream="master"/>
-  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="26d8b36a72acf1458a2520e4e9f4d654a4ba77e4" upstream="master"/>
-  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="4464f38b4aa618b5942f5e35dd25cff590f410a6" upstream="master"/>
-  <project name="meta-freescale-ml" remote="community" path="sources/meta-freescale-ml" revision="1330790bc6cdd3808260a16383d928e05a0e0eeb" upstream="master"/>
+  <project name="meta-freescale" remote="community" path="sources/meta-freescale" revision="ca31f33c5b5e433939c5f8442d2de56925d638bd" upstream="wrynose"/>
+  <project name="meta-freescale-3rdparty" remote="community" path="sources/meta-freescale-3rdparty" revision="26d8b36a72acf1458a2520e4e9f4d654a4ba77e4" upstream="wrynose"/>
+  <project name="meta-freescale-distro" remote="community" path="sources/meta-freescale-distro" revision="4464f38b4aa618b5942f5e35dd25cff590f410a6" upstream="wrynose"/>
+  <project name="meta-freescale-ml" remote="community" path="sources/meta-freescale-ml" revision="1330790bc6cdd3808260a16383d928e05a0e0eeb" upstream="wrynose"/>
 
-  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="0979b80429099f1a42dc0026c8c466cee780bc74" upstream="master" />
+  <project name="meta-arm" remote="yp" path="sources/meta-arm" revision="0979b80429099f1a42dc0026c8c466cee780bc74" upstream="wrynose" />
   <project name="meta-qt6" remote="qt" path="sources/meta-qt6" revision="302c4fab8d230f5cb7b21e4304c728831a0658cb" upstream="6.11" />
   <project name="meta-browser" remote="ossystems" path="sources/meta-browser" revision="407e3ac990f5ed466cb76e5002f918860503799c" upstream="wrynose" />
   <project name="meta-security" remote="yp" path="sources/meta-security" revision="c0d1d6200e7a84c39fb940cb1f22aad4b0b3d808" upstream="wrynose" />
-  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="bf4ff1bb4c85bb7a1c65bc6f2cc6188ff5b76ef2" upstream="master"/>
-  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="30f1a9d7e5ef1b41c64ff4c3c40951133d548ed8" upstream="master"/>
+  <project name="meta-timesys" remote="timesys" path="sources/meta-timesys" revision="bf4ff1bb4c85bb7a1c65bc6f2cc6188ff5b76ef2" upstream="wrynose"/>
+  <project name="meta-virtualization" remote="yp" path="sources/meta-virtualization" revision="30f1a9d7e5ef1b41c64ff4c3c40951133d548ed8" upstream="wrynose"/>
 
 
   <project name="meta-imx" remote="imx" path="sources/meta-imx" revision="refs/tags/rel_imx_6.18.37_2.1.0" upstream="wrynose-6.18.37-2.1.0">
