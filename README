@@ -2,7 +2,7 @@ i.MX Android BSP Repo Manifest README
 
 This repo is used to download manifests for i.MX Android BSP releases.
 
-The imx-android-17 branch will include all release manifests for Android 16 i.MX releases.
+The imx-android-17 branch will include all release manifests for Android 17 i.MX releases.
 The code is not distributed as patches as previous i.MX Android releases.
 Instead the i.MX Android open source is distributed on the https://github.com
 and the proprietary is distributed on nxp.com.   Please download from nxp.com first the proprietary
